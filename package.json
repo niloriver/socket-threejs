@@ -1,0 +1,18 @@
+{
+  "name": "hvbrd-sockets",
+  "version": "1.0.0",
+  "description": "Interactive hoverboard game with JavaScript and WebSockets",
+  "main": "server/index.js",
+  "author": "Charlie Gerard <charlie.a.gerard@gmail.com>",
+  "scripts": {
+    "start": "nodemon server/index.js localhost 8080"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "socket.io": "2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.4"
+  },
+  "keywords": ["javascript", "iot", "creative coding"]
+}
