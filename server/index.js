@@ -116,7 +116,7 @@ const updateGameState = (id, active, rest = {}) => {
 
 const getAverage = () => {
   commandsPool = commandsPool.slice(
-    commandsPool.length - 20,
+    commandsPool.length - Object.keys(loggedPeers[socket.id]).length,
     commandsPool.length
   );
 
