@@ -17,6 +17,7 @@ const allowedOrigins = [
   "http://192.168.5.185:8080",
   "http://192.168.5.185:7777",
   "https://pong.bolha.com.br",
+  "https://pong-core.bolha.com.br",
   "http://localhost:8080",
   "http://localhost:1234",
 ];
