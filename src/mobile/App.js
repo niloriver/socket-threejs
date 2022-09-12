@@ -99,7 +99,9 @@ export function App() {
     const noSleep = new NoSleep();
     noSleep.disable();
     window.noSleep = noSleep;
-    window.socket = io("http://192.168.5.185:7777");
+
+    const full = location.protocol + "//" + location.host;
+    window.socket = io(full);
 
     // AUTH PROCESS
     window.socket.on("welcome", (payload) => {
