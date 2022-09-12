@@ -810,37 +810,32 @@ export function App() {
                     "w-full h-auto flex flex-wrap flex-row justify-between arrows-container px-8"
                   }
                 >
-                  {!modoRaquete && (
-                    <div
-                      className={`${
-                        leftPressed
-                          ? "controller-button-pressed"
-                          : "controller-button"
-                      }  ${
-                        modoRaquete ? "opacity-0" : ""
-                      } flex items-center justify-center`}
-                    >
-                      <img src={arrowLeft} />
-                    </div>
-                  )}
+                  <div
+                    className={`${
+                      leftPressed
+                        ? "controller-button-pressed"
+                        : "controller-button"
+                    }  ${
+                      modoRaquete ? "opacity-0" : ""
+                    } flex items-center justify-center`}
+                  >
+                    <img src={arrowLeft} />
+                  </div>
 
-                  {!modoRaquete && (
-                    <div
-                      className={`${
-                        rightPressed
-                          ? "controller-button-pressed"
-                          : "controller-button"
-                      } ${
-                        modoRaquete ? "opacity-0" : ""
-                      } flex items-center justify-center`}
-                    >
-                      <img src={arrowRight} />
-                    </div>
-                  )}
+                  <div
+                    className={`${
+                      rightPressed
+                        ? "controller-button-pressed"
+                        : "controller-button"
+                    } ${
+                      modoRaquete ? "opacity-0" : ""
+                    } flex items-center justify-center`}
+                  >
+                    <img src={arrowRight} />
+                  </div>
                 </div>
               )}
-
-              <RenderVolume />
+              {modoRaquete && <RenderVolume />}
             </div>
 
             {!optOut && (
