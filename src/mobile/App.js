@@ -356,6 +356,12 @@ export function App() {
   };
 
   const handleOrientation = (e) => {
+    if (hasDebug && document.getElementById("footer-debug")) {
+      document.getElementById(
+        "footer-debug"
+      ).innerHTML = `forceLeft = ${JSON.stringify(e)}`;
+    }
+
     if (window.modoRaquete && window.socketStarted) {
       // socket.emit("orientation", e.gamma);
       const val = e.gamma;
@@ -798,39 +804,41 @@ export function App() {
                 </div>
               </div>
 
-              <div
-                className={
-                  "w-full h-auto flex flex-wrap flex-row justify-between arrows-container px-8"
-                }
-              >
-                {!modoRaquete && (
-                  <div
-                    className={`${
-                      leftPressed
-                        ? "controller-button-pressed"
-                        : "controller-button"
-                    }  ${
-                      modoRaquete ? "opacity-0" : ""
-                    } flex items-center justify-center`}
-                  >
-                    <img src={arrowLeft} />
-                  </div>
-                )}
+              {!modoRaquete && (
+                <div
+                  className={
+                    "w-full h-auto flex flex-wrap flex-row justify-between arrows-container px-8"
+                  }
+                >
+                  {!modoRaquete && (
+                    <div
+                      className={`${
+                        leftPressed
+                          ? "controller-button-pressed"
+                          : "controller-button"
+                      }  ${
+                        modoRaquete ? "opacity-0" : ""
+                      } flex items-center justify-center`}
+                    >
+                      <img src={arrowLeft} />
+                    </div>
+                  )}
 
-                {!modoRaquete && (
-                  <div
-                    className={`${
-                      rightPressed
-                        ? "controller-button-pressed"
-                        : "controller-button"
-                    } ${
-                      modoRaquete ? "opacity-0" : ""
-                    } flex items-center justify-center`}
-                  >
-                    <img src={arrowRight} />
-                  </div>
-                )}
-              </div>
+                  {!modoRaquete && (
+                    <div
+                      className={`${
+                        rightPressed
+                          ? "controller-button-pressed"
+                          : "controller-button"
+                      } ${
+                        modoRaquete ? "opacity-0" : ""
+                      } flex items-center justify-center`}
+                    >
+                      <img src={arrowRight} />
+                    </div>
+                  )}
+                </div>
+              )}
 
               <RenderVolume />
             </div>
@@ -915,7 +923,10 @@ export function App() {
             </div>
 
             {hasDebug && (
-              <div className="w-full h-24 bg-yellow-300 opacity-0">
+              <div
+                id="footer-debug"
+                className="w-full h-24 bg-yellow-300 opacity-25"
+              >
                 humanForceLeft: {humanForceLeft} <br />
                 humanForceRight: {humanForceRight}
               </div>
