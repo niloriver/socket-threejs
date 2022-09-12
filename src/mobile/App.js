@@ -24,6 +24,10 @@ window.commandsPool = [];
 window.playerHuman = null;
 window.modoRaquete = false;
 
+window.md = new MobileDetect(window.navigator.userAgent);
+
+var iosAccept = false;
+
 const getAverage = () => {
   window.commandsPool = window.commandsPool.slice(
     window.commandsPool.length - 20,
@@ -52,6 +56,10 @@ const isMobile = () => {
   return false;
 };
 
+const isIOS = () => {
+  return window.md.is("iPhone");
+};
+
 export function App() {
   const [human, setHuman] = useState(null);
   const [gameRoom, setGameRoom] = useState(null);
@@ -71,6 +79,39 @@ export function App() {
   const [humanForceRight, setHumanForceRight] = useState(0);
 
   const [modoRaquete, setRaquete] = useState(false);
+  const [optOut, setOutOut] = useState(false);
+
+  const optOutMotion = () => {
+    setOutOut(true);
+  };
+
+  const requestPermissionIOS = () => {
+    if (
+      typeof DeviceMotionEvent !== "undefined" &&
+      typeof DeviceMotionEvent.requestPermission === "function"
+    ) {
+      // (optional) Do something before API request prompt.
+      DeviceMotionEvent.requestPermission()
+        .then((response) => {
+          // (optional) Do something after API prompt dismissed.
+          if (response == "granted") {
+            iosAccept = true;
+            addMotionSensor();
+            const next = !modoRaquete;
+            setRaquete(next);
+            window.modoRaquete = next;
+          } else {
+            setRaquete(false);
+            optOutMotion();
+          }
+        })
+        .catch(console.error);
+    } else {
+      // alert( "DeviceMotionEvent is not defined" );
+      setRaquete(false);
+      optOutMotion();
+    }
+  };
 
   useEffect(() => {
     connectSocket();
@@ -111,10 +152,12 @@ export function App() {
       createHuman(payload.user);
 
       if (payload.gamestate === "playing") {
-        setGameState(payload.gamestate);
+        setGameState("playing");
       }
       if (payload.gamestate === "scoring") {
-        setGameState("playing");
+        if (human) {
+          setGameState("playing");
+        }
       }
 
       if (payload.gamestate === "iddle") {
@@ -130,12 +173,16 @@ export function App() {
         setGameState("playing");
       }
       if (payload.gamestate === "scoring") {
-        setGameState("playing");
+        if (human) {
+          setGameState("playing");
+        }
       }
 
       if (payload.gamestate === "gameover-mobile") {
-        setGameState("gameover-mobile");
-        setMatchResults(payload.params);
+        if (human) {
+          setGameState("gameover-mobile");
+          setMatchResults(payload.params);
+        }
       }
 
       if (payload.gamestate === "iddle") {
@@ -175,6 +222,16 @@ export function App() {
         }
       });
 
+      addMotionSensor();
+
+      // handleOrientation()
+    }
+  };
+
+  const addMotionSensor = () => {
+    if (iosAccept) {
+      window.addEventListener("devicemotion", handleOrientation, true);
+    } else {
       window.addEventListener("deviceorientation", handleOrientation, true);
     }
   };
@@ -216,9 +273,19 @@ export function App() {
   };
 
   const toggleRaquete = () => {
-    const next = !modoRaquete;
-    setRaquete(next);
-    window.modoRaquete = next;
+    if (isIOS()) {
+      if (iosAccept) {
+        const next = !modoRaquete;
+        setRaquete(next);
+        window.modoRaquete = next;
+      } else {
+        requestPermissionIOS();
+      }
+    } else {
+      const next = !modoRaquete;
+      setRaquete(next);
+      window.modoRaquete = next;
+    }
 
     setHumanForceLeft(0);
     setHumanForceRight(0);
@@ -768,25 +835,27 @@ export function App() {
               <RenderVolume />
             </div>
 
-            <div
-              onClick={() => {
-                toggleRaquete();
-              }}
-              className="w-full bottom-32 h-auto absolute flex flex-wrap px-8 toggler z-30 justify-center"
-            >
-              <div className="w-auto flex flex-wrap">
-                <div className="w-12 h-auto flex items-center mr-2">
-                  {/* {modoRaquete && <img className="w-full h-auto" src={btOn} />} */}
-                  <img
-                    className="w-full h-auto"
-                    src={!modoRaquete ? btOff : btOn}
-                  />
-                </div>
-                <div className="flex-1 h-auto flex items-center">
-                  {modoRaquete ? "motion" : "touch"}
+            {!optOut && (
+              <div
+                onClick={() => {
+                  toggleRaquete();
+                }}
+                className="w-full bottom-32 h-auto absolute flex flex-wrap px-8 toggler z-30 justify-center"
+              >
+                <div className="w-auto flex flex-wrap">
+                  <div className="w-12 h-auto flex items-center mr-2">
+                    {/* {modoRaquete && <img className="w-full h-auto" src={btOn} />} */}
+                    <img
+                      className="w-full h-auto"
+                      src={!modoRaquete ? btOff : btOn}
+                    />
+                  </div>
+                  <div className="flex-1 h-auto flex items-center">
+                    {modoRaquete ? "motion" : "touch"}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="w-full h-full absolute opacity-0 z-10 top-24">
               <ReactNipple
