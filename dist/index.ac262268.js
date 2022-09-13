@@ -27085,7 +27085,7 @@ var _btOnPng = require("./bt-on.png");
 var _btOnPngDefault = parcelHelpers.interopDefault(_btOnPng);
 var Buffer = require("buffer").Buffer;
 var _s = $RefreshSig$();
-window.hasDebug = true;
+window.hasDebug = false;
 window.socket = null;
 window.socketStarted = false;
 window.commandsPool = [];
@@ -27342,7 +27342,16 @@ function App() {
     };
     const handleOrientation = (e)=>{
         console.log("ORIENTATION_EVENT", e);
-        window.hasDebug && document.getElementById("footer-debug");
+        // if (isIOS() && window.hasDebug) {
+        //   window.socket.emit("debug-safari", e);
+        // }
+        // if (window.hasDebug && document.getElementById("footer-debug")) {
+        // document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
+        //   window.commandsPool
+        // )} left = ${humanForceLeft} <br>l0 = ${
+        //   humanForceLeft[0] || "Z"
+        // }<br> l1 = ${humanForceLeft[1] || "X"}`;
+        // }
         if (window.modoRaquete && window.socketStarted) {
             // socket.emit("orientation", e.gamma);
             var val = e.gamma;
@@ -27354,7 +27363,9 @@ function App() {
                 setHumanForceLeft(Math.abs(val));
                 setHumanForceRight(0);
             }
-            if (isIOS()) document.getElementById("footer-debug").innerHTML = `${val}`;
+            // if (isIOS()) {
+            //   document.getElementById("footer-debug").innerHTML = `${val}`;
+            // }
             // const direcionalRight = document.getElementById("direcional-right");
             // const direcionalLeft = document.getElementById("direcional-left");
             // if (direcionalRight) {

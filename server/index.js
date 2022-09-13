@@ -458,6 +458,8 @@ io.sockets.on("connection", (socket) => {
     //       io.sockets.sockets[socketId].leave(roomId)
     //     );
     //   });
+
+    console.log("PONG+GAME+OVER");
     // MUDA GAME STATE PARA GAMEOVER
     updateGameState("gameover", true, results);
     // BROADCAST GAME STATE

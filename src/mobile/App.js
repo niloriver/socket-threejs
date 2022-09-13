@@ -16,7 +16,7 @@ import arrowRight from "./arrow-right.svg";
 import btOff from "./bt-off.png";
 import btOn from "./bt-on.png";
 
-window.hasDebug = true;
+window.hasDebug = false;
 
 window.socket = null;
 window.socketStarted = false;
@@ -376,13 +376,13 @@ export function App() {
     //   window.socket.emit("debug-safari", e);
     // }
 
-    if (window.hasDebug && document.getElementById("footer-debug")) {
-      // document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
-      //   window.commandsPool
-      // )} left = ${humanForceLeft} <br>l0 = ${
-      //   humanForceLeft[0] || "Z"
-      // }<br> l1 = ${humanForceLeft[1] || "X"}`;
-    }
+    // if (window.hasDebug && document.getElementById("footer-debug")) {
+    // document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
+    //   window.commandsPool
+    // )} left = ${humanForceLeft} <br>l0 = ${
+    //   humanForceLeft[0] || "Z"
+    // }<br> l1 = ${humanForceLeft[1] || "X"}`;
+    // }
 
     if (window.modoRaquete && window.socketStarted) {
       // socket.emit("orientation", e.gamma);
@@ -400,9 +400,9 @@ export function App() {
         setHumanForceRight(0);
       }
 
-      if (isIOS()) {
-        document.getElementById("footer-debug").innerHTML = `${val}`;
-      }
+      // if (isIOS()) {
+      //   document.getElementById("footer-debug").innerHTML = `${val}`;
+      // }
 
       // const direcionalRight = document.getElementById("direcional-right");
       // const direcionalLeft = document.getElementById("direcional-left");
