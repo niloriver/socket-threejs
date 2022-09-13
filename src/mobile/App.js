@@ -365,22 +365,16 @@ export function App() {
     }
 
     if (window.hasDebug && document.getElementById("footer-debug")) {
-      document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
-        window.commandsPool
-      )} left = ${humanForceLeft} <br>l0 = ${
-        humanForceLeft[0] || "Z"
-      }<br> l1 = ${humanForceLeft[1] || "X"}`;
+      // document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
+      //   window.commandsPool
+      // )} left = ${humanForceLeft} <br>l0 = ${
+      //   humanForceLeft[0] || "Z"
+      // }<br> l1 = ${humanForceLeft[1] || "X"}`;
     }
 
     if (window.modoRaquete && window.socketStarted) {
       // socket.emit("orientation", e.gamma);
       var val = e.gamma;
-
-      if (isIOS()) {
-        if (e.gamma && e.gamma.split(",")[1]) {
-          val = parseFloat(e.gamma.split(",")[1]);
-        }
-      }
 
       window.commandsPool.push(val);
 
@@ -390,6 +384,10 @@ export function App() {
       } else {
         setHumanForceLeft(Math.abs(val));
         setHumanForceRight(0);
+      }
+
+      if (isIOS()) {
+        document.getElementById("footer-debug").innerHTML = `${val}`;
       }
 
       // const direcionalRight = document.getElementById("direcional-right");
