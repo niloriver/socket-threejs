@@ -27092,7 +27092,7 @@ window.commandsPool = [];
 window.playerHuman = null;
 window.modoRaquete = false;
 window.gameState = "starting";
-window.human = null;
+window.human = false;
 window.md = new MobileDetect(window.navigator.userAgent);
 var iosAccept = false;
 const getAverage = ()=>{
@@ -27259,12 +27259,12 @@ function App() {
         const image = svg;
         const buff = new Buffer(image);
         const base64data = buff.toString("base64");
-        const humanData = {
+        const h = {
             playerName,
             avatarImg: base64data
         };
-        setHuman(humanData);
-        window.human = humanData;
+        setHuman(h);
+        window.human = true;
         console.log("SETTING_HUMAN", playerName);
     };
     const joinCrowd = (playerName)=>{
