@@ -27192,6 +27192,16 @@ function App() {
             }
             if (payload.gamestate === "iddle") setGameState("waiting");
         });
+        window.socket.on("gameover", (payload)=>{
+            window.socket.emit("debug-safari", {
+                type: "gameover-mobile",
+                payload
+            });
+            if (human) {
+                setGameState("gameover-mobile");
+                setMatchResults(payload.params);
+            }
+        });
         // NEW GAME STATE
         window.socket.on("gamestate", (payload)=>{
             console.log("NEW_GAME_STATE", payload);
@@ -27445,12 +27455,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 516,
+                        lineNumber: 527,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 512,
+                    lineNumber: 523,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27463,12 +27473,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 525,
+                        lineNumber: 536,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 521,
+                    lineNumber: 532,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27481,12 +27491,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 534,
+                        lineNumber: 545,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 530,
+                    lineNumber: 541,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27499,12 +27509,12 @@ function App() {
                         className: "w-full h-full bg-gray-200"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 543,
+                        lineNumber: 554,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 539,
+                    lineNumber: 550,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27517,12 +27527,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 552,
+                        lineNumber: 563,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 548,
+                    lineNumber: 559,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27535,12 +27545,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 561,
+                        lineNumber: 572,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 557,
+                    lineNumber: 568,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27553,18 +27563,18 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 570,
+                        lineNumber: 581,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 566,
+                    lineNumber: 577,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/mobile/App.js",
-            lineNumber: 507,
+            lineNumber: 518,
             columnNumber: 7
         }, this);
     };
@@ -27581,14 +27591,14 @@ function App() {
                             "PONG AGAINST ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 596,
+                                lineNumber: 607,
                                 columnNumber: 26
                             }, this),
                             "THE MACHINE"
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 591,
+                        lineNumber: 602,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27600,7 +27610,7 @@ function App() {
                                 children: "Qual seu player name?"
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 601,
+                                lineNumber: 612,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27615,17 +27625,17 @@ function App() {
                                         className: "w-full input-outline"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 612,
+                                        lineNumber: 623,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 609,
+                                    lineNumber: 620,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 608,
+                                lineNumber: 619,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27640,18 +27650,18 @@ function App() {
                                     src: (0, _btcontinuarSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 629,
+                                    lineNumber: 640,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 622,
+                                lineNumber: 633,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 600,
+                        lineNumber: 611,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27661,18 +27671,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 644,
+                            lineNumber: 655,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 639,
+                        lineNumber: 650,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 585,
+                lineNumber: 596,
                 columnNumber: 9
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch > 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27694,17 +27704,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 663,
+                                                lineNumber: 674,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 662,
+                                            lineNumber: 673,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 661,
+                                        lineNumber: 672,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27717,25 +27727,25 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 677,
+                                                    lineNumber: 688,
                                                     columnNumber: 41
                                                 }, this),
                                                 "se liga que o jogo j\xe1 vai come\xe7ar..."
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 671,
+                                            lineNumber: 682,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 670,
+                                        lineNumber: 681,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 660,
+                                lineNumber: 671,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27746,7 +27756,7 @@ function App() {
                                         children: timeToMatch
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 684,
+                                        lineNumber: 695,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27754,19 +27764,19 @@ function App() {
                                         children: "segundos"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 688,
+                                        lineNumber: 699,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 683,
+                                lineNumber: 694,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 659,
+                        lineNumber: 670,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27776,18 +27786,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 696,
+                            lineNumber: 707,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 691,
+                        lineNumber: 702,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 653,
+                lineNumber: 664,
                 columnNumber: 11
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch === 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27808,17 +27818,17 @@ function App() {
                                             src: `data:image/svg+xml;base64,${human.avatarImg}`
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 714,
+                                            lineNumber: 725,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 713,
+                                        lineNumber: 724,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 712,
+                                    lineNumber: 723,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27832,14 +27842,14 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 728,
+                                                    lineNumber: 739,
                                                     columnNumber: 41
                                                 }, this),
                                                 "t\xe1 tudo certo!"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 722,
+                                            lineNumber: 733,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27848,24 +27858,24 @@ function App() {
                                             children: "Estamos calibrando o PONG para a pr\xf3xima partida. Espera s\xf3 um pouco mais, \xe9 coisa r\xe1pida."
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 731,
+                                            lineNumber: 742,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 721,
+                                    lineNumber: 732,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 711,
+                            lineNumber: 722,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 710,
+                        lineNumber: 721,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27875,18 +27885,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 748,
+                            lineNumber: 759,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 743,
+                        lineNumber: 754,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 704,
+                lineNumber: 715,
                 columnNumber: 11
             }, this),
             gameState === "gameover-mobile" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27907,12 +27917,12 @@ function App() {
                                             children: "Fim de jogo"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 766,
+                                            lineNumber: 777,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 765,
+                                        lineNumber: 776,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27926,7 +27936,7 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 769,
+                                                lineNumber: 780,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27937,29 +27947,29 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 772,
+                                                lineNumber: 783,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 768,
+                                        lineNumber: 779,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 764,
+                                lineNumber: 775,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 763,
+                            lineNumber: 774,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 762,
+                        lineNumber: 773,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27971,7 +27981,7 @@ function App() {
                                 children: "Esta experi\xeancia foi patrocinada pela Vale."
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 781,
+                                lineNumber: 792,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27979,13 +27989,13 @@ function App() {
                                 src: (0, _btsaibamaisSvgDefault.default)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 790,
+                                lineNumber: 801,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 780,
+                        lineNumber: 791,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27995,18 +28005,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 800,
+                            lineNumber: 811,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 795,
+                        lineNumber: 806,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 754,
+                lineNumber: 765,
                 columnNumber: 9
             }, this),
             (gameState === "playing" || gameState === "scoring") && human && human.avatarImg && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28018,7 +28028,7 @@ function App() {
                         children: "-"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 815,
+                        lineNumber: 826,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28035,17 +28045,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 826,
+                                                lineNumber: 837,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 825,
+                                            lineNumber: 836,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 824,
+                                        lineNumber: 835,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28056,18 +28066,18 @@ function App() {
                                             children: "E t\xe1 valendo!"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 831,
+                                            lineNumber: 842,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 830,
+                                        lineNumber: 841,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 823,
+                                lineNumber: 834,
                                 columnNumber: 15
                             }, this),
                             !modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28079,12 +28089,12 @@ function App() {
                                             src: (0, _arrowLeftSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 858,
+                                            lineNumber: 869,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 849,
+                                        lineNumber: 860,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28093,29 +28103,29 @@ function App() {
                                             src: (0, _arrowRightSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 870,
+                                            lineNumber: 881,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 861,
+                                        lineNumber: 872,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 844,
+                                lineNumber: 855,
                                 columnNumber: 17
                             }, this),
                             modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RenderVolume, {}, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 874,
+                                lineNumber: 885,
                                 columnNumber: 31
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 822,
+                        lineNumber: 833,
                         columnNumber: 13
                     }, this),
                     !optOut && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28133,12 +28143,12 @@ function App() {
                                         src: !modoRaquete ? (0, _btOffPngDefault.default) : (0, _btOnPngDefault.default)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 887,
+                                        lineNumber: 898,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 885,
+                                    lineNumber: 896,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28146,18 +28156,18 @@ function App() {
                                     children: modoRaquete ? "motion" : "touch"
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 892,
+                                    lineNumber: 903,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 884,
+                            lineNumber: 895,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 878,
+                        lineNumber: 889,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28213,12 +28223,12 @@ function App() {
                             }
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 900,
+                            lineNumber: 911,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 899,
+                        lineNumber: 910,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28228,18 +28238,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 961,
+                            lineNumber: 972,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 956,
+                        lineNumber: 967,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 809,
+                lineNumber: 820,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28247,13 +28257,13 @@ function App() {
                 children: "MOBILE_CONTROLLER_NOT_DESK"
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 965,
+                lineNumber: 976,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/mobile/App.js",
-        lineNumber: 580,
+        lineNumber: 591,
         columnNumber: 5
     }, this);
 }

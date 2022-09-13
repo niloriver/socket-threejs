@@ -57,7 +57,6 @@ var gameStates = [
   { id: "playing", active: false },
   { id: "scoring", active: false },
   { id: "gameover", active: false, duration: 60 },
-  { id: "gameover-mobile", active: false, duration: 60 },
   { id: "botwins", active: false },
   { id: "humanswins", active: false },
   { id: "merchan", active: false, duration: 30 },
@@ -463,7 +462,7 @@ io.sockets.on("connection", (socket) => {
     // MUDA GAME STATE PARA GAMEOVER
     updateGameState("gameover", true, results);
     // BROADCAST GAME STATE
-    socket.broadcast.emit("gamestate", {
+    io.sockets.emit("gameover", {
       gamestate: "gameover-mobile",
       params: getGameStateParams(getGameState()),
     });

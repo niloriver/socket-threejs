@@ -177,6 +177,17 @@ export function App() {
       }
     });
 
+    window.socket.on("gameover", (payload) => {
+      window.socket.emit("debug-safari", {
+        type: "gameover-mobile",
+        payload,
+      });
+      if (human) {
+        setGameState("gameover-mobile");
+        setMatchResults(payload.params);
+      }
+    });
+
     // NEW GAME STATE
     window.socket.on("gamestate", (payload) => {
       console.log("NEW_GAME_STATE", payload);
