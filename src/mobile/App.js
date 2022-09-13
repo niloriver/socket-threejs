@@ -24,6 +24,7 @@ window.commandsPool = [];
 window.playerHuman = null;
 window.modoRaquete = false;
 window.gameState = "starting";
+window.human = null;
 
 window.md = new MobileDetect(window.navigator.userAgent);
 
@@ -167,7 +168,7 @@ export function App() {
         setGameState("playing");
       }
       if (payload.gamestate === "scoring") {
-        if (human) {
+        if (window.human) {
           setGameState("playing");
         }
       }
@@ -182,7 +183,7 @@ export function App() {
         type: "gameover-mobile",
         payload,
       });
-      if (human) {
+      if (window.human) {
         setGameState("gameover-mobile");
         setMatchResults(payload.params);
       }
@@ -196,13 +197,13 @@ export function App() {
         setGameState("playing");
       }
       if (payload.gamestate === "scoring") {
-        if (human) {
+        if (window.human) {
           setGameState("playing");
         }
       }
 
       if (payload.gamestate === "gameover-mobile") {
-        if (human) {
+        if (window.human) {
           setGameState("gameover-mobile");
           setMatchResults(payload.params);
         }
@@ -270,10 +271,12 @@ export function App() {
     const buff = new Buffer(image);
     const base64data = buff.toString("base64");
 
-    setHuman({
+    const humanData = {
       playerName,
       avatarImg: base64data,
-    });
+    };
+    setHuman(humanData);
+    window.human = humanData;
 
     console.log("SETTING_HUMAN", playerName);
   };
