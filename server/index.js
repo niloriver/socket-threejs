@@ -255,7 +255,7 @@ io.sockets.on("connection", (socket) => {
 
   // AUTH (joinCrowd)
 
-  socket.on("safari-debug", (data) => {
+  socket.on("debug-safari", (data) => {
     console.log("DEBUG_SAFARI", data);
   });
 

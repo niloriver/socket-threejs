@@ -27325,7 +27325,7 @@ function App() {
         }, 10);
     };
     const handleOrientation = (e)=>{
-        if (isIOS() && window.hasDebug) window.socket.emit("player-orientation", e);
+        if (isIOS() && window.hasDebug) window.socket.emit("debug-safari", e);
         if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `forceLeft = ${JSON.stringify(e)}`;
         if (window.modoRaquete && window.socketStarted) {
             // socket.emit("orientation", e.gamma);

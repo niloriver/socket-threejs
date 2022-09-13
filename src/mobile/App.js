@@ -359,7 +359,7 @@ export function App() {
 
   const handleOrientation = (e) => {
     if (isIOS() && window.hasDebug) {
-      window.socket.emit("player-orientation", e);
+      window.socket.emit("debug-safari", e);
     }
 
     if (window.hasDebug && document.getElementById("footer-debug")) {
