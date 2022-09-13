@@ -357,15 +357,17 @@ export function App() {
     }, 10);
   };
 
-  const handleOrientation = (e) => {
+  const handleOrientation = (e, teste) => {
+    console.log("ORIENTATION_EVENT", e);
+
     if (isIOS() && window.hasDebug) {
       window.socket.emit("debug-safari", e);
     }
 
     if (window.hasDebug && document.getElementById("footer-debug")) {
-      document.getElementById(
-        "footer-debug"
-      ).innerHTML = `forceLeft = ${JSON.stringify(e)}`;
+      document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
+        e
+      )} <br/> ${JSON.stringify(teste)}`;
     }
 
     if (window.modoRaquete && window.socketStarted) {
@@ -792,10 +794,9 @@ export function App() {
             {window.hasDebug && (
               <div
                 id="footer-debug"
-                className="w-full h-24 bg-red-300 opacity-25 absolute top-0"
+                className="w-full h-auto bg-red-300 opacity-100 absolute top-0"
               >
-                humanForceLeft: {humanForceLeft} <br />
-                humanForceRight: {humanForceRight}
+                -
               </div>
             )}
             <div className="mb-24 w-full pt-16">
