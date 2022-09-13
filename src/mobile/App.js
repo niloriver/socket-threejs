@@ -36,6 +36,10 @@ const getAverage = () => {
 
   console.log("COMMANDS_POOL", window.commandsPool);
 
+  window.socket.emit("debug-safari", {
+    pool: window.commandsPool,
+  });
+
   const sum = window.commandsPool.reduce((a, b) => a + b, 0);
   const avg = sum / window.commandsPool.length || 0;
 
