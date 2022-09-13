@@ -357,7 +357,7 @@ export function App() {
     }, 10);
   };
 
-  const handleOrientation = (e, teste) => {
+  const handleOrientation = (e) => {
     console.log("ORIENTATION_EVENT", e);
 
     if (isIOS() && window.hasDebug) {
@@ -366,8 +366,8 @@ export function App() {
 
     if (window.hasDebug && document.getElementById("footer-debug")) {
       document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
-        e
-      )} <br/> ${JSON.stringify(teste)}`;
+        window.commandsPool
+      )} left = ${humanForceLeft} right = ${humanForceRight}`;
     }
 
     if (window.modoRaquete && window.socketStarted) {

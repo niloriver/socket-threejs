@@ -27324,10 +27324,10 @@ function App() {
             if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
         }, 10);
     };
-    const handleOrientation = (e, teste)=>{
+    const handleOrientation = (e)=>{
         console.log("ORIENTATION_EVENT", e);
         if (isIOS() && window.hasDebug) window.socket.emit("debug-safari", e);
-        if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(e)} <br/> ${JSON.stringify(teste)}`;
+        if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(window.commandsPool)} left = ${humanForceLeft} right = ${humanForceRight}`;
         if (window.modoRaquete && window.socketStarted) {
             // socket.emit("orientation", e.gamma);
             const val = e.gamma;
