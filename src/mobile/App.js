@@ -23,6 +23,7 @@ window.socketStarted = false;
 window.commandsPool = [];
 window.playerHuman = null;
 window.modoRaquete = false;
+window.gameState = "starting";
 
 window.md = new MobileDetect(window.navigator.userAgent);
 
@@ -36,9 +37,9 @@ const getAverage = () => {
 
   console.log("COMMANDS_POOL", window.commandsPool);
 
-  window.socket.emit("debug-safari", {
-    pool: window.commandsPool,
-  });
+  // window.socket.emit("debug-safari", {
+  //   pool: window.commandsPool,
+  // });
 
   const sum = window.commandsPool.reduce((a, b) => a + b, 0);
   const avg = sum / window.commandsPool.length || 0;
@@ -67,8 +68,13 @@ const isIOS = () => {
 export function App() {
   const [human, setHuman] = useState(null);
   const [gameRoom, setGameRoom] = useState(null);
-  const [gameState, setGameState] = useState("waiting");
+  const [gameState, setGameStateInteral] = useState("waiting");
   const [timeToMatch, setTimeToMatch] = useState(0);
+
+  const setGameState = (newState) => {
+    setGameStateInteral(newState);
+    window.gameState = newState;
+  };
 
   const [matchResults, setMatchResults] = useState({
     bot: 0,
@@ -351,7 +357,7 @@ export function App() {
 
       console.log("AVERAGE_SENT", avg);
 
-      if (gameState === "playing") {
+      if (window.gameState === "playing") {
         window.socket.emit("player-orientation", avg);
       }
 
@@ -366,9 +372,9 @@ export function App() {
   const handleOrientation = (e) => {
     console.log("ORIENTATION_EVENT", e);
 
-    if (isIOS() && window.hasDebug) {
-      window.socket.emit("debug-safari", e);
-    }
+    // if (isIOS() && window.hasDebug) {
+    //   window.socket.emit("debug-safari", e);
+    // }
 
     if (window.hasDebug && document.getElementById("footer-debug")) {
       // document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
