@@ -30,7 +30,7 @@ var iosAccept = false;
 
 const getAverage = () => {
   window.commandsPool = window.commandsPool.slice(
-    window.commandsPool.length - 20,
+    window.commandsPool.length - 10,
     window.commandsPool.length
   );
 
@@ -351,7 +351,9 @@ export function App() {
 
       console.log("AVERAGE_SENT", avg);
 
-      window.socket.emit("player-orientation", avg);
+      if (gameState === "playing") {
+        window.socket.emit("player-orientation", avg);
+      }
 
       // if (window.hasDebug && document.getElementById("footer-debug")) {
       //   document.getElementById(
