@@ -372,7 +372,11 @@ export function App() {
 
     if (window.modoRaquete && window.socketStarted) {
       // socket.emit("orientation", e.gamma);
-      const val = e.gamma;
+      var val = e.gamma;
+
+      if (isIOS() && window.hasDebug) {
+        val = e.gamma[1];
+      }
 
       window.commandsPool.push(val);
 
