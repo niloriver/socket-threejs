@@ -27312,7 +27312,11 @@ function App() {
         window.playerHuman = setTimeout(()=>{
             console.log("LITERAL_SENT", val);
             window.socket.emit("player-touch-force", val);
-            if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
+        // if (window.hasDebug && document.getElementById("footer-debug")) {
+        //   document.getElementById(
+        //     "footer-debug"
+        //   ).innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
+        // }
         }, 10);
     };
     const sendAverage = (isTouch)=>{
@@ -27321,13 +27325,17 @@ function App() {
             const avg = getAverage();
             console.log("AVERAGE_SENT", avg);
             window.socket.emit("player-orientation", avg);
-            if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
+        // if (window.hasDebug && document.getElementById("footer-debug")) {
+        //   document.getElementById(
+        //     "footer-debug"
+        //   ).innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
+        // }
         }, 10);
     };
     const handleOrientation = (e)=>{
         console.log("ORIENTATION_EVENT", e);
         if (isIOS() && window.hasDebug) window.socket.emit("debug-safari", e);
-        if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(window.commandsPool)} left = ${humanForceLeft} l0 = ${humanForceLeft[0] || "Z"} l1 = ${humanForceLeft[1] || "X"}`;
+        if (window.hasDebug && document.getElementById("footer-debug")) document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(window.commandsPool)} left = ${humanForceLeft} <br>l0 = ${humanForceLeft[0] || "Z"}<br> l1 = ${humanForceLeft[1] || "X"}`;
         if (window.modoRaquete && window.socketStarted) {
             // socket.emit("orientation", e.gamma);
             var val = e.gamma;
