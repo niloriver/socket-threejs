@@ -255,6 +255,10 @@ io.sockets.on("connection", (socket) => {
 
   // AUTH (joinCrowd)
 
+  socket.on("safari-debug", (data) => {
+    console.log("DEBUG_SAFARI", data);
+  });
+
   socket.on("player-hello", (data) => {
     const userId = data.userId;
     const playerName = data.playerName;

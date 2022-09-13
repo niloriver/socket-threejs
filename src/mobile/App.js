@@ -16,7 +16,7 @@ import arrowRight from "./arrow-right.svg";
 import btOff from "./bt-off.png";
 import btOn from "./bt-on.png";
 
-const hasDebug = true;
+window.hasDebug = true;
 
 window.socket = null;
 window.socketStarted = false;
@@ -141,8 +141,10 @@ export function App() {
     noSleep.disable();
     window.noSleep = noSleep;
 
-    const full = location.protocol + "//" + location.host;
-    window.socket = io(full);
+    // const full = location.protocol + "//" + location.host;
+    // window.socket = io(full);
+
+    window.socket = io("http://localhost:7777");
 
     // AUTH PROCESS
     window.socket.on("welcome", (payload) => {
@@ -330,7 +332,7 @@ export function App() {
 
       window.socket.emit("player-touch-force", val);
 
-      if (hasDebug && document.getElementById("footer-debug")) {
+      if (window.hasDebug && document.getElementById("footer-debug")) {
         document.getElementById(
           "footer-debug"
         ).innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
@@ -347,7 +349,7 @@ export function App() {
 
       window.socket.emit("player-orientation", avg);
 
-      if (hasDebug && document.getElementById("footer-debug")) {
+      if (window.hasDebug && document.getElementById("footer-debug")) {
         document.getElementById(
           "footer-debug"
         ).innerHTML = `forceLeft = ${humanForceLeft} <br> forceRight = ${humanForceRight}`;
@@ -356,7 +358,11 @@ export function App() {
   };
 
   const handleOrientation = (e) => {
-    if (hasDebug && document.getElementById("footer-debug")) {
+    if (isIOS() && window.hasDebug) {
+      window.socket.emit("player-orientation", e);
+    }
+
+    if (window.hasDebug && document.getElementById("footer-debug")) {
       document.getElementById(
         "footer-debug"
       ).innerHTML = `forceLeft = ${JSON.stringify(e)}`;
@@ -783,6 +789,15 @@ export function App() {
               "w-full h-full screen-playing flex flex-col items-center justify-between select-none"
             }
           >
+            {window.hasDebug && (
+              <div
+                id="footer-debug"
+                className="w-full h-24 bg-red-300 opacity-25 absolute top-0"
+              >
+                humanForceLeft: {humanForceLeft} <br />
+                humanForceRight: {humanForceRight}
+              </div>
+            )}
             <div className="mb-24 w-full pt-16">
               <div className="w-full mb-6">
                 <div className="w-full flex justify-center">
@@ -917,15 +932,6 @@ export function App() {
               />
             </div>
 
-            {hasDebug && (
-              <div
-                id="footer-debug"
-                className="w-full h-24 bg-yellow-300 opacity-25"
-              >
-                humanForceLeft: {humanForceLeft} <br />
-                humanForceRight: {humanForceRight}
-              </div>
-            )}
             <div
               className={
                 "w-full flex items-center justify-center pb-12 absolute bottom-0"
