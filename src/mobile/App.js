@@ -380,7 +380,9 @@ export function App() {
       // socket.emit("orientation", e.gamma);
       var val = e.gamma;
 
-      window.commandsPool.push(val);
+      if (val) {
+        window.commandsPool.push(val);
+      }
 
       if (val > 0) {
         setHumanForceRight(val);
