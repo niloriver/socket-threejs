@@ -367,15 +367,17 @@ export function App() {
     if (window.hasDebug && document.getElementById("footer-debug")) {
       document.getElementById("footer-debug").innerHTML = `E= ${JSON.stringify(
         window.commandsPool
-      )} left = ${humanForceLeft} right = ${humanForceRight}`;
+      )} left = ${humanForceLeft} l0 = ${humanForceLeft[0] || "Z"} l1 = ${
+        humanForceLeft[1] || "X"
+      }`;
     }
 
     if (window.modoRaquete && window.socketStarted) {
       // socket.emit("orientation", e.gamma);
       var val = e.gamma;
 
-      if (isIOS() && window.hasDebug) {
-        val = e.gamma[1];
+      if (isIOS()) {
+        val = e.gamma;
       }
 
       window.commandsPool.push(val);
