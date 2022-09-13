@@ -377,7 +377,9 @@ export function App() {
       var val = e.gamma;
 
       if (isIOS()) {
-        val = e.gamma;
+        if (e.gamma && e.gamma.split(",")[1]) {
+          val = parseFloat(e.gamma.split(",")[1]);
+        }
       }
 
       window.commandsPool.push(val);
