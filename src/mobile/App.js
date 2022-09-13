@@ -141,10 +141,10 @@ export function App() {
     noSleep.disable();
     window.noSleep = noSleep;
 
-    // const full = location.protocol + "//" + location.host;
-    // window.socket = io(full);
+    const full = location.protocol + "//" + location.host;
+    window.socket = io(full);
 
-    window.socket = io("http://localhost:7777");
+    // window.socket = io("http://localhost:7777");
 
     // AUTH PROCESS
     window.socket.on("welcome", (payload) => {

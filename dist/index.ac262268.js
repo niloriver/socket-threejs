@@ -27170,9 +27170,9 @@ function App() {
         const noSleep = new NoSleep();
         noSleep.disable();
         window.noSleep = noSleep;
-        // const full = location.protocol + "//" + location.host;
-        // window.socket = io(full);
-        window.socket = (0, _socketIoClientDefault.default)("http://localhost:7777");
+        const full = location.protocol + "//" + location.host;
+        window.socket = (0, _socketIoClientDefault.default)(full);
+        // window.socket = io("http://localhost:7777");
         // AUTH PROCESS
         window.socket.on("welcome", (payload)=>{
             window.socketStarted = true;
