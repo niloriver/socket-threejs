@@ -35,6 +35,7 @@ app.get("/test", (req, res, next) => {
   res.sendStatus(200);
 });
 
+app.use("/classic", express.static(path.join(path.resolve(), "/classic")));
 app.use("/", express.static(path.join(path.resolve(), "/dist")));
 app.get("/*", function (req, res) {
   const headers = req.query.headers;
@@ -78,9 +79,9 @@ var masterID = null;
 var masterCLIENT = null;
 
 // GAME STATISTICS
-var rootTotalPlayers = 10,
-  rootTotalBotWins = 20,
-  rootTotalHumansWins = 30;
+var rootTotalPlayers = 0,
+  rootTotalBotWins = 0,
+  rootTotalHumansWins = 0;
 
 // UTILS
 
@@ -158,18 +159,25 @@ const newSession = (currentState) => {
     if (currentState === "iddle") {
       console.log("A MAQUINA CRIOU UMA NOVA SESSAO");
 
-      countInterval = setInterval(() => {
-        countdown(randomID, () => {
-          console.log("COUNTDOWN_DONE");
+      const totalPlayers = Object.keys(loggedPeers).length;
 
-          updateGameState("playing", true);
+      if (totalPlayers > 0) {
+        clearInterval(countInterval);
+        countInterval = setInterval(() => {
+          countdown(randomID, () => {
+            console.log("COUNTDOWN_DONE");
 
-          io.sockets.emit("gamestate", {
-            gamestate: getGameState(),
-            params: getGameStateParams(getGameState()),
+            updateGameState("playing", true);
+
+            io.sockets.emit("gamestate", {
+              gamestate: getGameState(),
+              params: getGameStateParams(getGameState()),
+            });
           });
-        });
-      }, 1000);
+        }, 1000);
+      } else {
+        console.log("AGUARDANDO_PLAYERS");
+      }
     }
   }
 
@@ -193,6 +201,7 @@ const firstPlayerToJoin = (userId, currentState) => {
       console.log("O GAME ESTAVA EM IDDLE");
       console.log("PRIMEIRO PLAYER INICIOU TIMER GERAL");
 
+      clearInterval(countInterval);
       countInterval = setInterval(() => {
         countdown(randomID, () => {
           console.log("COUNTDOWN_DONE");

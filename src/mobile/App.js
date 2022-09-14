@@ -9,7 +9,10 @@ import { createAvatar } from "@dicebear/avatars";
 import * as style from "@dicebear/avatars-identicon-sprites";
 
 import logobolha from "./bolha.png";
+import footerMobiles from "./footer_mobiles.svg";
+
 import btcontinuar from "./btcontinuar.svg";
+import anuncio from "./anuncio.png";
 import btsaibamais from "./btsaibamais.svg";
 import arrowLeft from "./arrow-left.svg";
 import arrowRight from "./arrow-right.svg";
@@ -29,6 +32,12 @@ window.human = false;
 window.md = new MobileDetect(window.navigator.userAgent);
 
 var iosAccept = false;
+
+const localHostName = "http://localhost:7777";
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
 
 const getAverage = () => {
   window.commandsPool = window.commandsPool.slice(
@@ -153,7 +162,11 @@ export function App() {
     window.noSleep = noSleep;
 
     const full = location.protocol + "//" + location.host;
-    window.socket = io(full);
+    if (params.local) {
+      window.socket = io(localHostName);
+    } else {
+      window.socket = io(full);
+    }
 
     // window.socket = io("http://localhost:7777");
 
@@ -591,7 +604,7 @@ export function App() {
   };
 
   return (
-    <div className="bg-stage w-full h-full fixed flex items-center justify-center bg-red-100">
+    <div className="bg-stage w-full h-full fixed flex items-center justify-center">
       {/* {JSON.stringify(gameState)} */}
       {/*{JSON.stringify(human)} */}
 
@@ -652,10 +665,10 @@ export function App() {
 
           <div
             className={
-              "w-full flex items-center justify-center pb-12 absolute bottom-0"
+              "w-full h-auto bg-white flex items-center justify-center absolute bottom-0"
             }
           >
-            <img className={"w-12 h-12"} src={logobolha} />
+            <img className={"w-auto h-auto"} src={footerMobiles} />
           </div>
         </div>
       )}
@@ -704,10 +717,10 @@ export function App() {
             </div>
             <div
               className={
-                "w-full flex items-center justify-center pb-12 absolute bottom-0"
+                "w-full h-auto bg-white flex items-center justify-center absolute bottom-0"
               }
             >
-              <img className={"w-12 h-12"} src={logobolha} />
+              <img className={"w-auto h-auto"} src={footerMobiles} />
             </div>
           </div>
         )}
@@ -798,13 +811,23 @@ export function App() {
                 "basic-messages w-full text-center mt-8 mb-6 typewriter"
               }
             >
-              Esta experiência foi patrocinada pela Vale.
+              A Vale tem um <br /> recado especial <br />
+              para você
             </p>
 
-            <img
-              className={"w-full md:w-auto max-w-full h-auto scale-down px-12"}
-              src={btsaibamais}
-            />
+            <div
+              className={`controller-button w-auto flex items-center justify-center`}
+            >
+              <img
+                className={
+                  "w-full md:w-auto max-w-full h-auto scale-down px-12"
+                }
+                onClick={() => {
+                  setGameState("merchan");
+                }}
+                src={btsaibamais}
+              />
+            </div>
           </div>
           <div
             className={
@@ -815,7 +838,19 @@ export function App() {
           </div>
         </div>
       )}
-
+      {gameState === "merchan" && (
+        <div className="w-full h-full">
+          <img
+            onClick={() => {
+              window.open(
+                "https://www.vale.com/brasil/pt/Paginas/default.aspx"
+              );
+            }}
+            src={anuncio}
+            className="w-full h-full object-contain"
+          />
+        </div>
+      )}
       {/* GAME PLAYING */}
       {(gameState === "playing" || gameState === "scoring") &&
         human &&
@@ -828,7 +863,7 @@ export function App() {
             {window.hasDebug && (
               <div
                 id="footer-debug"
-                className="w-full h-auto bg-red-300 opacity-100 absolute top-0"
+                className="w-full h-auto opacity-100 absolute top-0"
               >
                 -
               </div>
@@ -969,7 +1004,7 @@ export function App() {
 
             <div
               className={
-                "w-full flex items-center justify-center pb-12 absolute bottom-0"
+                "w-full flex items-center justify-center pb-12 absolute bottom-0 hidden"
               }
             >
               <img className={"w-12 h-12"} src={logobolha} />

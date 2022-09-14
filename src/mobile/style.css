@@ -29,9 +29,12 @@ body {
   justify-content: center;
   display: flex;
 }
+.screen-playing {
+  background-color: #007e7a;
+}
 
 .bg-screen-waiting {
-  background-color: #b6cff5;
+  background-color: #e6f3f2;
 }
 .bg-screen-botwins {
   background-color: #ef4343;
@@ -121,9 +124,7 @@ p.basic-messages {
 .invert-arrow {
   transform: scaleX(-100%);
 }
-.screen-playing {
-  background-color: #ee9783;
-}
+
 .controller-button-pressed {
   box-sizing: border-box;
   width: 120px;
