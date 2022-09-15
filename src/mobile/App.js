@@ -48,6 +48,21 @@ window.oncontextmenu = function (event) {
   return false;
 };
 
+function iOS() {
+  return (
+    [
+      "iPad Simulator",
+      "iPhone Simulator",
+      "iPod Simulator",
+      "iPad",
+      "iPhone",
+      "iPod",
+    ].includes(navigator.platform) ||
+    // iPad on iOS 13 detection
+    (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  );
+}
+
 function absorbEvent_(event) {
   var e = event || window.event;
   e.preventDefault && e.preventDefault();
@@ -169,6 +184,9 @@ export function App() {
   };
 
   useEffect(() => {
+    if (iOS()) {
+      requestPermissionIOS();
+    }
     connectSocket();
   }, []);
 
