@@ -194,18 +194,17 @@ const newSession = (currentState) => {
 };
 
 const updateDB = () => {
-  let update = {
-    totalBot: rootTotalBotWins,
-    totalHumans: rootTotalHumansWins,
-    totalPlayers: rootTotalPlayers,
-  };
-
-  let data = JSON.stringify(update);
-  // fs.writeFileSync("database.json", data);
-  fs.writeFile("database.json", JSON.stringify(data), function (err) {
-    if (err) throw err;
-    console.log("complete");
-  });
+  // let update = {
+  //   totalBot: rootTotalBotWins,
+  //   totalHumans: rootTotalHumansWins,
+  //   totalPlayers: rootTotalPlayers,
+  // };
+  // let data = JSON.stringify(update);
+  // // fs.writeFileSync("database.json", data);
+  // fs.writeFile("database.json", JSON.stringify(data), function (err) {
+  //   if (err) throw err;
+  //   console.log("complete");
+  // });
 };
 
 const firstPlayerToJoin = (userId, currentState) => {
