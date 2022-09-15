@@ -12,6 +12,19 @@
   font-style: normal;
 }
 
+body {
+  -webkit-touch-callout: none !important;
+}
+
+a {
+  -webkit-user-select: none !important;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-select: none !important;
+}
+
 html {
   height: 100%;
 }

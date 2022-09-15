@@ -1185,7 +1185,7 @@ export function App() {
           </div>
         )}
       <section className={"desktop-message"}>
-        MOBILE_CONTROLLER_NOT_DESK
+        {/* MOBILE_CONTROLLER_NOT_DESK */}
       </section>
     </div>
   );

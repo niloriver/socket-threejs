@@ -28490,8 +28490,7 @@ function App() {
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                className: "desktop-message",
-                children: "MOBILE_CONTROLLER_NOT_DESK"
+                className: "desktop-message"
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
                 lineNumber: 1187,
