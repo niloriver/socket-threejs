@@ -209,6 +209,7 @@ export function App() {
         type: "gameover-mobile",
         payload,
       });
+      window.socketStarted = false;
       if (window.human) {
         setGameState("gameover-mobile");
         setMatchResults(payload.params);
