@@ -27059,12 +27059,16 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactStories = require("@reactrondev/react-stories");
+var _reactStoriesDefault = parcelHelpers.interopDefault(_reactStories);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _socketIoClient = require("socket.io-client");
 var _socketIoClientDefault = parcelHelpers.interopDefault(_socketIoClient);
 var _sbReactNipple = require("sb-react-nipple");
 var _sbReactNippleDefault = parcelHelpers.interopDefault(_sbReactNipple);
+var _youtube = require("react-player/youtube");
+var _youtubeDefault = parcelHelpers.interopDefault(_youtube);
 // optional: include the stylesheet somewhere in your app
 var _stylesCss = require("react-nipple/lib/styles.css");
 var _avatars = require("@dicebear/avatars");
@@ -27087,6 +27091,25 @@ var _btOffPng = require("./bt-off.png");
 var _btOffPngDefault = parcelHelpers.interopDefault(_btOffPng);
 var _btOnPng = require("./bt-on.png");
 var _btOnPngDefault = parcelHelpers.interopDefault(_btOnPng);
+var _image0Png = require("./stories/image-0.png");
+var _image0PngDefault = parcelHelpers.interopDefault(_image0Png);
+var _image1Png = require("./stories/image-1.png");
+var _image1PngDefault = parcelHelpers.interopDefault(_image1Png);
+var _image2Png = require("./stories/image-2.png");
+var _image2PngDefault = parcelHelpers.interopDefault(_image2Png);
+var _image3Png = require("./stories/image-3.png");
+var _image3PngDefault = parcelHelpers.interopDefault(_image3Png);
+var _image4Png = require("./stories/image-4.png");
+var _image4PngDefault = parcelHelpers.interopDefault(_image4Png);
+var _image5Png = require("./stories/image-5.png");
+var _image5PngDefault = parcelHelpers.interopDefault(_image5Png);
+var _image6Png = require("./stories/image-6.png");
+var _image6PngDefault = parcelHelpers.interopDefault(_image6Png);
+var _image7Png = require("./stories/image-7.png");
+var _image7PngDefault = parcelHelpers.interopDefault(_image7Png);
+// import VideoTransform from "./stories"
+var _valeLogoJpeg = require("./stories/vale-logo.jpeg");
+var _valeLogoJpegDefault = parcelHelpers.interopDefault(_valeLogoJpeg);
 var Buffer = require("buffer").Buffer;
 var _s = $RefreshSig$();
 window.hasDebug = false;
@@ -27467,12 +27490,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 543,
+                        lineNumber: 556,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 539,
+                    lineNumber: 552,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27485,12 +27508,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 552,
+                        lineNumber: 565,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 548,
+                    lineNumber: 561,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27503,12 +27526,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 561,
+                        lineNumber: 574,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 557,
+                    lineNumber: 570,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27521,12 +27544,12 @@ function App() {
                         className: "w-full h-full bg-gray-200"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 570,
+                        lineNumber: 583,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 566,
+                    lineNumber: 579,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27539,12 +27562,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 579,
+                        lineNumber: 592,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 575,
+                    lineNumber: 588,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27557,12 +27580,12 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 588,
+                        lineNumber: 601,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 584,
+                    lineNumber: 597,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27575,21 +27598,97 @@ function App() {
                         className: "w-full h-full bg-gray-400"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 597,
+                        lineNumber: 610,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 593,
+                    lineNumber: 606,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/mobile/App.js",
-            lineNumber: 534,
+            lineNumber: 547,
             columnNumber: 7
         }, this);
     };
+    const stories = [
+        {
+            url: (0, _anuncioPngDefault.default),
+            header: {
+                heading: "Vale",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image0PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image2PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image3PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image4PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image5PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image6PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: (0, _image7PngDefault.default),
+            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+            header: {
+                heading: "Vale",
+                // subheading: "Teste 2",
+                profileImage: (0, _valeLogoJpegDefault.default)
+            }
+        },
+        {
+            url: "https://pong-core.bolha.com.br/transform.mp4",
+            type: "video"
+        }, 
+    ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bg-stage w-full h-full fixed flex items-center justify-center",
         children: [
@@ -27603,14 +27702,14 @@ function App() {
                             "PONG AGAINST ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 623,
+                                lineNumber: 715,
                                 columnNumber: 26
                             }, this),
                             "THE MACHINE"
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 618,
+                        lineNumber: 710,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27622,7 +27721,7 @@ function App() {
                                 children: "Qual seu player name?"
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 628,
+                                lineNumber: 720,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27637,17 +27736,17 @@ function App() {
                                         className: "w-full input-outline"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 639,
+                                        lineNumber: 731,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 636,
+                                    lineNumber: 728,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 635,
+                                lineNumber: 727,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27662,18 +27761,18 @@ function App() {
                                     src: (0, _btcontinuarSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 656,
+                                    lineNumber: 748,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 649,
+                                lineNumber: 741,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 627,
+                        lineNumber: 719,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27683,18 +27782,18 @@ function App() {
                             src: (0, _footerMobilesSvgDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 671,
+                            lineNumber: 763,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 666,
+                        lineNumber: 758,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 612,
+                lineNumber: 704,
                 columnNumber: 9
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch > 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27716,17 +27815,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 690,
+                                                lineNumber: 782,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 689,
+                                            lineNumber: 781,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 688,
+                                        lineNumber: 780,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27739,25 +27838,25 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 704,
+                                                    lineNumber: 796,
                                                     columnNumber: 41
                                                 }, this),
                                                 "se liga que o jogo j\xe1 vai come\xe7ar..."
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 698,
+                                            lineNumber: 790,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 697,
+                                        lineNumber: 789,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 687,
+                                lineNumber: 779,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27768,7 +27867,7 @@ function App() {
                                         children: timeToMatch
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 711,
+                                        lineNumber: 803,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27776,19 +27875,19 @@ function App() {
                                         children: "segundos"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 715,
+                                        lineNumber: 807,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 710,
+                                lineNumber: 802,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 686,
+                        lineNumber: 778,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27798,18 +27897,18 @@ function App() {
                             src: (0, _footerMobilesSvgDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 723,
+                            lineNumber: 815,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 718,
+                        lineNumber: 810,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 680,
+                lineNumber: 772,
                 columnNumber: 11
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch === 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27830,17 +27929,17 @@ function App() {
                                             src: `data:image/svg+xml;base64,${human.avatarImg}`
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 741,
+                                            lineNumber: 833,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 740,
+                                        lineNumber: 832,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 739,
+                                    lineNumber: 831,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27854,14 +27953,14 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 755,
+                                                    lineNumber: 847,
                                                     columnNumber: 41
                                                 }, this),
                                                 "t\xe1 tudo certo!"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 749,
+                                            lineNumber: 841,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27870,24 +27969,24 @@ function App() {
                                             children: "Estamos calibrando o PONG para a pr\xf3xima partida. Espera s\xf3 um pouco mais, \xe9 coisa r\xe1pida."
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 758,
+                                            lineNumber: 850,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 748,
+                                    lineNumber: 840,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 738,
+                            lineNumber: 830,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 737,
+                        lineNumber: 829,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27897,18 +27996,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 775,
+                            lineNumber: 867,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 770,
+                        lineNumber: 862,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 731,
+                lineNumber: 823,
                 columnNumber: 11
             }, this),
             gameState === "gameover-mobile" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27929,12 +28028,12 @@ function App() {
                                             children: "Fim de jogo"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 793,
+                                            lineNumber: 885,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 792,
+                                        lineNumber: 884,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27948,7 +28047,7 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 796,
+                                                lineNumber: 888,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27959,29 +28058,29 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 799,
+                                                lineNumber: 891,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 795,
+                                        lineNumber: 887,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 791,
+                                lineNumber: 883,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 790,
+                            lineNumber: 882,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 789,
+                        lineNumber: 881,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27994,20 +28093,20 @@ function App() {
                                     "A Vale tem um ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 814,
+                                        lineNumber: 906,
                                         columnNumber: 29
                                     }, this),
                                     " recado especial ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 814,
+                                        lineNumber: 906,
                                         columnNumber: 52
                                     }, this),
                                     "para voc\xea"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 808,
+                                lineNumber: 900,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28020,18 +28119,18 @@ function App() {
                                     src: (0, _btsaibamaisSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 821,
+                                    lineNumber: 913,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 818,
+                                lineNumber: 910,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 807,
+                        lineNumber: 899,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28041,36 +28140,35 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 837,
+                            lineNumber: 929,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 832,
+                        lineNumber: 924,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 781,
+                lineNumber: 873,
                 columnNumber: 9
             }, this),
             gameState === "merchan" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "w-full h-full",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    onClick: ()=>{
-                        window.open("https://www.vale.com/brasil/pt/Paginas/default.aspx");
-                    },
-                    src: (0, _anuncioPngDefault.default),
-                    className: "w-full h-full object-contain"
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactStoriesDefault.default), {
+                    stories: stories,
+                    defaultInterval: 1500,
+                    width: window.innerWidth,
+                    height: window.innerHeight
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 843,
+                    lineNumber: 945,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 842,
+                lineNumber: 934,
                 columnNumber: 9
             }, this),
             (gameState === "playing" || gameState === "scoring") && human && human.avatarImg && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28082,7 +28180,7 @@ function App() {
                         children: "-"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 864,
+                        lineNumber: 963,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28099,17 +28197,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 875,
+                                                lineNumber: 974,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 874,
+                                            lineNumber: 973,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 873,
+                                        lineNumber: 972,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28120,18 +28218,18 @@ function App() {
                                             children: "E t\xe1 valendo!"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 880,
+                                            lineNumber: 979,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 879,
+                                        lineNumber: 978,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 872,
+                                lineNumber: 971,
                                 columnNumber: 15
                             }, this),
                             !modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28143,12 +28241,12 @@ function App() {
                                             src: (0, _arrowLeftSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 907,
+                                            lineNumber: 1006,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 898,
+                                        lineNumber: 997,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28157,29 +28255,29 @@ function App() {
                                             src: (0, _arrowRightSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 919,
+                                            lineNumber: 1018,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 910,
+                                        lineNumber: 1009,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 893,
+                                lineNumber: 992,
                                 columnNumber: 17
                             }, this),
                             modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RenderVolume, {}, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 923,
+                                lineNumber: 1022,
                                 columnNumber: 31
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 871,
+                        lineNumber: 970,
                         columnNumber: 13
                     }, this),
                     !optOut && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28197,12 +28295,12 @@ function App() {
                                         src: !modoRaquete ? (0, _btOffPngDefault.default) : (0, _btOnPngDefault.default)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 936,
+                                        lineNumber: 1035,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 934,
+                                    lineNumber: 1033,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28210,18 +28308,18 @@ function App() {
                                     children: modoRaquete ? "motion" : "touch"
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 941,
+                                    lineNumber: 1040,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 933,
+                            lineNumber: 1032,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 927,
+                        lineNumber: 1026,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28277,12 +28375,12 @@ function App() {
                             }
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 949,
+                            lineNumber: 1048,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 948,
+                        lineNumber: 1047,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28292,18 +28390,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 1010,
+                            lineNumber: 1109,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 1005,
+                        lineNumber: 1104,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 858,
+                lineNumber: 957,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28311,13 +28409,13 @@ function App() {
                 children: "MOBILE_CONTROLLER_NOT_DESK"
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 1014,
+                lineNumber: 1113,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/mobile/App.js",
-        lineNumber: 607,
+        lineNumber: 699,
         columnNumber: 5
     }, this);
 }
@@ -28331,7 +28429,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./btcontinuar.svg":"hUc4d","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./footer_mobiles.svg":"cMRTU","./anuncio.png":"iLu3k"}],"8HBJR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./footer_mobiles.svg":"cMRTU","./btcontinuar.svg":"hUc4d","./anuncio.png":"iLu3k","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@reactrondev/react-stories":"kdbDp","./stories/image-0.png":"5jjf2","./stories/image-1.png":"iRuFj","./stories/image-2.png":"iLDOK","./stories/image-3.png":"2jfwe","./stories/image-4.png":"iGVak","./stories/image-5.png":"ip0gc","./stories/image-6.png":"dqnIn","./stories/image-7.png":"2OBQ3","./stories/vale-logo.jpeg":"dADhw","react-player/youtube":"8GJfE"}],"8HBJR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /**
@@ -37874,8 +37972,14 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"hUc4d":[function(require,module,exports) {
+},{}],"cMRTU":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "footer_mobiles.8995aa44.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"hUc4d":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "btcontinuar.e713dd10.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iLu3k":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "anuncio.449fb750.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"jr9wr":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "btsaibamais.8cd1e02f.svg" + "?" + Date.now();
@@ -38012,12 +38116,3011 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"cMRTU":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "footer_mobiles.8995aa44.svg" + "?" + Date.now();
+},{"react-refresh/runtime":"786KC"}],"kdbDp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var Header = function Header(_ref) {
+    var profileImage = _ref.profileImage, heading = _ref.heading, subheading = _ref.subheading;
+    return (0, _reactDefault.default).createElement("div", {
+        style: styles.main
+    }, profileImage && (0, _reactDefault.default).createElement("img", {
+        style: styles.img,
+        src: profileImage
+    }), (0, _reactDefault.default).createElement("span", {
+        style: styles.text
+    }, (0, _reactDefault.default).createElement("p", {
+        style: styles.heading
+    }, heading), (0, _reactDefault.default).createElement("p", {
+        style: styles.subheading
+    }, subheading)));
+};
+var styles = {
+    main: {
+        display: "flex",
+        alignItems: "center"
+    },
+    img: {
+        width: 40,
+        height: 40,
+        borderRadius: 40,
+        marginRight: 10,
+        filter: "drop-shadow(0 0px 2px rgba(0, 0, 0, 0.5))",
+        border: "2px solid rgba(255, 255, 255, 0.8)"
+    },
+    text: {
+        display: "flex",
+        flexDirection: "column",
+        filter: "drop-shadow(0 0px 3px rgba(0, 0, 0, 0.9))"
+    },
+    heading: {
+        fontSize: "1rem",
+        color: "rgba(255, 255, 255, 0.9)"
+    },
+    subheading: {
+        fontSize: "0.6rem",
+        color: "rgba(255, 255, 255, 0.8)"
+    }
+};
+Header.propTypes = {
+    heading: (0, _propTypesDefault.default).string,
+    subheading: (0, _propTypesDefault.default).string,
+    profileImage: (0, _propTypesDefault.default).string
+};
+function styleInject(css, ref) {
+    if (ref === void 0) ref = {};
+    var insertAt = ref.insertAt;
+    if (!css || typeof document === "undefined") return;
+    var head = document.head || document.getElementsByTagName("head")[0];
+    var style = document.createElement("style");
+    style.type = "text/css";
+    if (insertAt === "top") {
+        if (head.firstChild) head.insertBefore(style, head.firstChild);
+        else head.appendChild(style);
+    } else head.appendChild(style);
+    if (style.styleSheet) style.styleSheet.cssText = css;
+    else style.appendChild(document.createTextNode(css));
+}
+var css = "body{\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}\n\n.styles_inner__x-amJ {\n  background: #fff;\n  height: 100%;\n  max-width: 100%;\n  transform-origin: center left;\n\n  -webkit-backface-visibility: hidden;\n  -moz-backface-visibility: hidden;\n  -ms-backface-visibility: hidden;\n  backface-visibility: hidden;\n\n  -webkit-perspective: 1000;\n  -moz-perspective: 1000;\n  -ms-perspective: 1000;\n  perspective: 1000;\n}\n\np{\n  margin: 0\n}\n\n@keyframes styles_slidein__1q-h- {\n  from { \n    -webkit-transform: scale3d(0, 1, 1);\n    -moz-transform: scale3d(0, 1, 1);\n    -ms-transform: scale3d(0, 1, 1);\n    -o-transform: scale3d(0, 1, 1);\n    transform: scale3d(0, 1, 1); \n  }\n  to { \n    -webkit-transform: scale3d(1, 1, 1);\n    -moz-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    -o-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); \n  }\n}\n\n.styles_spinner__1CK7F {\n  width: 40px;\n  height: 40px;\n  margin: 100px auto;\n  background-color: #fff;\n\n  border-radius: 100%;  \n  -webkit-animation: styles_sk-scaleout__1hEQ2 1.0s infinite ease-in-out;\n  animation: styles_sk-scaleout__1hEQ2 1.0s infinite ease-in-out;\n}\n\n@-webkit-keyframes styles_sk-scaleout__1hEQ2 {\n  0% { -webkit-transform: scale(0) }\n  100% {\n    -webkit-transform: scale(1.0);\n    opacity: 0;\n  }\n}\n\n@keyframes styles_sk-scaleout__1hEQ2 {\n  0% { \n    -webkit-transform: scale(0);\n    transform: scale(0);\n  } 100% {\n    -webkit-transform: scale(1.0);\n    transform: scale(1.0);\n    opacity: 0;\n  }\n}\n\n.styles_autoHide__83H_q{\n  transition: opacity 400ms ease-in-out\n}\n\n.styles_seeMore__1dyHs{\n  height: 10vh;\n  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: center;\n  justify-content: flex-end;\n}\n\n.styles_seeMore__1dyHs:hover{\n  cursor: pointer;\n}\n\n.styles_seeMore__1dyHs .styles_seemoreText__1wvli{\n  color: white;\n  text-align: center;\n  letter-spacing: 0.2em;\n  margin-bottom: 2.2vh;\n  text-transform: capitalize;\n  opacity: 0.6;\n  font-size: 0.7em;\n  transition: opacity 300ms ease-in-out  \n}\n\n.styles_seeMore__1dyHs .styles_seemoreIcon__1rAV5{\n  color: white;\n  text-align: center;\n  letter-spacing: 0.2em;\n  margin-bottom: 0.5vh;\n  opacity: 0.6;\n  text-transform: capitalize;\n  transition: opacity 300ms ease-in-out\n}\n\n.styles_seeMore__1dyHs:hover > .styles_seemoreIcon__1rAV5 {\n  opacity: 0.9;\n}\n\n.styles_seeMore__1dyHs:hover > .styles_seemoreText__1wvli {\n  opacity: 0.9;\n}\n\n.styles_seemoreIcon__1rAV5 img {\n  width: 5vh;\n}\n\n.styles_seeMoreExpanded__1l-e8 {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  z-index: 99999;\n}\n\n.styles_seeMoreClose__3jq_i{\n  position: absolute;\n  filter: drop-shadow(0 3px 2px #ccc);\n  right: 0.5rem;\n  top: 0.5rem;\n  font-size: 1.5rem;\n  opacity: 0.7;\n  padding: 1rem\n}\n\n.styles_seeMoreClose__3jq_i:hover{\n  cursor: pointer;\n}";
+var style = {
+    "inner": "styles_inner__x-amJ",
+    "spinner": "styles_spinner__1CK7F",
+    "sk-scaleout": "styles_sk-scaleout__1hEQ2",
+    "autoHide": "styles_autoHide__83H_q",
+    "seeMore": "styles_seeMore__1dyHs",
+    "seemoreText": "styles_seemoreText__1wvli",
+    "seemoreIcon": "styles_seemoreIcon__1rAV5",
+    "seeMoreExpanded": "styles_seeMoreExpanded__1l-e8",
+    "seeMoreClose": "styles_seeMoreClose__3jq_i",
+    "slidein": "styles_slidein__1q-h-"
+};
+styleInject(css);
+var up = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAfDSURBVHic7Z1prB5THMaf6a1agsYSe621tSJC8EEIUUWRtraKShNEbIktoQRRW2JJfEJi+dQPEkttIWiRoBK0jfWiVWoXxa1a7+1t+/PhTNPXa/7zztx3zjnTa37JpM29d87znGXOnDnzP2ekhoaGhoaGhoaGhoaGhqAksQ3kAWwt6XBJ+0vaNz3GpL/equ3PV6T/fi1pcXp8KuntJEn6/LsdGrWqAKBH0pGSJkqaIOlgST1dJrtG0iJJL0uaK+mNJEnWdpnm8AFIgAnAbKAP//SlWhOAWjXAoKQFPxVYFKDQLRYCk/93FQGcDnwQseDbeQ84NXa5eAc4DFgQubDzWAAcGrJMglx6wCaSbpF0haSNSp7+uaTXJC2RtDQ9fpf0h6TB9G82krS5pC0kjZW0d3ocLWnPknqDku6RdFOSJAMlz60fwFjK9fOrgXnARUDZwrP0LwZeAdaU8LGwCv2o4Pr6XwtmeClwBbCjRz87AVcCnxf0tAKY6suPV4BrgLUFMtkLnAOMDOhtJDAD+KSAv7XAVaG8dQ0wArivQMaWp4UQbQiIGwrPAH4q4PdeYEQsr4VIM/Rwgcw8hseupiy4rmlOAd8PxmwwHQHu75CBFcDpsX1a4K6G3zvk4b7YPjMBrutg/DNgXGyfnQAOoPNN+prYPv8FcAb5N9xFwPaxfRYF2AF4Nyc/a6nLkzOwB65rsXgN2DK2z7IAo4HXc/LVB+wW2+TGuAcWi/nAZlFNdgGwGfBmTv4WAKNiGrwpx9wSYLto5ioC1x0tzcnnDbGM7Q8MGKZWAmOjGPMAsHeapywGgP1CG0pwfbvFmUENBQCYlpPfeaHNTMkxMzuomYAAj+Tk+5RQJkbg5m+yWI57kT4sAbbBnrZ4jxBPybhXeBbnezcQGeDCnPyfHMKANSzrpe6TVRUA9ACfGmXwhm/xA3Nqf4ZX8Ww/xwDHRNA9N6ccxvsUvscQ/QwX0xMM4FTcEHCAwNMCuPcJy4yyuNuXaA/wvSEadHIKNwprfQYZACYH9nCtURbf4KMrBo41BFcDO1UuaPtoL/wolQDsgv2O+SgfgncaYs9VLmZ7mJ5WuMVqYHpAPy8YPm7zIfaWIRZk6Ind8tsJdiVgD0nnVy20FXbL271SsWz9Ti2/nSBXArCXoT9IlVPw2P3/V5WJ2NpFW347Qa4E4FtD/+gi5xe9W1uzfdVeam0AUyQ9Ksmac18tF36exShJjwWoBKsMCs2QdlsBHxc8vzRpF/KE7MIfkDRF0uT0/1mMkjTHc3dklUF1U9TAXOMy8xLhQOc+vx+Y1PL3J6U/s/B2T8Cepn6hSpEPDZGDKhNZr9Wpzx8EpmWcNy39nYWXewJwiKH3fpUiXxoiu1YmovItP+P8SQS+EoDdDa1lVYr8YohUNvdfsPBPLJBO0ErAvSPI4ueqNITdJVQSEVBV4bekF6wSgFGGRnVrC4BVhkjZxRZZaXfq81cxhJs9LljM+z0BF5qTRX+3abeKeOmC6Nzy/6ZEy89I/8Q0DYuurwRgWyPtn7pJt13EugkPOTKsYOGfUIF3r5WAiwzM4otuvbeKfGSIDGkYSrFu57QK/Z+G3Y1CF90RgYahLxoi/xmPF0grSMvP0D0BD1cCcLaR3vNFzi86FbHE+Pk+Bc+X5G5Ykm6Wvf3AoKSzkyR5sUy6RUjTnK71Kyvb6ZF0M+VHdlYZWGX2L4pWwGLj56XmO9JlnxMlZc2iDkqaliTJU2XSLKn/pKSzlF0JX0k6LkmSVSWTtcrAKrPyUPF0NO7pcVlLOgO4mc8g4LZIaL0nLGOI7zXocjq6qMjm2DexIQXh4qKOe3H98vGVmS2uf3yq3QvsMMQ09jXKpJ+qw/Lx8EoS2JUuxvndghuijun8l+b5YV5JpmK3GWJhI4NrBPCqUSazfIjVIiylLhAhLKU2gVl1gNCBWanoHYbot8RcKxUYYBPgB6MsbvcpPM4QBTjPm3DNAC7IKQe/y5XID08PGqAbA2KGp6cGJuXU/qXeDUQGuDwn/5XPYVkm3jEM/AbsEsREBHBTz38aefcaI9VuJG+R3pxgRgKCWxn6TE6+wyzSazH0bI6ZK4OaCQBwdU5+n45haCz2/Ho/cHBwU54ADsV+gfQXsfaWI3+rgq+BnaMYqxBgDPaMJ8TaqiA1NwJ4Ocfcx2zA64aB7XDr3yzmEntlaNpCfs4xOVy3q1lOXa5wXHBs3p6cw23DpjWEGvMXBbgsxzAMry3L6vnACczqYLwf9yRZu50HceP8meSHrwDcGNurSZqJhzpkADbcbSsfqGPj+Q9pS+rEn7grJto0Ni6ucxZuLN+JmbF8DgmarYvjg9vPoehnSeq4efcvBN4CoXJwkQ/zC2YY1m9ffwkVjJqA8cCllN++/nW6iJgoSqgPOIyUNFPS9ZI2LXn6j5LelFuN2Cv3aao+SSuTJFmZpj9a0mhJW8tFqo2XNE7SEZLKPn/8LelWSXclSWItgd0wwXUBj5dohaGZzf8hwgMXLh7z60ntLGRD/VBDNwATsYObQvAKcFzscogOLshpJm63Xd8sTrVqMZFWq6c63NTuUfL3KcOXJM2v06cMa1UB7eDeJRwmaa+WY2e5D3muOyT3Ic91x3dyn75ad7xT5495NjQ0NDQ0NDQ0NDQ0NATmHxLcnGvnnDNMAAAAAElFTkSuQmCC";
+function seeMore(props) {
+    return props.showContent ? (0, _reactDefault.default).createElement("div", {
+        className: style.seeMoreExpanded
+    }, props.seeMoreContent, (0, _reactDefault.default).createElement("div", {
+        onClick: function onClick() {
+            props.toggleMore(false);
+            props.action("play");
+        },
+        className: style.seeMoreClose
+    }, (0, _reactDefault.default).createElement("span", null, "✕"))) : (0, _reactDefault.default).createElement("div", {
+        onClick: function onClick() {
+            props.toggleMore(true);
+            props.action("pause");
+        },
+        className: style.seeMore
+    }, (0, _reactDefault.default).createElement("span", {
+        className: style.seemoreIcon
+    }, (0, _reactDefault.default).createElement("img", {
+        src: up
+    })), (0, _reactDefault.default).createElement("span", {
+        className: style.seemoreText
+    }, "Read more"));
+}
+seeMore.propTypes = {
+    seeMoreContent: (0, _propTypesDefault.default).object,
+    showContent: (0, _propTypesDefault.default).bool,
+    action: (0, _propTypesDefault.default).func,
+    toggleMore: (0, _propTypesDefault.default).func
+};
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+    return typeof obj;
+} : function(obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+var classCallCheck = function(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+};
+var createClass = function() {
+    function defineProperties(target, props) {
+        for(var i = 0; i < props.length; i++){
+            var descriptor = props[i];
+            descriptor.enumerable = descriptor.enumerable || false;
+            descriptor.configurable = true;
+            if ("value" in descriptor) descriptor.writable = true;
+            Object.defineProperty(target, descriptor.key, descriptor);
+        }
+    }
+    return function(Constructor, protoProps, staticProps) {
+        if (protoProps) defineProperties(Constructor.prototype, protoProps);
+        if (staticProps) defineProperties(Constructor, staticProps);
+        return Constructor;
+    };
+}();
+var _extends = Object.assign || function(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i];
+        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+    }
+    return target;
+};
+var inherits = function(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+var possibleConstructorReturn = function(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+var Story = function(_React$Component) {
+    inherits(Story, _React$Component);
+    function Story(props) {
+        classCallCheck(this, Story);
+        var _this = possibleConstructorReturn(this, (Story.__proto__ || Object.getPrototypeOf(Story)).call(this, props));
+        _this.toggleMore = function(show) {
+            _this.setState({
+                showMore: show
+            });
+        };
+        _this.imageLoaded = function() {
+            try {
+                if (_this.pauseId) clearTimeout(_this.pauseId);
+                _this.setState({
+                    loaded: true
+                });
+                _this.props.action("play", true);
+            } catch (e) {
+                console.log(e);
+            }
+        };
+        _this.videoLoaded = function() {
+            try {
+                _this.props.getVideoDuration(_this.vid.duration);
+                _this.vid && _this.vid.play().then(function() {
+                    _this.imageLoaded();
+                }).catch(function(e) {
+                    _this.props.action("pause");
+                    console.log(e);
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        };
+        _this.state = {
+            loaded: false
+        };
+        _this.getStoryContent = _this.getStoryContent.bind(_this);
+        return _this;
+    }
+    createClass(Story, [
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps) {
+                var _this2 = this;
+                if (this.props.story !== prevProps.story) {
+                    this.pauseId && clearTimeout(this.pauseId);
+                    this.pauseId = setTimeout(function() {
+                        _this2.setState({
+                            loaded: false
+                        });
+                    }, 300);
+                    this.props.action("pause", true);
+                    this.vid && this.vid.addEventListener("waiting", function() {
+                        _this2.props.action("pause", true);
+                    });
+                    this.vid && this.vid.addEventListener("playing", function() {
+                        _this2.props.action("play", true);
+                    });
+                }
+                if (this.vid && this.props.playState !== prevProps.playState && !this.props.bufferAction) {
+                    if (this.props.playState) this.vid.pause();
+                    else this.vid.play().catch(function(e) {
+                        return console.log(e);
+                    });
+                }
+            }
+        },
+        {
+            key: "getStoryContent",
+            value: function getStoryContent() {
+                var _this3 = this;
+                var source = _typeof(this.props.story) === "object" ? this.props.story.url : this.props.story;
+                var storyContentStyles = this.props.story.styles || this.props.storyContentStyles || styles$1.storyContent;
+                var type = this.props.story.type === "video" ? "video" : "image";
+                return type === "image" ? (0, _reactDefault.default).createElement("img", {
+                    style: storyContentStyles,
+                    src: source,
+                    onLoad: this.imageLoaded
+                }) : type === "video" ? (0, _reactDefault.default).createElement("video", {
+                    ref: function ref(r) {
+                        _this3.vid = r;
+                    },
+                    style: storyContentStyles,
+                    src: source,
+                    controls: false,
+                    onLoadedData: this.videoLoaded,
+                    autoPlay: true,
+                    playsInline: true
+                }) : null;
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this4 = this;
+                var isHeader = _typeof(this.props.story) === "object" && this.props.story.header;
+                return (0, _reactDefault.default).createElement("div", {
+                    style: _extends({}, styles$1.story, {
+                        width: this.props.width,
+                        height: this.props.height
+                    })
+                }, this.getStoryContent(), isHeader && (0, _reactDefault.default).createElement("div", {
+                    style: {
+                        position: "absolute",
+                        left: 12,
+                        top: 20,
+                        zIndex: 19
+                    }
+                }, this.props.header ? function() {
+                    return _this4.props.header(_this4.props.story.header);
+                } : (0, _reactDefault.default).createElement(Header, {
+                    heading: this.props.story.header.heading,
+                    subheading: this.props.story.header.subheading,
+                    profileImage: this.props.story.header.profileImage
+                })), !this.state.loaded && (0, _reactDefault.default).createElement("div", {
+                    style: {
+                        width: this.props.width,
+                        height: this.props.height,
+                        position: "absolute",
+                        left: 0,
+                        top: 0,
+                        background: "rgba(0, 0, 0, 0.9)",
+                        zIndex: 9,
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "#ccc"
+                    }
+                }, this.props.loader || (0, _reactDefault.default).createElement("div", {
+                    className: style.spinner
+                })), this.props.story.seeMore && (0, _reactDefault.default).createElement("div", {
+                    style: {
+                        position: "absolute",
+                        margin: "auto",
+                        bottom: 0,
+                        zIndex: 9999,
+                        width: "100%"
+                    }
+                }, (0, _reactDefault.default).createElement(seeMore, {
+                    action: this.props.action,
+                    toggleMore: this.toggleMore,
+                    showContent: this.state.showMore,
+                    seeMoreContent: this.props.story.seeMore
+                })));
+            }
+        }
+    ]);
+    return Story;
+}((0, _reactDefault.default).Component);
+var styles$1 = {
+    story: {
+        display: "flex",
+        position: "relative",
+        overflow: "hidden"
+    },
+    storyContent: {
+        width: "auto",
+        maxWidth: "100%",
+        maxHeight: "100%",
+        margin: "auto"
+    }
+};
+Story.propTypes = {
+    story: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).object,
+        (0, _propTypesDefault.default).string
+    ]),
+    height: (0, _propTypesDefault.default).number,
+    width: (0, _propTypesDefault.default).number,
+    action: (0, _propTypesDefault.default).func,
+    loader: (0, _propTypesDefault.default).element,
+    header: (0, _propTypesDefault.default).element,
+    playState: (0, _propTypesDefault.default).bool,
+    getVideoDuration: (0, _propTypesDefault.default).func,
+    bufferAction: (0, _propTypesDefault.default).bool,
+    storyContentStyles: (0, _propTypesDefault.default).object
+};
+var ProgressWrapper = function ProgressWrapper(props) {
+    return (0, _reactDefault.default).createElement("div", {
+        className: style.autoHide,
+        style: _extends({}, styles$2.progress, getProgressWrapperStyle(props))
+    }, props.children);
+};
+var getProgressWrapperStyle = function getProgressWrapperStyle(_ref) {
+    var width = _ref.width, pause = _ref.pause, bufferAction = _ref.bufferAction;
+    return {
+        width: width * 100 + "%",
+        opacity: pause && !bufferAction ? 0 : 1
+    };
+};
+var styles$2 = {
+    progress: {
+        height: 2,
+        maxWidth: "100%",
+        background: "#555",
+        margin: 2
+    }
+};
+ProgressWrapper.propTypes = {
+    children: (0, _propTypesDefault.default).node
+};
+var Progress = function(_React$PureComponent) {
+    inherits(Progress, _React$PureComponent);
+    function Progress() {
+        var _ref;
+        var _temp, _this, _ret;
+        classCallCheck(this, Progress);
+        for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Progress.__proto__ || Object.getPrototypeOf(Progress)).call.apply(_ref, [
+            this
+        ].concat(args))), _this), _this.next = function() {
+            _this.props.next();
+        }, _temp), possibleConstructorReturn(_this, _ret);
+    }
+    createClass(Progress, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                if (this.inner) {
+                    this.inner.addEventListener("webkitAnimationEnd", this.next, false);
+                    this.inner.addEventListener("animationend", this.next, false);
+                    this.inner.addEventListener("oanimationend", this.next, false);
+                }
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+                var _props = this.props, width = _props.width, pause = _props.pause, bufferAction = _props.bufferAction, active = _props.active;
+                return (0, _reactDefault.default).createElement(ProgressWrapper, {
+                    width: width,
+                    pause: pause,
+                    bufferAction: bufferAction
+                }, (0, _reactDefault.default).createElement("div", {
+                    ref: function ref(r) {
+                        _this2.inner = r;
+                    },
+                    className: style.inner,
+                    style: getProgressStyle({
+                        active: active,
+                        pause: pause,
+                        duration: this.state.duration
+                    })
+                }));
+            }
+        }
+    ], [
+        {
+            key: "getDerivedStateFromProps",
+            value: function getDerivedStateFromProps(props, state) {
+                var current = props.currentStory;
+                if ((typeof current === "undefined" ? "undefined" : _typeof(current)) === "object") {
+                    if (current.type && props.videoDuration) return {
+                        duration: props.videoDuration * 1000
+                    };
+                    if (current.duration) return {
+                        duration: current.duration
+                    };
+                    return {
+                        duration: props.defaultInterval
+                    };
+                } else return {
+                    duration: props.defaultInterval
+                };
+            }
+        }
+    ]);
+    return Progress;
+}((0, _reactDefault.default).PureComponent);
+var animation = function animation(duration) {
+    return duration + "ms linear 0ms " + style.slidein;
+};
+var animationPlayState = function animationPlayState(pause) {
+    return pause ? "paused" : "running";
+};
+var getProgressStyle = function getProgressStyle(_ref2) {
+    var active = _ref2.active, duration = _ref2.duration, pause = _ref2.pause;
+    switch(active){
+        case 2:
+            return {
+                width: "100%"
+            };
+        case 1:
+            return {
+                animation: animation(duration),
+                animationPlayState: animationPlayState(pause)
+            };
+        case 0:
+            return {
+                width: 0
+            };
+        default:
+            return {
+                width: 0
+            };
+    }
+};
+Progress.propTypes = {
+    width: (0, _propTypesDefault.default).number,
+    defaultInterval: (0, _propTypesDefault.default).number,
+    pause: (0, _propTypesDefault.default).bool,
+    next: (0, _propTypesDefault.default).func,
+    active: (0, _propTypesDefault.default).number,
+    bufferAction: (0, _propTypesDefault.default).bool,
+    videoDuration: (0, _propTypesDefault.default).number,
+    currentStory: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).string,
+        (0, _propTypesDefault.default).object
+    ])
+};
+var ProgressArray = function(_React$Component) {
+    inherits(ProgressArray, _React$Component);
+    function ProgressArray() {
+        classCallCheck(this, ProgressArray);
+        return possibleConstructorReturn(this, (ProgressArray.__proto__ || Object.getPrototypeOf(ProgressArray)).apply(this, arguments));
+    }
+    createClass(ProgressArray, [
+        {
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+                return (0, _reactDefault.default).createElement("div", {
+                    style: styles$3.progressArr
+                }, this.props.length.map(function(i, index) {
+                    return (0, _reactDefault.default).createElement(Progress, {
+                        key: index,
+                        width: 1 / _this2.props.length.length,
+                        next: _this2.props.next,
+                        defaultInterval: _this2.props.defaultInterval,
+                        videoDuration: _this2.props.videoDuration,
+                        currentStory: _this2.props.currentStory,
+                        active: i === _this2.props.progress.id ? 1 : i < _this2.props.progress.id ? 2 : 0,
+                        pause: _this2.props.pause,
+                        bufferAction: _this2.props.bufferAction
+                    });
+                }));
+            }
+        }
+    ]);
+    return ProgressArray;
+}((0, _reactDefault.default).Component);
+var styles$3 = {
+    progressArr: {
+        display: "flex",
+        justifyContent: "center",
+        maxWidth: "100%",
+        flexWrap: "row",
+        position: "absolute",
+        width: "98%",
+        padding: 5,
+        paddingTop: 7,
+        alignSelf: "center",
+        zIndex: 99,
+        filter: "drop-shadow(0 1px 8px #000)"
+    }
+};
+ProgressArray.propTypes = {
+    length: (0, _propTypesDefault.default).array,
+    progress: (0, _propTypesDefault.default).object,
+    pause: (0, _propTypesDefault.default).bool,
+    next: (0, _propTypesDefault.default).func,
+    currentStory: (0, _propTypesDefault.default).oneOfType([
+        (0, _propTypesDefault.default).string,
+        (0, _propTypesDefault.default).object
+    ]),
+    defaultInterval: (0, _propTypesDefault.default).number,
+    videoDuration: (0, _propTypesDefault.default).number,
+    bufferAction: (0, _propTypesDefault.default).bool
+};
+var Container = function(_React$PureComponent) {
+    inherits(Container, _React$PureComponent);
+    function Container(props) {
+        classCallCheck(this, Container);
+        var _this = possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
+        _this.pause = function(action, bufferAction) {
+            _this.setState({
+                pause: action === "pause",
+                bufferAction: bufferAction
+            });
+        };
+        _this.previous = function() {
+            if (_this.state.currentId > 0) _this.setState({
+                currentId: _this.state.currentId - 1,
+                count: 0
+            });
+        };
+        _this.next = function() {
+            if (_this.props.loop) _this.updateNextStoryIdForLoop();
+            else _this.updateNextStoryId();
+        };
+        _this.updateNextStoryIdForLoop = function() {
+            _this.setState({
+                currentId: (_this.state.currentId + 1) % _this.props.stories.length,
+                count: 0
+            });
+        };
+        _this.updateNextStoryId = function() {
+            if (_this.state.currentId < _this.props.stories.length - 1) _this.setState({
+                currentId: _this.state.currentId + 1,
+                count: 0
+            });
+            else _this.props.handleNextUser();
+        };
+        _this.debouncePause = function(e) {
+            e.preventDefault();
+            _this.mousedownId = setTimeout(function() {
+                _this.pause("pause");
+            }, 200);
+        };
+        _this.mouseUp = function(e, type) {
+            e.preventDefault();
+            _this.mousedownId && clearTimeout(_this.mousedownId);
+            if (_this.state.pause) _this.pause("play");
+            else type === "next" ? _this.next() : _this.previous();
+        };
+        _this.getVideoDuration = function(duration) {
+            _this.setState({
+                videoDuration: duration
+            });
+        };
+        _this.toggleMore = function(show) {
+            if (_this.story) {
+                _this.story.toggleMore(show);
+                return true;
+            } else return false;
+        };
+        _this.state = {
+            currentId: 0,
+            pause: true,
+            count: 0,
+            storiesDone: 0
+        };
+        _this.defaultInterval = props.defaultInterval;
+        _this.width = props.width;
+        _this.height = props.height;
+        return _this;
+    }
+    createClass(Container, [
+        {
+            key: "resetState",
+            value: function resetState() {
+                this.setState({
+                    currentId: 0
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+                return (0, _reactDefault.default).createElement("div", {
+                    style: _extends({}, styles$4.container, {
+                        width: this.width,
+                        height: this.height
+                    })
+                }, (0, _reactDefault.default).createElement(ProgressArray, {
+                    next: this.next,
+                    pause: this.state.pause,
+                    bufferAction: this.state.bufferAction,
+                    videoDuration: this.state.videoDuration,
+                    length: this.props.stories.map(function(_, i) {
+                        return i;
+                    }),
+                    defaultInterval: this.defaultInterval,
+                    currentStory: this.props.stories[this.state.currentId],
+                    progress: {
+                        id: this.state.currentId,
+                        completed: this.state.count / (this.props.stories[this.state.currentId] && this.props.stories[this.state.currentId].duration || this.defaultInterval)
+                    }
+                }), (0, _reactDefault.default).createElement(Story, {
+                    ref: function ref(s) {
+                        return _this2.story = s;
+                    },
+                    action: this.pause,
+                    bufferAction: this.state.bufferAction,
+                    height: this.height,
+                    playState: this.state.pause,
+                    width: this.width,
+                    story: this.props.stories[this.state.currentId],
+                    loader: this.props.loader,
+                    header: this.props.header,
+                    getVideoDuration: this.getVideoDuration,
+                    storyContentStyles: this.props.storyContentStyles
+                }), (0, _reactDefault.default).createElement("div", {
+                    style: styles$4.overlay
+                }, (0, _reactDefault.default).createElement("div", {
+                    style: {
+                        width: "50%",
+                        zIndex: 999
+                    },
+                    onTouchStart: this.debouncePause,
+                    onTouchEnd: function onTouchEnd(e) {
+                        if (_this2.state.currentId === 0) return _this2.props.handlePreviousUser();
+                        return _this2.mouseUp(e, "previous");
+                    },
+                    onMouseDown: this.debouncePause,
+                    onMouseUp: function onMouseUp(e) {
+                        if (_this2.state.currentId === 0) return _this2.props.handlePreviousUser();
+                        return _this2.mouseUp(e, "previous");
+                    }
+                }), (0, _reactDefault.default).createElement("div", {
+                    style: {
+                        width: "50%",
+                        zIndex: 999
+                    },
+                    onTouchStart: this.debouncePause,
+                    onTouchEnd: function onTouchEnd(e) {
+                        if (_this2.state.currentId === _this2.props.stories.length - 1) return _this2.props.handleNextUser();
+                        return _this2.mouseUp(e, "next");
+                    },
+                    onMouseDown: this.debouncePause,
+                    onMouseUp: function onMouseUp(e) {
+                        if (_this2.state.currentId === _this2.props.stories.length - 1) return _this2.props.handleNextUser();
+                        return _this2.mouseUp(e, "next");
+                    }
+                })));
+            }
+        }
+    ]);
+    return Container;
+}((0, _reactDefault.default).PureComponent);
+var styles$4 = {
+    container: {
+        display: "flex",
+        flexDirection: "column",
+        background: "#111",
+        position: "relative"
+    },
+    overlay: {
+        position: "absolute",
+        height: "inherit",
+        width: "inherit",
+        display: "flex"
+    },
+    left: {},
+    right: {}
+};
+Container.propTypes = {
+    stories: (0, _propTypesDefault.default).array,
+    defaultInterval: (0, _propTypesDefault.default).number,
+    width: (0, _propTypesDefault.default).number,
+    height: (0, _propTypesDefault.default).number,
+    loader: (0, _propTypesDefault.default).element,
+    header: (0, _propTypesDefault.default).element,
+    storyContentStyles: (0, _propTypesDefault.default).object,
+    loop: (0, _propTypesDefault.default).bool,
+    handleNextUser: (0, _propTypesDefault.default).Function,
+    handlePreviousUser: (0, _propTypesDefault.default).Function
+};
+Container.defaultProps = {
+    defaultInterval: 4000,
+    width: 360,
+    height: 640
+};
+var ReactInstaStories = function(_Component) {
+    inherits(ReactInstaStories, _Component);
+    function ReactInstaStories(props) {
+        classCallCheck(this, ReactInstaStories);
+        var _this = possibleConstructorReturn(this, (ReactInstaStories.__proto__ || Object.getPrototypeOf(ReactInstaStories)).call(this, props));
+        _this.pause = _this.pause.bind(_this);
+        _this.play = _this.play.bind(_this);
+        _this.previous = _this.previous.bind(_this);
+        _this.next = _this.next.bind(_this);
+        _this.resetStory = _this.resetStory.bind(_this);
+        return _this;
+    }
+    createClass(ReactInstaStories, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this.props.stories.map(function(s) {
+                    var i = new Image();
+                    if (!((typeof s === "undefined" ? "undefined" : _typeof(s)) === "object" && s.type === "video")) i.src = (typeof s === "undefined" ? "undefined" : _typeof(s)) === "object" ? s.url : s;
+                });
+            }
+        },
+        {
+            key: "resetStory",
+            value: function resetStory() {
+                if (this.c) {
+                    this.c.resetState();
+                    return true;
+                } else return false;
+            }
+        },
+        {
+            key: "pause",
+            value: function pause() {
+                if (this.c) {
+                    this.c.pause("pause");
+                    return true;
+                } else return false;
+            }
+        },
+        {
+            key: "play",
+            value: function play() {
+                if (this.c) {
+                    this.c.pause("play");
+                    return true;
+                } else return false;
+            }
+        },
+        {
+            key: "previous",
+            value: function previous() {
+                if (this.c) {
+                    this.c.previous();
+                    return true;
+                } else return false;
+            }
+        },
+        {
+            key: "next",
+            value: function next() {
+                if (this.c) {
+                    this.c.next();
+                    return true;
+                } else return false;
+            }
+        },
+        {
+            key: "toggleSeeMore",
+            value: function toggleSeeMore(show) {
+                if (this.c) return this.c.toggleMore(show);
+                else return false;
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this2 = this;
+                return (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(Container, {
+                    ref: function ref(c) {
+                        return _this2.c = c;
+                    },
+                    stories: this.props.stories,
+                    defaultInterval: this.props.defaultInterval,
+                    width: this.props.width,
+                    height: this.props.height,
+                    loader: this.props.loader,
+                    header: this.props.header,
+                    storyContentStyles: this.props.storyStyles,
+                    loop: this.props.loop,
+                    handlePreviousUser: this.props.handlePreviousUser,
+                    handleNextUser: this.props.handleNextUser
+                }));
+            }
+        }
+    ]);
+    return ReactInstaStories;
+}((0, _react.Component));
+ReactInstaStories.defaultProps = {
+    loop: false
+};
+ReactInstaStories.propTypes = {
+    stories: (0, _propTypesDefault.default).array,
+    defaultInterval: (0, _propTypesDefault.default).number,
+    width: (0, _propTypesDefault.default).number,
+    height: (0, _propTypesDefault.default).number,
+    loader: (0, _propTypesDefault.default).element,
+    header: (0, _propTypesDefault.default).element,
+    storyStyles: (0, _propTypesDefault.default).object,
+    loop: (0, _propTypesDefault.default).bool,
+    handleNextUser: (0, _propTypesDefault.default).Function,
+    handlePreviousUser: (0, _propTypesDefault.default).Function
+};
+exports.default = ReactInstaStories;
 
-},{"./helpers/bundle-url":"lgJ39"}],"iLu3k":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "anuncio.449fb750.png" + "?" + Date.now();
+},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5jjf2":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-0.71c7d3e9.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
+},{"./helpers/bundle-url":"lgJ39"}],"iRuFj":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-1.10810cd5.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iLDOK":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-2.541eed62.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2jfwe":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-3.1e3f6731.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iGVak":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-4.5248ff9c.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"ip0gc":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-5.9f9a0ca0.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dqnIn":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-6.cc88d68d.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2OBQ3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-7.e3f49af3.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dADhw":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "vale-logo.32922acd.jpeg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"8GJfE":[function(require,module,exports) {
+var createReactPlayer = require("./lib/ReactPlayer").createReactPlayer;
+var Player = require("./lib/players/YouTube").default;
+module.exports = createReactPlayer([
+    {
+        key: "youtube",
+        canPlay: Player.canPlay,
+        lazyPlayer: Player
+    }
+]);
+
+},{"./lib/ReactPlayer":"kI1Mr","./lib/players/YouTube":"ldM4q"}],"kI1Mr":[function(require,module,exports) {
+"use strict";
+var global = arguments[3];
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.createReactPlayer = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _deepmerge = _interopRequireDefault(require("deepmerge"));
+var _memoizeOne = _interopRequireDefault(require("memoize-one"));
+var _reactFastCompare = _interopRequireDefault(require("react-fast-compare"));
+var _props = require("./props");
+var _utils = require("./utils");
+var _Player3 = _interopRequireDefault(require("./Player"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _typeof(obj) {
+    "@babel/helpers - typeof";
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(Object(source), true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _toConsumableArray(arr) {
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+function _iterableToArray(iter) {
+    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+function _arrayWithoutHoles(arr) {
+    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+var Preview = /*#__PURE__*/ (0, _react.lazy)(function() {
+    return Promise.resolve().then(function() {
+        return require("cccea2e6adbd2f5");
+    }).then(function(res) {
+        return _interopRequireWildcard(res);
+    });
+});
+var IS_BROWSER = typeof window !== "undefined" && window.document;
+var IS_GLOBAL = typeof global !== "undefined" && global.window && global.window.document;
+var SUPPORTED_PROPS = Object.keys(_props.propTypes); // Return null when rendering on the server
+// as Suspense is not supported yet
+var UniversalSuspense = IS_BROWSER || IS_GLOBAL ? _react.Suspense : function() {
+    return null;
+};
+var customPlayers = [];
+var createReactPlayer = function createReactPlayer(players, fallback) {
+    var _class, _temp;
+    return _temp = _class = /*#__PURE__*/ function(_Component) {
+        _inherits(ReactPlayer, _Component);
+        var _super = _createSuper(ReactPlayer);
+        function ReactPlayer() {
+            var _this;
+            _classCallCheck(this, ReactPlayer);
+            for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            _this = _super.call.apply(_super, [
+                this
+            ].concat(args));
+            _defineProperty(_assertThisInitialized(_this), "state", {
+                showPreview: !!_this.props.light
+            });
+            _defineProperty(_assertThisInitialized(_this), "references", {
+                wrapper: function wrapper(_wrapper) {
+                    _this.wrapper = _wrapper;
+                },
+                player: function player(_player) {
+                    _this.player = _player;
+                }
+            });
+            _defineProperty(_assertThisInitialized(_this), "handleClickPreview", function(e) {
+                _this.setState({
+                    showPreview: false
+                });
+                _this.props.onClickPreview(e);
+            });
+            _defineProperty(_assertThisInitialized(_this), "showPreview", function() {
+                _this.setState({
+                    showPreview: true
+                });
+            });
+            _defineProperty(_assertThisInitialized(_this), "getDuration", function() {
+                if (!_this.player) return null;
+                return _this.player.getDuration();
+            });
+            _defineProperty(_assertThisInitialized(_this), "getCurrentTime", function() {
+                if (!_this.player) return null;
+                return _this.player.getCurrentTime();
+            });
+            _defineProperty(_assertThisInitialized(_this), "getSecondsLoaded", function() {
+                if (!_this.player) return null;
+                return _this.player.getSecondsLoaded();
+            });
+            _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function() {
+                var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "player";
+                if (!_this.player) return null;
+                return _this.player.getInternalPlayer(key);
+            });
+            _defineProperty(_assertThisInitialized(_this), "seekTo", function(fraction, type) {
+                if (!_this.player) return null;
+                _this.player.seekTo(fraction, type);
+            });
+            _defineProperty(_assertThisInitialized(_this), "handleReady", function() {
+                _this.props.onReady(_assertThisInitialized(_this));
+            });
+            _defineProperty(_assertThisInitialized(_this), "getActivePlayer", (0, _memoizeOne["default"])(function(url) {
+                for(var _i = 0, _arr = [].concat(customPlayers, _toConsumableArray(players)); _i < _arr.length; _i++){
+                    var player = _arr[_i];
+                    if (player.canPlay(url)) return player;
+                }
+                if (fallback) return fallback;
+                return null;
+            }));
+            _defineProperty(_assertThisInitialized(_this), "getConfig", (0, _memoizeOne["default"])(function(url, key) {
+                var config = _this.props.config;
+                return _deepmerge["default"].all([
+                    _props.defaultProps.config,
+                    _props.defaultProps.config[key] || {},
+                    config,
+                    config[key] || {}
+                ]);
+            }));
+            _defineProperty(_assertThisInitialized(_this), "getAttributes", (0, _memoizeOne["default"])(function(url) {
+                return (0, _utils.omit)(_this.props, SUPPORTED_PROPS);
+            }));
+            _defineProperty(_assertThisInitialized(_this), "renderActivePlayer", function(url) {
+                if (!url) return null;
+                var player = _this.getActivePlayer(url);
+                if (!player) return null;
+                var config = _this.getConfig(url, player.key);
+                return /*#__PURE__*/ _react["default"].createElement(_Player3["default"], _extends({}, _this.props, {
+                    key: player.key,
+                    ref: _this.references.player,
+                    config: config,
+                    activePlayer: player.lazyPlayer || player,
+                    onReady: _this.handleReady
+                }));
+            });
+            return _this;
+        }
+        _createClass(ReactPlayer, [
+            {
+                key: "shouldComponentUpdate",
+                value: function shouldComponentUpdate(nextProps, nextState) {
+                    return !(0, _reactFastCompare["default"])(this.props, nextProps) || !(0, _reactFastCompare["default"])(this.state, nextState);
+                }
+            },
+            {
+                key: "componentDidUpdate",
+                value: function componentDidUpdate(prevProps) {
+                    var light = this.props.light;
+                    if (!prevProps.light && light) this.setState({
+                        showPreview: true
+                    });
+                    if (prevProps.light && !light) this.setState({
+                        showPreview: false
+                    });
+                }
+            },
+            {
+                key: "renderPreview",
+                value: function renderPreview(url) {
+                    if (!url) return null;
+                    var _this$props = this.props, light = _this$props.light, playIcon = _this$props.playIcon, previewTabIndex = _this$props.previewTabIndex, oEmbedUrl = _this$props.oEmbedUrl;
+                    return /*#__PURE__*/ _react["default"].createElement(Preview, {
+                        url: url,
+                        light: light,
+                        playIcon: playIcon,
+                        previewTabIndex: previewTabIndex,
+                        oEmbedUrl: oEmbedUrl,
+                        onClick: this.handleClickPreview
+                    });
+                }
+            },
+            {
+                key: "render",
+                value: function render() {
+                    var _this$props2 = this.props, url = _this$props2.url, style = _this$props2.style, width = _this$props2.width, height = _this$props2.height, fallback = _this$props2.fallback, Wrapper = _this$props2.wrapper;
+                    var showPreview = this.state.showPreview;
+                    var attributes = this.getAttributes(url);
+                    return /*#__PURE__*/ _react["default"].createElement(Wrapper, _extends({
+                        ref: this.references.wrapper,
+                        style: _objectSpread(_objectSpread({}, style), {}, {
+                            width: width,
+                            height: height
+                        })
+                    }, attributes), /*#__PURE__*/ _react["default"].createElement(UniversalSuspense, {
+                        fallback: fallback
+                    }, showPreview ? this.renderPreview(url) : this.renderActivePlayer(url)));
+                }
+            }
+        ]);
+        return ReactPlayer;
+    }(_react.Component), _defineProperty(_class, "displayName", "ReactPlayer"), _defineProperty(_class, "propTypes", _props.propTypes), _defineProperty(_class, "defaultProps", _props.defaultProps), _defineProperty(_class, "addCustomPlayer", function(player) {
+        customPlayers.push(player);
+    }), _defineProperty(_class, "removeCustomPlayers", function() {
+        customPlayers.length = 0;
+    }), _defineProperty(_class, "canPlay", function(url) {
+        for(var _i2 = 0, _arr2 = [].concat(customPlayers, _toConsumableArray(players)); _i2 < _arr2.length; _i2++){
+            var _Player = _arr2[_i2];
+            if (_Player.canPlay(url)) return true;
+        }
+        return false;
+    }), _defineProperty(_class, "canEnablePIP", function(url) {
+        for(var _i3 = 0, _arr3 = [].concat(customPlayers, _toConsumableArray(players)); _i3 < _arr3.length; _i3++){
+            var _Player2 = _arr3[_i3];
+            if (_Player2.canEnablePIP && _Player2.canEnablePIP(url)) return true;
+        }
+        return false;
+    }), _temp;
+};
+exports.createReactPlayer = createReactPlayer;
+
+},{"react":"21dqq","deepmerge":"ck1Q2","memoize-one":"ajWd5","react-fast-compare":"isHbY","./props":"aLjed","./utils":"2twkn","./Player":"esXfx","cccea2e6adbd2f5":"586AM"}],"ck1Q2":[function(require,module,exports) {
+"use strict";
+var isMergeableObject = function isMergeableObject(value) {
+    return isNonNullObject(value) && !isSpecial(value);
+};
+function isNonNullObject(value) {
+    return !!value && typeof value === "object";
+}
+function isSpecial(value) {
+    var stringValue = Object.prototype.toString.call(value);
+    return stringValue === "[object RegExp]" || stringValue === "[object Date]" || isReactElement(value);
+}
+// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
+var canUseSymbol = typeof Symbol === "function" && Symbol.for;
+var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for("react.element") : 0xeac7;
+function isReactElement(value) {
+    return value.$$typeof === REACT_ELEMENT_TYPE;
+}
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {};
+}
+function cloneUnlessOtherwiseSpecified(value, options) {
+    return options.clone !== false && options.isMergeableObject(value) ? deepmerge(emptyTarget(value), value, options) : value;
+}
+function defaultArrayMerge(target, source, options) {
+    return target.concat(source).map(function(element) {
+        return cloneUnlessOtherwiseSpecified(element, options);
+    });
+}
+function getMergeFunction(key, options) {
+    if (!options.customMerge) return deepmerge;
+    var customMerge = options.customMerge(key);
+    return typeof customMerge === "function" ? customMerge : deepmerge;
+}
+function getEnumerableOwnPropertySymbols(target) {
+    return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(target).filter(function(symbol) {
+        return target.propertyIsEnumerable(symbol);
+    }) : [];
+}
+function getKeys(target) {
+    return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target));
+}
+function propertyIsOnObject(object, property) {
+    try {
+        return property in object;
+    } catch (_) {
+        return false;
+    }
+}
+// Protects from prototype poisoning and unexpected merging up the prototype chain.
+function propertyIsUnsafe(target, key) {
+    return propertyIsOnObject(target, key) // Properties are safe to merge if they don't exist in the target yet,
+     && !(Object.hasOwnProperty.call(target, key) // unsafe if they exist up the prototype chain,
+     && Object.propertyIsEnumerable.call(target, key) // and also unsafe if they're nonenumerable.
+    );
+}
+function mergeObject(target, source, options) {
+    var destination = {};
+    if (options.isMergeableObject(target)) getKeys(target).forEach(function(key) {
+        destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
+    });
+    getKeys(source).forEach(function(key) {
+        if (propertyIsUnsafe(target, key)) return;
+        if (propertyIsOnObject(target, key) && options.isMergeableObject(source[key])) destination[key] = getMergeFunction(key, options)(target[key], source[key], options);
+        else destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
+    });
+    return destination;
+}
+function deepmerge(target, source, options) {
+    options = options || {};
+    options.arrayMerge = options.arrayMerge || defaultArrayMerge;
+    options.isMergeableObject = options.isMergeableObject || isMergeableObject;
+    // cloneUnlessOtherwiseSpecified is added to `options` so that custom arrayMerge()
+    // implementations can use it. The caller may not replace it.
+    options.cloneUnlessOtherwiseSpecified = cloneUnlessOtherwiseSpecified;
+    var sourceIsArray = Array.isArray(source);
+    var targetIsArray = Array.isArray(target);
+    var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
+    if (!sourceAndTargetTypesMatch) return cloneUnlessOtherwiseSpecified(source, options);
+    else if (sourceIsArray) return options.arrayMerge(target, source, options);
+    else return mergeObject(target, source, options);
+}
+deepmerge.all = function deepmergeAll(array, options) {
+    if (!Array.isArray(array)) throw new Error("first argument should be an array");
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, options);
+    }, {});
+};
+var deepmerge_1 = deepmerge;
+module.exports = deepmerge_1;
+
+},{}],"ajWd5":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var safeIsNaN = Number.isNaN || function ponyfill(value) {
+    return typeof value === "number" && value !== value;
+};
+function isEqual(first, second) {
+    if (first === second) return true;
+    if (safeIsNaN(first) && safeIsNaN(second)) return true;
+    return false;
+}
+function areInputsEqual(newInputs, lastInputs) {
+    if (newInputs.length !== lastInputs.length) return false;
+    for(var i = 0; i < newInputs.length; i++){
+        if (!isEqual(newInputs[i], lastInputs[i])) return false;
+    }
+    return true;
+}
+function memoizeOne(resultFn, isEqual) {
+    if (isEqual === void 0) isEqual = areInputsEqual;
+    var lastThis;
+    var lastArgs = [];
+    var lastResult;
+    var calledOnce = false;
+    function memoized() {
+        var newArgs = [];
+        for(var _i = 0; _i < arguments.length; _i++)newArgs[_i] = arguments[_i];
+        if (calledOnce && lastThis === this && isEqual(newArgs, lastArgs)) return lastResult;
+        lastResult = resultFn.apply(this, newArgs);
+        calledOnce = true;
+        lastThis = this;
+        lastArgs = newArgs;
+        return lastResult;
+    }
+    return memoized;
+}
+exports.default = memoizeOne;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"isHbY":[function(require,module,exports) {
+/* global Map:readonly, Set:readonly, ArrayBuffer:readonly */ var hasElementType = typeof Element !== "undefined";
+var hasMap = typeof Map === "function";
+var hasSet = typeof Set === "function";
+var hasArrayBuffer = typeof ArrayBuffer === "function" && !!ArrayBuffer.isView;
+// Note: We **don't** need `envHasBigInt64Array` in fde es6/index.js
+function equal(a, b) {
+    // START: fast-deep-equal es6/index.js 3.1.1
+    if (a === b) return true;
+    if (a && b && typeof a == "object" && typeof b == "object") {
+        if (a.constructor !== b.constructor) return false;
+        var length, i, keys;
+        if (Array.isArray(a)) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; (i--) !== 0;)if (!equal(a[i], b[i])) return false;
+            return true;
+        }
+        // START: Modifications:
+        // 1. Extra `has<Type> &&` helpers in initial condition allow es6 code
+        //    to co-exist with es5.
+        // 2. Replace `for of` with es5 compliant iteration using `for`.
+        //    Basically, take:
+        //
+        //    ```js
+        //    for (i of a.entries())
+        //      if (!b.has(i[0])) return false;
+        //    ```
+        //
+        //    ... and convert to:
+        //
+        //    ```js
+        //    it = a.entries();
+        //    while (!(i = it.next()).done)
+        //      if (!b.has(i.value[0])) return false;
+        //    ```
+        //
+        //    **Note**: `i` access switches to `i.value`.
+        var it;
+        if (hasMap && a instanceof Map && b instanceof Map) {
+            if (a.size !== b.size) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!b.has(i.value[0])) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!equal(i.value[1], b.get(i.value[0]))) return false;
+            return true;
+        }
+        if (hasSet && a instanceof Set && b instanceof Set) {
+            if (a.size !== b.size) return false;
+            it = a.entries();
+            while(!(i = it.next()).done)if (!b.has(i.value[0])) return false;
+            return true;
+        }
+        // END: Modifications
+        if (hasArrayBuffer && ArrayBuffer.isView(a) && ArrayBuffer.isView(b)) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; (i--) !== 0;)if (a[i] !== b[i]) return false;
+            return true;
+        }
+        if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+        if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+        if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+        keys = Object.keys(a);
+        length = keys.length;
+        if (length !== Object.keys(b).length) return false;
+        for(i = length; (i--) !== 0;)if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+        // END: fast-deep-equal
+        // START: react-fast-compare
+        // custom handling for DOM elements
+        if (hasElementType && a instanceof Element) return false;
+        // custom handling for React/Preact
+        for(i = length; (i--) !== 0;){
+            if ((keys[i] === "_owner" || keys[i] === "__v" || keys[i] === "__o") && a.$$typeof) continue;
+            // all other properties should be traversed as usual
+            if (!equal(a[keys[i]], b[keys[i]])) return false;
+        }
+        // END: react-fast-compare
+        // START: fast-deep-equal
+        return true;
+    }
+    return a !== a && b !== b;
+}
+// end fast-deep-equal
+module.exports = function isEqual(a, b) {
+    try {
+        return equal(a, b);
+    } catch (error) {
+        if ((error.message || "").match(/stack|recursion/i)) {
+            // warn on circular references, don't crash
+            // browsers give this different errors name and messages:
+            // chrome/safari: "RangeError", "Maximum call stack size exceeded"
+            // firefox: "InternalError", too much recursion"
+            // edge: "Error", "Out of stack space"
+            console.warn("react-fast-compare cannot handle circular refs");
+            return false;
+        }
+        // some other error. we should definitely know about these
+        throw error;
+    }
+};
+
+},{}],"aLjed":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.defaultProps = exports.propTypes = void 0;
+var _propTypes = _interopRequireDefault(require("prop-types"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+var string = _propTypes["default"].string, bool = _propTypes["default"].bool, number = _propTypes["default"].number, array = _propTypes["default"].array, oneOfType = _propTypes["default"].oneOfType, shape = _propTypes["default"].shape, object = _propTypes["default"].object, func = _propTypes["default"].func, node = _propTypes["default"].node;
+var propTypes = {
+    url: oneOfType([
+        string,
+        array,
+        object
+    ]),
+    playing: bool,
+    loop: bool,
+    controls: bool,
+    volume: number,
+    muted: bool,
+    playbackRate: number,
+    width: oneOfType([
+        string,
+        number
+    ]),
+    height: oneOfType([
+        string,
+        number
+    ]),
+    style: object,
+    progressInterval: number,
+    playsinline: bool,
+    pip: bool,
+    stopOnUnmount: bool,
+    light: oneOfType([
+        bool,
+        string
+    ]),
+    playIcon: node,
+    previewTabIndex: number,
+    fallback: node,
+    oEmbedUrl: string,
+    wrapper: oneOfType([
+        string,
+        func,
+        shape({
+            render: func.isRequired
+        })
+    ]),
+    config: shape({
+        soundcloud: shape({
+            options: object
+        }),
+        youtube: shape({
+            playerVars: object,
+            embedOptions: object,
+            onUnstarted: func
+        }),
+        facebook: shape({
+            appId: string,
+            version: string,
+            playerId: string,
+            attributes: object
+        }),
+        dailymotion: shape({
+            params: object
+        }),
+        vimeo: shape({
+            playerOptions: object,
+            title: string
+        }),
+        file: shape({
+            attributes: object,
+            tracks: array,
+            forceVideo: bool,
+            forceAudio: bool,
+            forceHLS: bool,
+            forceDASH: bool,
+            forceFLV: bool,
+            hlsOptions: object,
+            hlsVersion: string,
+            dashVersion: string,
+            flvVersion: string
+        }),
+        wistia: shape({
+            options: object,
+            playerId: string,
+            customControls: array
+        }),
+        mixcloud: shape({
+            options: object
+        }),
+        twitch: shape({
+            options: object,
+            playerId: string
+        }),
+        vidyard: shape({
+            options: object
+        })
+    }),
+    onReady: func,
+    onStart: func,
+    onPlay: func,
+    onPause: func,
+    onBuffer: func,
+    onBufferEnd: func,
+    onEnded: func,
+    onError: func,
+    onDuration: func,
+    onSeek: func,
+    onPlaybackRateChange: func,
+    onProgress: func,
+    onClickPreview: func,
+    onEnablePIP: func,
+    onDisablePIP: func
+};
+exports.propTypes = propTypes;
+var noop = function noop() {};
+var defaultProps = {
+    playing: false,
+    loop: false,
+    controls: false,
+    volume: null,
+    muted: false,
+    playbackRate: 1,
+    width: "640px",
+    height: "360px",
+    style: {},
+    progressInterval: 1000,
+    playsinline: false,
+    pip: false,
+    stopOnUnmount: true,
+    light: false,
+    fallback: null,
+    wrapper: "div",
+    previewTabIndex: 0,
+    oEmbedUrl: "https://noembed.com/embed?url={url}",
+    config: {
+        soundcloud: {
+            options: {
+                visual: true,
+                // Undocumented, but makes player fill container and look better
+                buying: false,
+                liking: false,
+                download: false,
+                sharing: false,
+                show_comments: false,
+                show_playcount: false
+            }
+        },
+        youtube: {
+            playerVars: {
+                playsinline: 1,
+                showinfo: 0,
+                rel: 0,
+                iv_load_policy: 3,
+                modestbranding: 1
+            },
+            embedOptions: {},
+            onUnstarted: noop
+        },
+        facebook: {
+            appId: "1309697205772819",
+            version: "v3.3",
+            playerId: null,
+            attributes: {}
+        },
+        dailymotion: {
+            params: {
+                api: 1,
+                "endscreen-enable": false
+            }
+        },
+        vimeo: {
+            playerOptions: {
+                autopause: false,
+                byline: false,
+                portrait: false,
+                title: false
+            },
+            title: null
+        },
+        file: {
+            attributes: {},
+            tracks: [],
+            forceVideo: false,
+            forceAudio: false,
+            forceHLS: false,
+            forceDASH: false,
+            forceFLV: false,
+            hlsOptions: {},
+            hlsVersion: "1.1.4",
+            dashVersion: "3.1.3",
+            flvVersion: "1.5.0"
+        },
+        wistia: {
+            options: {},
+            playerId: null,
+            customControls: null
+        },
+        mixcloud: {
+            options: {
+                hide_cover: 1
+            }
+        },
+        twitch: {
+            options: {},
+            playerId: null
+        },
+        vidyard: {
+            options: {}
+        }
+    },
+    onReady: noop,
+    onStart: noop,
+    onPlay: noop,
+    onPause: noop,
+    onBuffer: noop,
+    onBufferEnd: noop,
+    onEnded: noop,
+    onError: noop,
+    onDuration: noop,
+    onSeek: noop,
+    onPlaybackRateChange: noop,
+    onProgress: noop,
+    onClickPreview: noop,
+    onEnablePIP: noop,
+    onDisablePIP: noop
+};
+exports.defaultProps = defaultProps;
+
+},{"prop-types":"7wKI2"}],"2twkn":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.parseStartTime = parseStartTime;
+exports.parseEndTime = parseEndTime;
+exports.randomString = randomString;
+exports.queryString = queryString;
+exports.getSDK = getSDK;
+exports.getConfig = getConfig;
+exports.omit = omit;
+exports.callPlayer = callPlayer;
+exports.isMediaStream = isMediaStream;
+exports.isBlobUrl = isBlobUrl;
+exports.supportsWebKitPresentationMode = supportsWebKitPresentationMode;
+var _loadScript = _interopRequireDefault(require("load-script"));
+var _deepmerge = _interopRequireDefault(require("deepmerge"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _slicedToArray(arr, i) {
+    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+function _nonIterableRest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function _iterableToArrayLimit(arr, i) {
+    if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _e = undefined;
+    try {
+        for(var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function _arrayWithHoles(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+var MATCH_START_QUERY = /[?&#](?:start|t)=([0-9hms]+)/;
+var MATCH_END_QUERY = /[?&#]end=([0-9hms]+)/;
+var MATCH_START_STAMP = /(\d+)(h|m|s)/g;
+var MATCH_NUMERIC = /^\d+$/; // Parse YouTube URL for a start time param, ie ?t=1h14m30s
+// and return the start time in seconds
+function parseTimeParam(url, pattern) {
+    if (url instanceof Array) return undefined;
+    var match = url.match(pattern);
+    if (match) {
+        var stamp = match[1];
+        if (stamp.match(MATCH_START_STAMP)) return parseTimeString(stamp);
+        if (MATCH_NUMERIC.test(stamp)) return parseInt(stamp);
+    }
+    return undefined;
+}
+function parseTimeString(stamp) {
+    var seconds = 0;
+    var array = MATCH_START_STAMP.exec(stamp);
+    while(array !== null){
+        var _array = array, _array2 = _slicedToArray(_array, 3), count = _array2[1], period = _array2[2];
+        if (period === "h") seconds += parseInt(count, 10) * 3600;
+        if (period === "m") seconds += parseInt(count, 10) * 60;
+        if (period === "s") seconds += parseInt(count, 10);
+        array = MATCH_START_STAMP.exec(stamp);
+    }
+    return seconds;
+}
+function parseStartTime(url) {
+    return parseTimeParam(url, MATCH_START_QUERY);
+}
+function parseEndTime(url) {
+    return parseTimeParam(url, MATCH_END_QUERY);
+} // http://stackoverflow.com/a/38622545
+function randomString() {
+    return Math.random().toString(36).substr(2, 5);
+}
+function queryString(object) {
+    return Object.keys(object).map(function(key) {
+        return "".concat(key, "=").concat(object[key]);
+    }).join("&");
+}
+function getGlobal(key) {
+    if (window[key]) return window[key];
+    if (window.exports && window.exports[key]) return window.exports[key];
+    if (window.module && window.module.exports && window.module.exports[key]) return window.module.exports[key];
+    return null;
+} // Util function to load an external SDK
+// or return the SDK if it is already loaded
+var requests = {};
+function getSDK(url, sdkGlobal) {
+    var sdkReady = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+    var isLoaded = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function() {
+        return true;
+    };
+    var fetchScript = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : _loadScript["default"];
+    var existingGlobal = getGlobal(sdkGlobal);
+    if (existingGlobal && isLoaded(existingGlobal)) return Promise.resolve(existingGlobal);
+    return new Promise(function(resolve, reject) {
+        // If we are already loading the SDK, add the resolve and reject
+        // functions to the existing array of requests
+        if (requests[url]) {
+            requests[url].push({
+                resolve: resolve,
+                reject: reject
+            });
+            return;
+        }
+        requests[url] = [
+            {
+                resolve: resolve,
+                reject: reject
+            }
+        ];
+        var onLoaded = function onLoaded(sdk) {
+            // When loaded, resolve all pending request promises
+            requests[url].forEach(function(request) {
+                return request.resolve(sdk);
+            });
+        };
+        if (sdkReady) {
+            var previousOnReady = window[sdkReady];
+            window[sdkReady] = function() {
+                if (previousOnReady) previousOnReady();
+                onLoaded(getGlobal(sdkGlobal));
+            };
+        }
+        fetchScript(url, function(err) {
+            if (err) {
+                // Loading the SDK failed – reject all requests and
+                // reset the array of requests for this SDK
+                requests[url].forEach(function(request) {
+                    return request.reject(err);
+                });
+                requests[url] = null;
+            } else if (!sdkReady) onLoaded(getGlobal(sdkGlobal));
+        });
+    });
+}
+function getConfig(props, defaultProps) {
+    return (0, _deepmerge["default"])(defaultProps.config, props.config);
+}
+function omit(object) {
+    var _ref;
+    for(var _len = arguments.length, arrays = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++)arrays[_key - 1] = arguments[_key];
+    var omitKeys = (_ref = []).concat.apply(_ref, arrays);
+    var output = {};
+    var keys = Object.keys(object);
+    for(var _i2 = 0, _keys = keys; _i2 < _keys.length; _i2++){
+        var key = _keys[_i2];
+        if (omitKeys.indexOf(key) === -1) output[key] = object[key];
+    }
+    return output;
+}
+function callPlayer(method) {
+    var _this$player;
+    // Util method for calling a method on this.player
+    // but guard against errors and console.warn instead
+    if (!this.player || !this.player[method]) {
+        var message = "ReactPlayer: ".concat(this.constructor.displayName, " player could not call %c").concat(method, "%c – ");
+        if (!this.player) message += "The player was not available";
+        else if (!this.player[method]) message += "The method was not available";
+        console.warn(message, "font-weight: bold", "");
+        return null;
+    }
+    for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
+    return (_this$player = this.player)[method].apply(_this$player, args);
+}
+function isMediaStream(url) {
+    return typeof window !== "undefined" && typeof window.MediaStream !== "undefined" && url instanceof window.MediaStream;
+}
+function isBlobUrl(url) {
+    return /^blob:/.test(url);
+}
+function supportsWebKitPresentationMode() {
+    var video = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.createElement("video");
+    // Check if Safari supports PiP, and is not on mobile (other than iPad)
+    // iPhone safari appears to "support" PiP through the check, however PiP does not function
+    var notMobile = /iPhone|iPod/.test(navigator.userAgent) === false;
+    return video.webkitSupportsPresentationMode && typeof video.webkitSetPresentationMode === "function" && notMobile;
+}
+
+},{"load-script":"8eVCX","deepmerge":"ck1Q2"}],"8eVCX":[function(require,module,exports) {
+module.exports = function load(src, opts, cb) {
+    var head = document.head || document.getElementsByTagName("head")[0];
+    var script = document.createElement("script");
+    if (typeof opts === "function") {
+        cb = opts;
+        opts = {};
+    }
+    opts = opts || {};
+    cb = cb || function() {};
+    script.type = opts.type || "text/javascript";
+    script.charset = opts.charset || "utf8";
+    script.async = "async" in opts ? !!opts.async : true;
+    script.src = src;
+    if (opts.attrs) setAttributes(script, opts.attrs);
+    if (opts.text) script.text = "" + opts.text;
+    var onend = "onload" in script ? stdOnEnd : ieOnEnd;
+    onend(script, cb);
+    // some good legacy browsers (firefox) fail the 'in' detection above
+    // so as a fallback we always set onload
+    // old IE will ignore this and new IE will set onload
+    if (!script.onload) stdOnEnd(script, cb);
+    head.appendChild(script);
+};
+function setAttributes(script, attrs) {
+    for(var attr in attrs)script.setAttribute(attr, attrs[attr]);
+}
+function stdOnEnd(script, cb) {
+    script.onload = function() {
+        this.onerror = this.onload = null;
+        cb(null, script);
+    };
+    script.onerror = function() {
+        // this.onload = null here is necessary
+        // because even IE9 works not like others
+        this.onerror = this.onload = null;
+        cb(new Error("Failed to load " + this.src), script);
+    };
+}
+function ieOnEnd(script, cb) {
+    script.onreadystatechange = function() {
+        if (this.readyState != "complete" && this.readyState != "loaded") return;
+        this.onreadystatechange = null;
+        cb(null, script) // there is no way to catch loading errors in IE8
+        ;
+    };
+}
+
+},{}],"esXfx":[function(require,module,exports) {
+"use strict";
+function _typeof(obj) {
+    "@babel/helpers - typeof";
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _reactFastCompare = _interopRequireDefault(require("react-fast-compare"));
+var _props = require("./props");
+var _utils = require("./utils");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var SEEK_ON_PLAY_EXPIRY = 5000;
+var Player = /*#__PURE__*/ function(_Component) {
+    _inherits(Player, _Component);
+    var _super = _createSuper(Player);
+    function Player() {
+        var _this;
+        _classCallCheck(this, Player);
+        for(var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++)_args[_key] = arguments[_key];
+        _this = _super.call.apply(_super, [
+            this
+        ].concat(_args));
+        _defineProperty(_assertThisInitialized(_this), "mounted", false);
+        _defineProperty(_assertThisInitialized(_this), "isReady", false);
+        _defineProperty(_assertThisInitialized(_this), "isPlaying", false);
+        _defineProperty(_assertThisInitialized(_this), "isLoading", true);
+        _defineProperty(_assertThisInitialized(_this), "loadOnReady", null);
+        _defineProperty(_assertThisInitialized(_this), "startOnPlay", true);
+        _defineProperty(_assertThisInitialized(_this), "seekOnPlay", null);
+        _defineProperty(_assertThisInitialized(_this), "onDurationCalled", false);
+        _defineProperty(_assertThisInitialized(_this), "handlePlayerMount", function(player) {
+            if (_this.player) return; // Prevent loading twice in strict mode
+            _this.player = player;
+            _this.player.load(_this.props.url);
+            _this.progress();
+        });
+        _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function(key) {
+            if (!_this.player) return null;
+            return _this.player[key];
+        });
+        _defineProperty(_assertThisInitialized(_this), "progress", function() {
+            if (_this.props.url && _this.player && _this.isReady) {
+                var playedSeconds = _this.getCurrentTime() || 0;
+                var loadedSeconds = _this.getSecondsLoaded();
+                var duration = _this.getDuration();
+                if (duration) {
+                    var progress = {
+                        playedSeconds: playedSeconds,
+                        played: playedSeconds / duration
+                    };
+                    if (loadedSeconds !== null) {
+                        progress.loadedSeconds = loadedSeconds;
+                        progress.loaded = loadedSeconds / duration;
+                    } // Only call onProgress if values have changed
+                    if (progress.playedSeconds !== _this.prevPlayed || progress.loadedSeconds !== _this.prevLoaded) _this.props.onProgress(progress);
+                    _this.prevPlayed = progress.playedSeconds;
+                    _this.prevLoaded = progress.loadedSeconds;
+                }
+            }
+            _this.progressTimeout = setTimeout(_this.progress, _this.props.progressFrequency || _this.props.progressInterval);
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleReady", function() {
+            if (!_this.mounted) return;
+            _this.isReady = true;
+            _this.isLoading = false;
+            var _this$props = _this.props, onReady = _this$props.onReady, playing = _this$props.playing, volume = _this$props.volume, muted = _this$props.muted;
+            onReady();
+            if (!muted && volume !== null) _this.player.setVolume(volume);
+            if (_this.loadOnReady) {
+                _this.player.load(_this.loadOnReady, true);
+                _this.loadOnReady = null;
+            } else if (playing) _this.player.play();
+            _this.handleDurationCheck();
+        });
+        _defineProperty(_assertThisInitialized(_this), "handlePlay", function() {
+            _this.isPlaying = true;
+            _this.isLoading = false;
+            var _this$props2 = _this.props, onStart = _this$props2.onStart, onPlay = _this$props2.onPlay, playbackRate = _this$props2.playbackRate;
+            if (_this.startOnPlay) {
+                if (_this.player.setPlaybackRate && playbackRate !== 1) _this.player.setPlaybackRate(playbackRate);
+                onStart();
+                _this.startOnPlay = false;
+            }
+            onPlay();
+            if (_this.seekOnPlay) {
+                _this.seekTo(_this.seekOnPlay);
+                _this.seekOnPlay = null;
+            }
+            _this.handleDurationCheck();
+        });
+        _defineProperty(_assertThisInitialized(_this), "handlePause", function(e) {
+            _this.isPlaying = false;
+            if (!_this.isLoading) _this.props.onPause(e);
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleEnded", function() {
+            var _this$props3 = _this.props, activePlayer = _this$props3.activePlayer, loop = _this$props3.loop, onEnded = _this$props3.onEnded;
+            if (activePlayer.loopOnEnded && loop) _this.seekTo(0);
+            if (!loop) {
+                _this.isPlaying = false;
+                onEnded();
+            }
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleError", function() {
+            var _this$props4;
+            _this.isLoading = false;
+            (_this$props4 = _this.props).onError.apply(_this$props4, arguments);
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleDurationCheck", function() {
+            clearTimeout(_this.durationCheckTimeout);
+            var duration = _this.getDuration();
+            if (duration) {
+                if (!_this.onDurationCalled) {
+                    _this.props.onDuration(duration);
+                    _this.onDurationCalled = true;
+                }
+            } else _this.durationCheckTimeout = setTimeout(_this.handleDurationCheck, 100);
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleLoaded", function() {
+            // Sometimes we know loading has stopped but onReady/onPlay are never called
+            // so this provides a way for players to avoid getting stuck
+            _this.isLoading = false;
+        });
+        return _this;
+    }
+    _createClass(Player, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this.mounted = true;
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                clearTimeout(this.progressTimeout);
+                clearTimeout(this.durationCheckTimeout);
+                if (this.isReady && this.props.stopOnUnmount) {
+                    this.player.stop();
+                    if (this.player.disablePIP) this.player.disablePIP();
+                }
+                this.mounted = false;
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps) {
+                var _this2 = this;
+                // If there isn’t a player available, don’t do anything
+                if (!this.player) return;
+                 // Invoke player methods based on changed props
+                var _this$props5 = this.props, url = _this$props5.url, playing = _this$props5.playing, volume = _this$props5.volume, muted = _this$props5.muted, playbackRate = _this$props5.playbackRate, pip = _this$props5.pip, loop = _this$props5.loop, activePlayer = _this$props5.activePlayer, disableDeferredLoading = _this$props5.disableDeferredLoading;
+                if (!(0, _reactFastCompare["default"])(prevProps.url, url)) {
+                    if (this.isLoading && !activePlayer.forceLoad && !disableDeferredLoading && !(0, _utils.isMediaStream)(url)) {
+                        console.warn("ReactPlayer: the attempt to load ".concat(url, " is being deferred until the player has loaded"));
+                        this.loadOnReady = url;
+                        return;
+                    }
+                    this.isLoading = true;
+                    this.startOnPlay = true;
+                    this.onDurationCalled = false;
+                    this.player.load(url, this.isReady);
+                }
+                if (!prevProps.playing && playing && !this.isPlaying) this.player.play();
+                if (prevProps.playing && !playing && this.isPlaying) this.player.pause();
+                if (!prevProps.pip && pip && this.player.enablePIP) this.player.enablePIP();
+                if (prevProps.pip && !pip && this.player.disablePIP) this.player.disablePIP();
+                if (prevProps.volume !== volume && volume !== null) this.player.setVolume(volume);
+                if (prevProps.muted !== muted) {
+                    if (muted) this.player.mute();
+                    else {
+                        this.player.unmute();
+                        if (volume !== null) // Set volume next tick to fix a bug with DailyMotion
+                        setTimeout(function() {
+                            return _this2.player.setVolume(volume);
+                        });
+                    }
+                }
+                if (prevProps.playbackRate !== playbackRate && this.player.setPlaybackRate) this.player.setPlaybackRate(playbackRate);
+                if (prevProps.loop !== loop && this.player.setLoop) this.player.setLoop(loop);
+            }
+        },
+        {
+            key: "getDuration",
+            value: function getDuration() {
+                if (!this.isReady) return null;
+                return this.player.getDuration();
+            }
+        },
+        {
+            key: "getCurrentTime",
+            value: function getCurrentTime() {
+                if (!this.isReady) return null;
+                return this.player.getCurrentTime();
+            }
+        },
+        {
+            key: "getSecondsLoaded",
+            value: function getSecondsLoaded() {
+                if (!this.isReady) return null;
+                return this.player.getSecondsLoaded();
+            }
+        },
+        {
+            key: "seekTo",
+            value: function seekTo(amount, type) {
+                var _this3 = this;
+                // When seeking before player is ready, store value and seek later
+                if (!this.isReady) {
+                    if (amount !== 0) {
+                        this.seekOnPlay = amount;
+                        setTimeout(function() {
+                            _this3.seekOnPlay = null;
+                        }, SEEK_ON_PLAY_EXPIRY);
+                    }
+                    return;
+                }
+                var isFraction = !type ? amount > 0 && amount < 1 : type === "fraction";
+                if (isFraction) {
+                    // Convert fraction to seconds based on duration
+                    var duration = this.player.getDuration();
+                    if (!duration) {
+                        console.warn("ReactPlayer: could not seek using fraction –\xa0duration not yet available");
+                        return;
+                    }
+                    this.player.seekTo(duration * amount);
+                    return;
+                }
+                this.player.seekTo(amount);
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var Player = this.props.activePlayer;
+                if (!Player) return null;
+                return /*#__PURE__*/ _react["default"].createElement(Player, _extends({}, this.props, {
+                    onMount: this.handlePlayerMount,
+                    onReady: this.handleReady,
+                    onPlay: this.handlePlay,
+                    onPause: this.handlePause,
+                    onEnded: this.handleEnded,
+                    onLoaded: this.handleLoaded,
+                    onError: this.handleError
+                }));
+            }
+        }
+    ]);
+    return Player;
+}(_react.Component);
+exports["default"] = Player;
+_defineProperty(Player, "displayName", "Player");
+_defineProperty(Player, "propTypes", _props.propTypes);
+_defineProperty(Player, "defaultProps", _props.defaultProps);
+
+},{"react":"21dqq","react-fast-compare":"isHbY","./props":"aLjed","./utils":"2twkn"}],"586AM":[function(require,module,exports) {
+module.exports = require("./helpers/browser/js-loader")(require("./helpers/bundle-url").getBundleURL("7065G") + "Preview.03bde0f9.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("8Vhrn"));
+
+},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("../cacheLoader");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"../cacheLoader":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"ldM4q":[function(require,module,exports) {
+"use strict";
+function _typeof(obj) {
+    "@babel/helpers - typeof";
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _utils = require("../utils");
+var _patterns = require("../patterns");
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(Object(source), true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _slicedToArray(arr, i) {
+    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+function _nonIterableRest() {
+    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+function _iterableToArrayLimit(arr, i) {
+    if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _e = undefined;
+    try {
+        for(var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true){
+            _arr.push(_s.value);
+            if (i && _arr.length === i) break;
+        }
+    } catch (err) {
+        _d = true;
+        _e = err;
+    } finally{
+        try {
+            if (!_n && _i["return"] != null) _i["return"]();
+        } finally{
+            if (_d) throw _e;
+        }
+    }
+    return _arr;
+}
+function _arrayWithHoles(arr) {
+    if (Array.isArray(arr)) return arr;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var SDK_URL = "https://www.youtube.com/iframe_api";
+var SDK_GLOBAL = "YT";
+var SDK_GLOBAL_READY = "onYouTubeIframeAPIReady";
+var MATCH_PLAYLIST = /[?&](?:list|channel)=([a-zA-Z0-9_-]+)/;
+var MATCH_USER_UPLOADS = /user\/([a-zA-Z0-9_-]+)\/?/;
+var MATCH_NOCOOKIE = /youtube-nocookie\.com/;
+var NOCOOKIE_HOST = "https://www.youtube-nocookie.com";
+var YouTube = /*#__PURE__*/ function(_Component) {
+    _inherits(YouTube, _Component);
+    var _super = _createSuper(YouTube);
+    function YouTube() {
+        var _this;
+        _classCallCheck(this, YouTube);
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        _this = _super.call.apply(_super, [
+            this
+        ].concat(args));
+        _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
+        _defineProperty(_assertThisInitialized(_this), "parsePlaylist", function(url) {
+            if (url instanceof Array) return {
+                listType: "playlist",
+                playlist: url.map(_this.getID).join(",")
+            };
+            if (MATCH_PLAYLIST.test(url)) {
+                var _url$match = url.match(MATCH_PLAYLIST), _url$match2 = _slicedToArray(_url$match, 2), playlistId = _url$match2[1];
+                return {
+                    listType: "playlist",
+                    list: playlistId.replace(/^UC/, "UU")
+                };
+            }
+            if (MATCH_USER_UPLOADS.test(url)) {
+                var _url$match3 = url.match(MATCH_USER_UPLOADS), _url$match4 = _slicedToArray(_url$match3, 2), username = _url$match4[1];
+                return {
+                    listType: "user_uploads",
+                    list: username
+                };
+            }
+            return {};
+        });
+        _defineProperty(_assertThisInitialized(_this), "onStateChange", function(event) {
+            var data = event.data;
+            var _this$props = _this.props, onPlay = _this$props.onPlay, onPause = _this$props.onPause, onBuffer = _this$props.onBuffer, onBufferEnd = _this$props.onBufferEnd, onEnded = _this$props.onEnded, onReady = _this$props.onReady, loop = _this$props.loop, _this$props$config = _this$props.config, playerVars = _this$props$config.playerVars, onUnstarted = _this$props$config.onUnstarted;
+            var _window$SDK_GLOBAL$Pl = window[SDK_GLOBAL].PlayerState, UNSTARTED = _window$SDK_GLOBAL$Pl.UNSTARTED, PLAYING = _window$SDK_GLOBAL$Pl.PLAYING, PAUSED = _window$SDK_GLOBAL$Pl.PAUSED, BUFFERING = _window$SDK_GLOBAL$Pl.BUFFERING, ENDED = _window$SDK_GLOBAL$Pl.ENDED, CUED = _window$SDK_GLOBAL$Pl.CUED;
+            if (data === UNSTARTED) onUnstarted();
+            if (data === PLAYING) {
+                onPlay();
+                onBufferEnd();
+            }
+            if (data === PAUSED) onPause();
+            if (data === BUFFERING) onBuffer();
+            if (data === ENDED) {
+                var isPlaylist = !!_this.callPlayer("getPlaylist"); // Only loop manually if not playing a playlist
+                if (loop && !isPlaylist) {
+                    if (playerVars.start) _this.seekTo(playerVars.start);
+                    else _this.play();
+                }
+                onEnded();
+            }
+            if (data === CUED) onReady();
+        });
+        _defineProperty(_assertThisInitialized(_this), "mute", function() {
+            _this.callPlayer("mute");
+        });
+        _defineProperty(_assertThisInitialized(_this), "unmute", function() {
+            _this.callPlayer("unMute");
+        });
+        _defineProperty(_assertThisInitialized(_this), "ref", function(container) {
+            _this.container = container;
+        });
+        return _this;
+    }
+    _createClass(YouTube, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this.props.onMount && this.props.onMount(this);
+            }
+        },
+        {
+            key: "getID",
+            value: function getID(url) {
+                if (!url || url instanceof Array || MATCH_PLAYLIST.test(url)) return null;
+                return url.match(_patterns.MATCH_URL_YOUTUBE)[1];
+            }
+        },
+        {
+            key: "load",
+            value: function load(url, isReady) {
+                var _this2 = this;
+                var _this$props2 = this.props, playing = _this$props2.playing, muted = _this$props2.muted, playsinline = _this$props2.playsinline, controls = _this$props2.controls, loop = _this$props2.loop, config = _this$props2.config, _onError = _this$props2.onError;
+                var playerVars = config.playerVars, embedOptions = config.embedOptions;
+                var id = this.getID(url);
+                if (isReady) {
+                    if (MATCH_PLAYLIST.test(url) || MATCH_USER_UPLOADS.test(url) || url instanceof Array) {
+                        this.player.loadPlaylist(this.parsePlaylist(url));
+                        return;
+                    }
+                    this.player.cueVideoById({
+                        videoId: id,
+                        startSeconds: (0, _utils.parseStartTime)(url) || playerVars.start,
+                        endSeconds: (0, _utils.parseEndTime)(url) || playerVars.end
+                    });
+                    return;
+                }
+                (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function(YT) {
+                    return YT.loaded;
+                }).then(function(YT) {
+                    if (!_this2.container) return;
+                    _this2.player = new YT.Player(_this2.container, _objectSpread({
+                        width: "100%",
+                        height: "100%",
+                        videoId: id,
+                        playerVars: _objectSpread(_objectSpread({
+                            autoplay: playing ? 1 : 0,
+                            mute: muted ? 1 : 0,
+                            controls: controls ? 1 : 0,
+                            start: (0, _utils.parseStartTime)(url),
+                            end: (0, _utils.parseEndTime)(url),
+                            origin: window.location.origin,
+                            playsinline: playsinline ? 1 : 0
+                        }, _this2.parsePlaylist(url)), playerVars),
+                        events: {
+                            onReady: function onReady() {
+                                if (loop) _this2.player.setLoop(true); // Enable playlist looping
+                                _this2.props.onReady();
+                            },
+                            onPlaybackRateChange: function onPlaybackRateChange(event) {
+                                return _this2.props.onPlaybackRateChange(event.data);
+                            },
+                            onStateChange: _this2.onStateChange,
+                            onError: function onError(event) {
+                                return _onError(event.data);
+                            }
+                        },
+                        host: MATCH_NOCOOKIE.test(url) ? NOCOOKIE_HOST : undefined
+                    }, embedOptions));
+                }, _onError);
+                if (embedOptions.events) console.warn("Using `embedOptions.events` will likely break things. Use ReactPlayer’s callback props instead, eg onReady, onPlay, onPause");
+            }
+        },
+        {
+            key: "play",
+            value: function play() {
+                this.callPlayer("playVideo");
+            }
+        },
+        {
+            key: "pause",
+            value: function pause() {
+                this.callPlayer("pauseVideo");
+            }
+        },
+        {
+            key: "stop",
+            value: function stop() {
+                if (!document.body.contains(this.callPlayer("getIframe"))) return;
+                this.callPlayer("stopVideo");
+            }
+        },
+        {
+            key: "seekTo",
+            value: function seekTo(amount) {
+                this.callPlayer("seekTo", amount);
+                if (!this.props.playing) this.pause();
+            }
+        },
+        {
+            key: "setVolume",
+            value: function setVolume(fraction) {
+                this.callPlayer("setVolume", fraction * 100);
+            }
+        },
+        {
+            key: "setPlaybackRate",
+            value: function setPlaybackRate(rate) {
+                this.callPlayer("setPlaybackRate", rate);
+            }
+        },
+        {
+            key: "setLoop",
+            value: function setLoop(loop) {
+                this.callPlayer("setLoop", loop);
+            }
+        },
+        {
+            key: "getDuration",
+            value: function getDuration() {
+                return this.callPlayer("getDuration");
+            }
+        },
+        {
+            key: "getCurrentTime",
+            value: function getCurrentTime() {
+                return this.callPlayer("getCurrentTime");
+            }
+        },
+        {
+            key: "getSecondsLoaded",
+            value: function getSecondsLoaded() {
+                return this.callPlayer("getVideoLoadedFraction") * this.getDuration();
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var display = this.props.display;
+                var style = {
+                    width: "100%",
+                    height: "100%",
+                    display: display
+                };
+                return /*#__PURE__*/ _react["default"].createElement("div", {
+                    style: style
+                }, /*#__PURE__*/ _react["default"].createElement("div", {
+                    ref: this.ref
+                }));
+            }
+        }
+    ]);
+    return YouTube;
+}(_react.Component);
+exports["default"] = YouTube;
+_defineProperty(YouTube, "displayName", "YouTube");
+_defineProperty(YouTube, "canPlay", _patterns.canPlay.youtube);
+
+},{"react":"21dqq","../utils":"2twkn","../patterns":"eeZWi"}],"eeZWi":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.canPlay = exports.FLV_EXTENSIONS = exports.DASH_EXTENSIONS = exports.HLS_EXTENSIONS = exports.VIDEO_EXTENSIONS = exports.AUDIO_EXTENSIONS = exports.MATCH_URL_KALTURA = exports.MATCH_URL_VIDYARD = exports.MATCH_URL_MIXCLOUD = exports.MATCH_URL_DAILYMOTION = exports.MATCH_URL_TWITCH_CHANNEL = exports.MATCH_URL_TWITCH_VIDEO = exports.MATCH_URL_WISTIA = exports.MATCH_URL_STREAMABLE = exports.MATCH_URL_FACEBOOK_WATCH = exports.MATCH_URL_FACEBOOK = exports.MATCH_URL_VIMEO = exports.MATCH_URL_SOUNDCLOUD = exports.MATCH_URL_YOUTUBE = void 0;
+var _utils = require("./utils");
+function _createForOfIteratorHelper(o, allowArrayLike) {
+    var it;
+    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+        if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+            if (it) o = it;
+            var i = 0;
+            var F = function F() {};
+            return {
+                s: F,
+                n: function n() {
+                    if (i >= o.length) return {
+                        done: true
+                    };
+                    return {
+                        done: false,
+                        value: o[i++]
+                    };
+                },
+                e: function e(_e) {
+                    throw _e;
+                },
+                f: F
+            };
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+    var normalCompletion = true, didErr = false, err;
+    return {
+        s: function s() {
+            it = o[Symbol.iterator]();
+        },
+        n: function n() {
+            var step = it.next();
+            normalCompletion = step.done;
+            return step;
+        },
+        e: function e(_e2) {
+            didErr = true;
+            err = _e2;
+        },
+        f: function f() {
+            try {
+                if (!normalCompletion && it["return"] != null) it["return"]();
+            } finally{
+                if (didErr) throw err;
+            }
+        }
+    };
+}
+function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+    for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
+    return arr2;
+}
+var MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=|shorts\/))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
+exports.MATCH_URL_YOUTUBE = MATCH_URL_YOUTUBE;
+var MATCH_URL_SOUNDCLOUD = /(?:soundcloud\.com|snd\.sc)\/[^.]+$/;
+exports.MATCH_URL_SOUNDCLOUD = MATCH_URL_SOUNDCLOUD;
+var MATCH_URL_VIMEO = /vimeo\.com\/(?!progressive_redirect).+/;
+exports.MATCH_URL_VIMEO = MATCH_URL_VIMEO;
+var MATCH_URL_FACEBOOK = /^https?:\/\/(www\.)?facebook\.com.*\/(video(s)?|watch|story)(\.php?|\/).+$/;
+exports.MATCH_URL_FACEBOOK = MATCH_URL_FACEBOOK;
+var MATCH_URL_FACEBOOK_WATCH = /^https?:\/\/fb\.watch\/.+$/;
+exports.MATCH_URL_FACEBOOK_WATCH = MATCH_URL_FACEBOOK_WATCH;
+var MATCH_URL_STREAMABLE = /streamable\.com\/([a-z0-9]+)$/;
+exports.MATCH_URL_STREAMABLE = MATCH_URL_STREAMABLE;
+var MATCH_URL_WISTIA = /(?:wistia\.(?:com|net)|wi\.st)\/(?:medias|embed)\/(?:iframe\/)?(.*)$/;
+exports.MATCH_URL_WISTIA = MATCH_URL_WISTIA;
+var MATCH_URL_TWITCH_VIDEO = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
+exports.MATCH_URL_TWITCH_VIDEO = MATCH_URL_TWITCH_VIDEO;
+var MATCH_URL_TWITCH_CHANNEL = /(?:www\.|go\.)?twitch\.tv\/([a-zA-Z0-9_]+)($|\?)/;
+exports.MATCH_URL_TWITCH_CHANNEL = MATCH_URL_TWITCH_CHANNEL;
+var MATCH_URL_DAILYMOTION = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
+exports.MATCH_URL_DAILYMOTION = MATCH_URL_DAILYMOTION;
+var MATCH_URL_MIXCLOUD = /mixcloud\.com\/([^/]+\/[^/]+)/;
+exports.MATCH_URL_MIXCLOUD = MATCH_URL_MIXCLOUD;
+var MATCH_URL_VIDYARD = /vidyard.com\/(?:watch\/)?([a-zA-Z0-9-_]+)/;
+exports.MATCH_URL_VIDYARD = MATCH_URL_VIDYARD;
+var MATCH_URL_KALTURA = /^https?:\/\/[a-zA-Z]+\.kaltura.(com|org)\/p\/([0-9]+)\/sp\/([0-9]+)00\/embedIframeJs\/uiconf_id\/([0-9]+)\/partner_id\/([0-9]+)(.*)entry_id.([a-zA-Z0-9-_].*)$/;
+exports.MATCH_URL_KALTURA = MATCH_URL_KALTURA;
+var AUDIO_EXTENSIONS = /\.(m4a|m4b|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i;
+exports.AUDIO_EXTENSIONS = AUDIO_EXTENSIONS;
+var VIDEO_EXTENSIONS = /\.(mp4|og[gv]|webm|mov|m4v)(#t=[,\d+]+)?($|\?)/i;
+exports.VIDEO_EXTENSIONS = VIDEO_EXTENSIONS;
+var HLS_EXTENSIONS = /\.(m3u8)($|\?)/i;
+exports.HLS_EXTENSIONS = HLS_EXTENSIONS;
+var DASH_EXTENSIONS = /\.(mpd)($|\?)/i;
+exports.DASH_EXTENSIONS = DASH_EXTENSIONS;
+var FLV_EXTENSIONS = /\.(flv)($|\?)/i;
+exports.FLV_EXTENSIONS = FLV_EXTENSIONS;
+var canPlayFile = function canPlayFile(url) {
+    if (url instanceof Array) {
+        var _iterator = _createForOfIteratorHelper(url), _step;
+        try {
+            for(_iterator.s(); !(_step = _iterator.n()).done;){
+                var item = _step.value;
+                if (typeof item === "string" && canPlayFile(item)) return true;
+                if (canPlayFile(item.src)) return true;
+            }
+        } catch (err) {
+            _iterator.e(err);
+        } finally{
+            _iterator.f();
+        }
+        return false;
+    }
+    if ((0, _utils.isMediaStream)(url) || (0, _utils.isBlobUrl)(url)) return true;
+    return AUDIO_EXTENSIONS.test(url) || VIDEO_EXTENSIONS.test(url) || HLS_EXTENSIONS.test(url) || DASH_EXTENSIONS.test(url) || FLV_EXTENSIONS.test(url);
+};
+var canPlay = {
+    youtube: function youtube(url) {
+        if (url instanceof Array) return url.every(function(item) {
+            return MATCH_URL_YOUTUBE.test(item);
+        });
+        return MATCH_URL_YOUTUBE.test(url);
+    },
+    soundcloud: function soundcloud(url) {
+        return MATCH_URL_SOUNDCLOUD.test(url) && !AUDIO_EXTENSIONS.test(url);
+    },
+    vimeo: function vimeo(url) {
+        return MATCH_URL_VIMEO.test(url) && !VIDEO_EXTENSIONS.test(url) && !HLS_EXTENSIONS.test(url);
+    },
+    facebook: function facebook(url) {
+        return MATCH_URL_FACEBOOK.test(url) || MATCH_URL_FACEBOOK_WATCH.test(url);
+    },
+    streamable: function streamable(url) {
+        return MATCH_URL_STREAMABLE.test(url);
+    },
+    wistia: function wistia(url) {
+        return MATCH_URL_WISTIA.test(url);
+    },
+    twitch: function twitch(url) {
+        return MATCH_URL_TWITCH_VIDEO.test(url) || MATCH_URL_TWITCH_CHANNEL.test(url);
+    },
+    dailymotion: function dailymotion(url) {
+        return MATCH_URL_DAILYMOTION.test(url);
+    },
+    mixcloud: function mixcloud(url) {
+        return MATCH_URL_MIXCLOUD.test(url);
+    },
+    vidyard: function vidyard(url) {
+        return MATCH_URL_VIDYARD.test(url);
+    },
+    kaltura: function kaltura(url) {
+        return MATCH_URL_KALTURA.test(url);
+    },
+    file: canPlayFile
+};
+exports.canPlay = canPlay;
+
+},{"./utils":"2twkn"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
 
 //# sourceMappingURL=index.ac262268.js.map

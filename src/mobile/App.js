@@ -1,6 +1,8 @@
+import Stories from "@reactrondev/react-stories";
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import ReactNipple from "sb-react-nipple";
+import ReactPlayer from "react-player/youtube";
 
 // optional: include the stylesheet somewhere in your app
 import "react-nipple/lib/styles.css";
@@ -18,6 +20,17 @@ import arrowLeft from "./arrow-left.svg";
 import arrowRight from "./arrow-right.svg";
 import btOff from "./bt-off.png";
 import btOn from "./bt-on.png";
+
+import StoryZero from "./stories/image-0.png";
+import StoryOne from "./stories/image-1.png";
+import StoryTwo from "./stories/image-2.png";
+import StoryThree from "./stories/image-3.png";
+import StoryFour from "./stories/image-4.png";
+import StoryFive from "./stories/image-5.png";
+import StorySix from "./stories/image-6.png";
+import StorySeven from "./stories/image-7.png";
+// import VideoTransform from "./stories"
+import LogoVale from "./stories/vale-logo.jpeg";
 
 window.hasDebug = false;
 
@@ -603,6 +616,85 @@ export function App() {
     );
   };
 
+  const stories = [
+    {
+      url: anuncio,
+      header: {
+        heading: "Vale",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StoryZero,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StoryTwo,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StoryThree,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StoryFour,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StoryFive,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StorySix,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+    {
+      url: StorySeven,
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      header: {
+        heading: "Vale",
+        // subheading: "Teste 2",
+        profileImage: LogoVale,
+      },
+    },
+
+    {
+      url: "https://pong-core.bolha.com.br/transform.mp4",
+      type: "video",
+      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    },
+  ];
+
   return (
     <div className="bg-stage w-full h-full fixed flex items-center justify-center">
       {/* {JSON.stringify(gameState)} */}
@@ -840,7 +932,7 @@ export function App() {
       )}
       {gameState === "merchan" && (
         <div className="w-full h-full">
-          <img
+          {/* <img
             onClick={() => {
               window.open(
                 "https://www.vale.com/brasil/pt/Paginas/default.aspx"
@@ -848,6 +940,13 @@ export function App() {
             }}
             src={anuncio}
             className="w-full h-full object-contain"
+          /> */}
+
+          <Stories
+            stories={stories}
+            defaultInterval={1500}
+            width={window.innerWidth}
+            height={window.innerHeight}
           />
         </div>
       )}
