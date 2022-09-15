@@ -978,15 +978,16 @@ export function App() {
             </p>
 
             <div
-              className={`controller-button w-auto flex items-center justify-center`}
+              onClick={() => {
+                alert("merchan");
+                setGameState("merchan");
+              }}
+              className={`controller-button w-auto flex items-center justify-center relative`}
             >
               <img
                 className={
-                  "w-full md:w-auto max-w-full h-auto scale-down px-12"
+                  "w-full md:w-auto max-w-full h-auto scale-down px-12 absolute z-30"
                 }
-                onClick={() => {
-                  setGameState("merchan");
-                }}
                 src={btsaibamais}
               />
             </div>
