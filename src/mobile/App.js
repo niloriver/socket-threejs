@@ -979,7 +979,7 @@ export function App() {
 
             <div
               onClick={() => {
-                alert("merchan");
+                // alert("merchan");
                 setGameState("merchan");
               }}
               className={`controller-button w-auto flex items-center justify-center relative`}
