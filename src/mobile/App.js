@@ -42,6 +42,28 @@ window.modoRaquete = false;
 window.gameState = "starting";
 window.human = false;
 
+window.oncontextmenu = function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  return false;
+};
+
+function absorbEvent_(event) {
+  var e = event || window.event;
+  e.preventDefault && e.preventDefault();
+  e.stopPropagation && e.stopPropagation();
+  e.cancelBubble = true;
+  e.returnValue = false;
+  return false;
+}
+
+function preventLongPressMenu(node) {
+  node.ontouchstart = absorbEvent_;
+  node.ontouchmove = absorbEvent_;
+  node.ontouchend = absorbEvent_;
+  node.ontouchcancel = absorbEvent_;
+}
+
 window.md = new MobileDetect(window.navigator.userAgent);
 
 var iosAccept = false;
@@ -192,6 +214,12 @@ export function App() {
 
       if (payload.gamestate === "playing") {
         setGameState("playing");
+
+        setTimeout(() => {
+          preventLongPressMenu(document.getElementById("arrowLeftID"));
+
+          preventLongPressMenu(document.getElementById("arrowRightID"));
+        }, 1000);
       }
       if (payload.gamestate === "scoring") {
         if (window.human) {
@@ -987,7 +1015,7 @@ export function App() {
         human.avatarImg && (
           <div
             className={
-              "w-full h-full screen-playing flex flex-col items-center justify-between select-none"
+              "w-full select-none h-full screen-playing flex flex-col items-center justify-between select-none"
             }
           >
             {window.hasDebug && (
@@ -1022,7 +1050,7 @@ export function App() {
               {!modoRaquete && (
                 <div
                   className={
-                    "w-full h-auto flex flex-wrap flex-row justify-between arrows-container px-8"
+                    "w-full select-none h-auto flex flex-wrap flex-row justify-between arrows-container px-8"
                   }
                 >
                   <div
@@ -1032,9 +1060,9 @@ export function App() {
                         : "controller-button"
                     }  ${
                       modoRaquete ? "opacity-0" : ""
-                    } flex items-center justify-center`}
+                    } flex items-center justify-center select-none`}
                   >
-                    <img src={arrowLeft} />
+                    <img id="arrowLeftID" src={arrowLeft} />
                   </div>
 
                   <div
@@ -1044,9 +1072,9 @@ export function App() {
                         : "controller-button"
                     } ${
                       modoRaquete ? "opacity-0" : ""
-                    } flex items-center justify-center`}
+                    } select-none flex items-center justify-center select-none`}
                   >
-                    <img src={arrowRight} />
+                    <img id="arrowRightID" src={arrowRight} />
                   </div>
                 </div>
               )}
