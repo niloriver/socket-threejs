@@ -28429,7 +28429,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./footer_mobiles.svg":"cMRTU","./btcontinuar.svg":"hUc4d","./anuncio.png":"iLu3k","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@reactrondev/react-stories":"kdbDp","./stories/image-0.png":"5jjf2","./stories/image-1.png":"iRuFj","./stories/image-2.png":"iLDOK","./stories/image-3.png":"2jfwe","./stories/image-4.png":"iGVak","./stories/image-5.png":"ip0gc","./stories/image-6.png":"dqnIn","./stories/image-7.png":"2OBQ3","./stories/vale-logo.jpeg":"dADhw","react-player/youtube":"8GJfE"}],"8HBJR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./footer_mobiles.svg":"cMRTU","./btcontinuar.svg":"hUc4d","./anuncio.png":"iLu3k","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@reactrondev/react-stories":"kdbDp","react-player/youtube":"8GJfE","./stories/image-0.png":"5jjf2","./stories/image-1.png":"iRuFj","./stories/image-2.png":"iLDOK","./stories/image-3.png":"2jfwe","./stories/image-4.png":"iGVak","./stories/image-5.png":"ip0gc","./stories/image-6.png":"dqnIn","./stories/image-7.png":"2OBQ3","./stories/vale-logo.jpeg":"dADhw"}],"8HBJR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /**
@@ -38946,34 +38946,7 @@ ReactInstaStories.propTypes = {
 };
 exports.default = ReactInstaStories;
 
-},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5jjf2":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-0.71c7d3e9.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"iRuFj":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-1.10810cd5.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"iLDOK":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-2.541eed62.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"2jfwe":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-3.1e3f6731.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"iGVak":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-4.5248ff9c.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"ip0gc":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-5.9f9a0ca0.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"dqnIn":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-6.cc88d68d.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"2OBQ3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-7.e3f49af3.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"dADhw":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "vale-logo.32922acd.jpeg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"8GJfE":[function(require,module,exports) {
+},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8GJfE":[function(require,module,exports) {
 var createReactPlayer = require("./lib/ReactPlayer").createReactPlayer;
 var Player = require("./lib/players/YouTube").default;
 module.exports = createReactPlayer([
@@ -41121,6 +41094,33 @@ var canPlay = {
 };
 exports.canPlay = canPlay;
 
-},{"./utils":"2twkn"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
+},{"./utils":"2twkn"}],"5jjf2":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-0.71c7d3e9.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iRuFj":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-1.10810cd5.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iLDOK":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-2.541eed62.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2jfwe":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-3.1e3f6731.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"iGVak":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-4.5248ff9c.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"ip0gc":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-5.9f9a0ca0.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dqnIn":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-6.cc88d68d.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2OBQ3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-7.e3f49af3.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dADhw":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "vale-logo.32922acd.jpeg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
 
 //# sourceMappingURL=index.ac262268.js.map

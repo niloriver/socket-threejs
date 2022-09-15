@@ -7,6 +7,13 @@ import _ from "lodash";
 import Gun from "gun";
 import path from "path";
 
+import fs from "fs";
+
+let rawdata = fs.readFileSync(path.join(path.resolve(), "database.json"));
+let dataLoaded = JSON.parse(rawdata);
+
+console.log("DATA_BASE", dataLoaded);
+
 const app = express();
 app.use(Gun.serve);
 
@@ -79,9 +86,9 @@ var masterID = null;
 var masterCLIENT = null;
 
 // GAME STATISTICS
-var rootTotalPlayers = 0,
-  rootTotalBotWins = 0,
-  rootTotalHumansWins = 0;
+var rootTotalPlayers = dataLoaded.totalPlayers || 0,
+  rootTotalBotWins = dataLoaded.totalBot || 0,
+  rootTotalHumansWins = dataLoaded.totalPlayers || 0;
 
 // UTILS
 
@@ -186,6 +193,21 @@ const newSession = (currentState) => {
   });
 };
 
+const updateDB = () => {
+  let update = {
+    totalBot: rootTotalBotWins,
+    totalHumans: rootTotalHumansWins,
+    totalPlayers: rootTotalPlayers,
+  };
+
+  let data = JSON.stringify(update);
+  // fs.writeFileSync("database.json", data);
+  fs.writeFile("database.json", JSON.stringify(data), function (err) {
+    if (err) throw err;
+    console.log("complete");
+  });
+};
+
 const firstPlayerToJoin = (userId, currentState) => {
   // JA TEM COUNTDOWN
   if (countElapsed > 0 && roomStarting) {
@@ -275,6 +297,10 @@ io.sockets.on("connection", (socket) => {
       playerName,
     };
 
+    rootTotalPlayers += 1;
+
+    updateDB();
+
     // RETORNA COM GAMESTATE ATUAL
     console.log("AUTHING_USER", loggedPeers[userId]);
 
@@ -337,6 +363,10 @@ io.sockets.on("connection", (socket) => {
       .on((rs, name) => {
         // console.log("ALL_GAME_STATES[" + name + "]", rs);
       });
+
+    console.log("SENDING_STATE_TOTALPLAYERS", rootTotalPlayers);
+    console.log("SENDING_STATE_TOTALBOT", rootTotalBotWins);
+    console.log("SENDING_STATE_TOTALHUMANS", rootTotalBotWins);
 
     io.to(socket.id).emit("deliver-state", {
       gamestate: getGameState(),
@@ -466,6 +496,14 @@ io.sockets.on("connection", (socket) => {
     //       io.sockets.sockets[socketId].leave(roomId)
     //     );
     //   });
+
+    if (results.winner === "bot") {
+      rootTotalBotWins += 1;
+    } else {
+      rootTotalHumansWins += 1;
+    }
+
+    updateDB();
 
     console.log("PONG+GAME+OVER");
     // MUDA GAME STATE PARA GAMEOVER
