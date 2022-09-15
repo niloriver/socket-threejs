@@ -1,4 +1,4 @@
-import Stories from "@reactrondev/react-stories";
+import Stories from "react-insta-stories";
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import ReactNipple from "sb-react-nipple";
@@ -617,83 +617,106 @@ export function App() {
   };
 
   const stories = [
+    StoryZero,
+    StoryOne,
+    StoryTwo,
+    StoryThree,
+    StoryFour,
+    StoryFive,
+    StorySix,
+    StorySeven,
     {
-      url: anuncio,
-      header: {
-        heading: "Vale",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StoryZero,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StoryTwo,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StoryThree,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StoryFour,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StoryFive,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StorySix,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-    {
-      url: StorySeven,
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-      header: {
-        heading: "Vale",
-        // subheading: "Teste 2",
-        profileImage: LogoVale,
-      },
-    },
-
-    {
-      url: "https://pong-core.bolha.com.br/transform.mp4",
-      type: "video",
-      // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+      content: (props) => (
+        <div style={{ background: "black" }}>
+          <ReactPlayer
+            playing
+            width={window.innerWidth}
+            height={window.innerHeight}
+            url="https://www.youtube.com/watch?v=IEflR5QD-0I"
+          />
+        </div>
+      ),
     },
   ];
+
+  // const stories = [
+  //   {
+  //     url: anuncio,
+  //     header: {
+  //       heading: "Vale",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StoryZero,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StoryTwo,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StoryThree,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StoryFour,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StoryFive,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StorySix,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+  //   {
+  //     url: StorySeven,
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //     header: {
+  //       heading: "Vale",
+  //       // subheading: "Teste 2",
+  //       profileImage: LogoVale,
+  //     },
+  //   },
+
+  //   {
+  //     url: "https://pong-core.bolha.com.br/transform.mp4",
+  //     type: "video",
+  //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+  //   },
+  // ];
 
   return (
     <div className="bg-stage w-full h-full fixed flex items-center justify-center">
@@ -941,12 +964,19 @@ export function App() {
             src={anuncio}
             className="w-full h-full object-contain"
           /> */}
-
+          {/* 
           <Stories
             stories={stories}
             defaultInterval={1500}
             width={window.innerWidth}
             height={window.innerHeight}
+          /> */}
+
+          <Stories
+            stories={stories}
+            defaultInterval={1500}
+            width={432}
+            height={768}
           />
         </div>
       )}
@@ -1019,7 +1049,22 @@ export function App() {
                   </div>
                 </div>
               )}
-              {modoRaquete && <RenderVolume />}
+              {modoRaquete && (
+                <div className="w-full flex flex-col">
+                  <RenderVolume />
+                  <div className="w-full">
+                    <p
+                      id={"data-form-message"}
+                      className={
+                        "basic-messages w-full text-center mb-2 typewriter"
+                      }
+                    >
+                      Movimente o seu telefone para controlar o jogo
+                      {/* ({gameRoom || "no-room"}) */}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
 
             {!optOut && (

@@ -27059,8 +27059,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactStories = require("@reactrondev/react-stories");
-var _reactStoriesDefault = parcelHelpers.interopDefault(_reactStories);
+var _reactInstaStories = require("react-insta-stories");
+var _reactInstaStoriesDefault = parcelHelpers.interopDefault(_reactInstaStories);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _socketIoClient = require("socket.io-client");
@@ -27614,81 +27614,113 @@ function App() {
         }, this);
     };
     const stories = [
+        (0, _image0PngDefault.default),
+        (0, _image1PngDefault.default),
+        (0, _image2PngDefault.default),
+        (0, _image3PngDefault.default),
+        (0, _image4PngDefault.default),
+        (0, _image5PngDefault.default),
+        (0, _image6PngDefault.default),
+        (0, _image7PngDefault.default),
         {
-            url: (0, _anuncioPngDefault.default),
-            header: {
-                heading: "Vale",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image0PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image2PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image3PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image4PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image5PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image6PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: (0, _image7PngDefault.default),
-            // seeMore: <div className="px-8 h-10">Saiba mais</div>,
-            header: {
-                heading: "Vale",
-                // subheading: "Teste 2",
-                profileImage: (0, _valeLogoJpegDefault.default)
-            }
-        },
-        {
-            url: "https://pong-core.bolha.com.br/transform.mp4",
-            type: "video"
+            content: (props)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    style: {
+                        background: "black"
+                    },
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _youtubeDefault.default), {
+                        playing: true,
+                        width: window.innerWidth,
+                        height: window.innerHeight,
+                        url: "https://www.youtube.com/watch?v=IEflR5QD-0I"
+                    }, void 0, false, {
+                        fileName: "src/mobile/App.js",
+                        lineNumber: 631,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/mobile/App.js",
+                    lineNumber: 630,
+                    columnNumber: 9
+                }, this)
         }, 
     ];
+    // const stories = [
+    //   {
+    //     url: anuncio,
+    //     header: {
+    //       heading: "Vale",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StoryZero,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StoryTwo,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StoryThree,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StoryFour,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StoryFive,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StorySix,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: StorySeven,
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //     header: {
+    //       heading: "Vale",
+    //       // subheading: "Teste 2",
+    //       profileImage: LogoVale,
+    //     },
+    //   },
+    //   {
+    //     url: "https://pong-core.bolha.com.br/transform.mp4",
+    //     type: "video",
+    //     // seeMore: <div className="px-8 h-10">Saiba mais</div>,
+    //   },
+    // ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bg-stage w-full h-full fixed flex items-center justify-center",
         children: [
@@ -27702,14 +27734,14 @@ function App() {
                             "PONG AGAINST ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 715,
+                                lineNumber: 738,
                                 columnNumber: 26
                             }, this),
                             "THE MACHINE"
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 710,
+                        lineNumber: 733,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27721,7 +27753,7 @@ function App() {
                                 children: "Qual seu player name?"
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 720,
+                                lineNumber: 743,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27736,17 +27768,17 @@ function App() {
                                         className: "w-full input-outline"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 731,
+                                        lineNumber: 754,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 728,
+                                    lineNumber: 751,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 727,
+                                lineNumber: 750,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27761,18 +27793,18 @@ function App() {
                                     src: (0, _btcontinuarSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 748,
+                                    lineNumber: 771,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 741,
+                                lineNumber: 764,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 719,
+                        lineNumber: 742,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27782,18 +27814,18 @@ function App() {
                             src: (0, _footerMobilesSvgDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 763,
+                            lineNumber: 786,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 758,
+                        lineNumber: 781,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 704,
+                lineNumber: 727,
                 columnNumber: 9
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch > 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27815,17 +27847,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 782,
+                                                lineNumber: 805,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 781,
+                                            lineNumber: 804,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 780,
+                                        lineNumber: 803,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27838,25 +27870,25 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 796,
+                                                    lineNumber: 819,
                                                     columnNumber: 41
                                                 }, this),
                                                 "se liga que o jogo j\xe1 vai come\xe7ar..."
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 790,
+                                            lineNumber: 813,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 789,
+                                        lineNumber: 812,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 779,
+                                lineNumber: 802,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27867,7 +27899,7 @@ function App() {
                                         children: timeToMatch
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 803,
+                                        lineNumber: 826,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27875,19 +27907,19 @@ function App() {
                                         children: "segundos"
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 807,
+                                        lineNumber: 830,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 802,
+                                lineNumber: 825,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 778,
+                        lineNumber: 801,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27897,18 +27929,18 @@ function App() {
                             src: (0, _footerMobilesSvgDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 815,
+                            lineNumber: 838,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 810,
+                        lineNumber: 833,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 772,
+                lineNumber: 795,
                 columnNumber: 11
             }, this),
             (gameState === "waiting" || gameState === "iddle") && timeToMatch === 0 && human && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27929,17 +27961,17 @@ function App() {
                                             src: `data:image/svg+xml;base64,${human.avatarImg}`
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 833,
+                                            lineNumber: 856,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 832,
+                                        lineNumber: 855,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 831,
+                                    lineNumber: 854,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27953,14 +27985,14 @@ function App() {
                                                 ", ",
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                     fileName: "src/mobile/App.js",
-                                                    lineNumber: 847,
+                                                    lineNumber: 870,
                                                     columnNumber: 41
                                                 }, this),
                                                 "t\xe1 tudo certo!"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 841,
+                                            lineNumber: 864,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27969,24 +28001,24 @@ function App() {
                                             children: "Estamos calibrando o PONG para a pr\xf3xima partida. Espera s\xf3 um pouco mais, \xe9 coisa r\xe1pida."
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 850,
+                                            lineNumber: 873,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 840,
+                                    lineNumber: 863,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 830,
+                            lineNumber: 853,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 829,
+                        lineNumber: 852,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27996,18 +28028,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 867,
+                            lineNumber: 890,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 862,
+                        lineNumber: 885,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 823,
+                lineNumber: 846,
                 columnNumber: 11
             }, this),
             gameState === "gameover-mobile" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28028,12 +28060,12 @@ function App() {
                                             children: "Fim de jogo"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 885,
+                                            lineNumber: 908,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 884,
+                                        lineNumber: 907,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28047,7 +28079,7 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 888,
+                                                lineNumber: 911,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28058,29 +28090,29 @@ function App() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 891,
+                                                lineNumber: 914,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 887,
+                                        lineNumber: 910,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 883,
+                                lineNumber: 906,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 882,
+                            lineNumber: 905,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 881,
+                        lineNumber: 904,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28093,20 +28125,20 @@ function App() {
                                     "A Vale tem um ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 906,
+                                        lineNumber: 929,
                                         columnNumber: 29
                                     }, this),
                                     " recado especial ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 906,
+                                        lineNumber: 929,
                                         columnNumber: 52
                                     }, this),
                                     "para voc\xea"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 900,
+                                lineNumber: 923,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28119,18 +28151,18 @@ function App() {
                                     src: (0, _btsaibamaisSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 913,
+                                    lineNumber: 936,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 910,
+                                lineNumber: 933,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 899,
+                        lineNumber: 922,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28140,35 +28172,35 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 929,
+                            lineNumber: 952,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 924,
+                        lineNumber: 947,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 873,
+                lineNumber: 896,
                 columnNumber: 9
             }, this),
             gameState === "merchan" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "w-full h-full",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactStoriesDefault.default), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactInstaStoriesDefault.default), {
                     stories: stories,
                     defaultInterval: 1500,
-                    width: window.innerWidth,
-                    height: window.innerHeight
+                    width: 432,
+                    height: 768
                 }, void 0, false, {
                     fileName: "src/mobile/App.js",
-                    lineNumber: 945,
+                    lineNumber: 975,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 934,
+                lineNumber: 957,
                 columnNumber: 9
             }, this),
             (gameState === "playing" || gameState === "scoring") && human && human.avatarImg && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28180,7 +28212,7 @@ function App() {
                         children: "-"
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 963,
+                        lineNumber: 993,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28197,17 +28229,17 @@ function App() {
                                                 src: `data:image/svg+xml;base64,${human.avatarImg}`
                                             }, void 0, false, {
                                                 fileName: "src/mobile/App.js",
-                                                lineNumber: 974,
+                                                lineNumber: 1004,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 973,
+                                            lineNumber: 1003,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 972,
+                                        lineNumber: 1002,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28218,18 +28250,18 @@ function App() {
                                             children: "E t\xe1 valendo!"
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 979,
+                                            lineNumber: 1009,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 978,
+                                        lineNumber: 1008,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 971,
+                                lineNumber: 1001,
                                 columnNumber: 15
                             }, this),
                             !modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28241,12 +28273,12 @@ function App() {
                                             src: (0, _arrowLeftSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 1006,
+                                            lineNumber: 1036,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 997,
+                                        lineNumber: 1027,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28255,29 +28287,54 @@ function App() {
                                             src: (0, _arrowRightSvgDefault.default)
                                         }, void 0, false, {
                                             fileName: "src/mobile/App.js",
-                                            lineNumber: 1018,
+                                            lineNumber: 1048,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 1009,
+                                        lineNumber: 1039,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 992,
+                                lineNumber: 1022,
                                 columnNumber: 17
                             }, this),
-                            modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RenderVolume, {}, void 0, false, {
+                            modoRaquete && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-full flex flex-col",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RenderVolume, {}, void 0, false, {
+                                        fileName: "src/mobile/App.js",
+                                        lineNumber: 1054,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "w-full",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            id: "data-form-message",
+                                            className: "basic-messages w-full text-center mb-2 typewriter",
+                                            children: "Movimente o seu telefone para controlar o jogo"
+                                        }, void 0, false, {
+                                            fileName: "src/mobile/App.js",
+                                            lineNumber: 1056,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/mobile/App.js",
+                                        lineNumber: 1055,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/mobile/App.js",
-                                lineNumber: 1022,
-                                columnNumber: 31
+                                lineNumber: 1053,
+                                columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 970,
+                        lineNumber: 1000,
                         columnNumber: 13
                     }, this),
                     !optOut && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28295,12 +28352,12 @@ function App() {
                                         src: !modoRaquete ? (0, _btOffPngDefault.default) : (0, _btOnPngDefault.default)
                                     }, void 0, false, {
                                         fileName: "src/mobile/App.js",
-                                        lineNumber: 1035,
+                                        lineNumber: 1080,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 1033,
+                                    lineNumber: 1078,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28308,18 +28365,18 @@ function App() {
                                     children: modoRaquete ? "motion" : "touch"
                                 }, void 0, false, {
                                     fileName: "src/mobile/App.js",
-                                    lineNumber: 1040,
+                                    lineNumber: 1085,
                                     columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 1032,
+                            lineNumber: 1077,
                             columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 1026,
+                        lineNumber: 1071,
                         columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28375,12 +28432,12 @@ function App() {
                             }
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 1048,
+                            lineNumber: 1093,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 1047,
+                        lineNumber: 1092,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28390,18 +28447,18 @@ function App() {
                             src: (0, _bolhaPngDefault.default)
                         }, void 0, false, {
                             fileName: "src/mobile/App.js",
-                            lineNumber: 1109,
+                            lineNumber: 1154,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "src/mobile/App.js",
-                        lineNumber: 1104,
+                        lineNumber: 1149,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 957,
+                lineNumber: 987,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28409,13 +28466,13 @@ function App() {
                 children: "MOBILE_CONTROLLER_NOT_DESK"
             }, void 0, false, {
                 fileName: "src/mobile/App.js",
-                lineNumber: 1113,
+                lineNumber: 1158,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/mobile/App.js",
-        lineNumber: 699,
+        lineNumber: 722,
         columnNumber: 5
     }, this);
 }
@@ -28429,7 +28486,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./footer_mobiles.svg":"cMRTU","./btcontinuar.svg":"hUc4d","./anuncio.png":"iLu3k","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@reactrondev/react-stories":"kdbDp","react-player/youtube":"8GJfE","./stories/image-0.png":"5jjf2","./stories/image-1.png":"iRuFj","./stories/image-2.png":"iLDOK","./stories/image-3.png":"2jfwe","./stories/image-4.png":"iGVak","./stories/image-5.png":"ip0gc","./stories/image-6.png":"dqnIn","./stories/image-7.png":"2OBQ3","./stories/vale-logo.jpeg":"dADhw"}],"8HBJR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","socket.io-client":"8HBJR","sb-react-nipple":"kmG2V","react-nipple/lib/styles.css":"lDhEl","@dicebear/avatars":"5lNfS","@dicebear/avatars-identicon-sprites":"jZLp4","./bolha.png":"7h5mW","./footer_mobiles.svg":"cMRTU","./btcontinuar.svg":"hUc4d","./anuncio.png":"iLu3k","./btsaibamais.svg":"jr9wr","./arrow-left.svg":"e0DJf","./arrow-right.svg":"i3Qgr","./bt-off.png":"72r3r","./bt-on.png":"2UPil","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-player/youtube":"8GJfE","./stories/image-0.png":"5jjf2","./stories/image-1.png":"iRuFj","./stories/image-2.png":"iLDOK","./stories/image-3.png":"2jfwe","./stories/image-4.png":"iGVak","./stories/image-5.png":"ip0gc","./stories/image-6.png":"dqnIn","./stories/image-7.png":"2OBQ3","./stories/vale-logo.jpeg":"dADhw","react-insta-stories":"iuzFH"}],"8HBJR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /**
@@ -38116,837 +38173,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"kdbDp":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var Header = function Header(_ref) {
-    var profileImage = _ref.profileImage, heading = _ref.heading, subheading = _ref.subheading;
-    return (0, _reactDefault.default).createElement("div", {
-        style: styles.main
-    }, profileImage && (0, _reactDefault.default).createElement("img", {
-        style: styles.img,
-        src: profileImage
-    }), (0, _reactDefault.default).createElement("span", {
-        style: styles.text
-    }, (0, _reactDefault.default).createElement("p", {
-        style: styles.heading
-    }, heading), (0, _reactDefault.default).createElement("p", {
-        style: styles.subheading
-    }, subheading)));
-};
-var styles = {
-    main: {
-        display: "flex",
-        alignItems: "center"
-    },
-    img: {
-        width: 40,
-        height: 40,
-        borderRadius: 40,
-        marginRight: 10,
-        filter: "drop-shadow(0 0px 2px rgba(0, 0, 0, 0.5))",
-        border: "2px solid rgba(255, 255, 255, 0.8)"
-    },
-    text: {
-        display: "flex",
-        flexDirection: "column",
-        filter: "drop-shadow(0 0px 3px rgba(0, 0, 0, 0.9))"
-    },
-    heading: {
-        fontSize: "1rem",
-        color: "rgba(255, 255, 255, 0.9)"
-    },
-    subheading: {
-        fontSize: "0.6rem",
-        color: "rgba(255, 255, 255, 0.8)"
-    }
-};
-Header.propTypes = {
-    heading: (0, _propTypesDefault.default).string,
-    subheading: (0, _propTypesDefault.default).string,
-    profileImage: (0, _propTypesDefault.default).string
-};
-function styleInject(css, ref) {
-    if (ref === void 0) ref = {};
-    var insertAt = ref.insertAt;
-    if (!css || typeof document === "undefined") return;
-    var head = document.head || document.getElementsByTagName("head")[0];
-    var style = document.createElement("style");
-    style.type = "text/css";
-    if (insertAt === "top") {
-        if (head.firstChild) head.insertBefore(style, head.firstChild);
-        else head.appendChild(style);
-    } else head.appendChild(style);
-    if (style.styleSheet) style.styleSheet.cssText = css;
-    else style.appendChild(document.createTextNode(css));
-}
-var css = "body{\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n}\n\n.styles_inner__x-amJ {\n  background: #fff;\n  height: 100%;\n  max-width: 100%;\n  transform-origin: center left;\n\n  -webkit-backface-visibility: hidden;\n  -moz-backface-visibility: hidden;\n  -ms-backface-visibility: hidden;\n  backface-visibility: hidden;\n\n  -webkit-perspective: 1000;\n  -moz-perspective: 1000;\n  -ms-perspective: 1000;\n  perspective: 1000;\n}\n\np{\n  margin: 0\n}\n\n@keyframes styles_slidein__1q-h- {\n  from { \n    -webkit-transform: scale3d(0, 1, 1);\n    -moz-transform: scale3d(0, 1, 1);\n    -ms-transform: scale3d(0, 1, 1);\n    -o-transform: scale3d(0, 1, 1);\n    transform: scale3d(0, 1, 1); \n  }\n  to { \n    -webkit-transform: scale3d(1, 1, 1);\n    -moz-transform: scale3d(1, 1, 1);\n    -ms-transform: scale3d(1, 1, 1);\n    -o-transform: scale3d(1, 1, 1);\n    transform: scale3d(1, 1, 1); \n  }\n}\n\n.styles_spinner__1CK7F {\n  width: 40px;\n  height: 40px;\n  margin: 100px auto;\n  background-color: #fff;\n\n  border-radius: 100%;  \n  -webkit-animation: styles_sk-scaleout__1hEQ2 1.0s infinite ease-in-out;\n  animation: styles_sk-scaleout__1hEQ2 1.0s infinite ease-in-out;\n}\n\n@-webkit-keyframes styles_sk-scaleout__1hEQ2 {\n  0% { -webkit-transform: scale(0) }\n  100% {\n    -webkit-transform: scale(1.0);\n    opacity: 0;\n  }\n}\n\n@keyframes styles_sk-scaleout__1hEQ2 {\n  0% { \n    -webkit-transform: scale(0);\n    transform: scale(0);\n  } 100% {\n    -webkit-transform: scale(1.0);\n    transform: scale(1.0);\n    opacity: 0;\n  }\n}\n\n.styles_autoHide__83H_q{\n  transition: opacity 400ms ease-in-out\n}\n\n.styles_seeMore__1dyHs{\n  height: 10vh;\n  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  align-items: center;\n  justify-content: flex-end;\n}\n\n.styles_seeMore__1dyHs:hover{\n  cursor: pointer;\n}\n\n.styles_seeMore__1dyHs .styles_seemoreText__1wvli{\n  color: white;\n  text-align: center;\n  letter-spacing: 0.2em;\n  margin-bottom: 2.2vh;\n  text-transform: capitalize;\n  opacity: 0.6;\n  font-size: 0.7em;\n  transition: opacity 300ms ease-in-out  \n}\n\n.styles_seeMore__1dyHs .styles_seemoreIcon__1rAV5{\n  color: white;\n  text-align: center;\n  letter-spacing: 0.2em;\n  margin-bottom: 0.5vh;\n  opacity: 0.6;\n  text-transform: capitalize;\n  transition: opacity 300ms ease-in-out\n}\n\n.styles_seeMore__1dyHs:hover > .styles_seemoreIcon__1rAV5 {\n  opacity: 0.9;\n}\n\n.styles_seeMore__1dyHs:hover > .styles_seemoreText__1wvli {\n  opacity: 0.9;\n}\n\n.styles_seemoreIcon__1rAV5 img {\n  width: 5vh;\n}\n\n.styles_seeMoreExpanded__1l-e8 {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  z-index: 99999;\n}\n\n.styles_seeMoreClose__3jq_i{\n  position: absolute;\n  filter: drop-shadow(0 3px 2px #ccc);\n  right: 0.5rem;\n  top: 0.5rem;\n  font-size: 1.5rem;\n  opacity: 0.7;\n  padding: 1rem\n}\n\n.styles_seeMoreClose__3jq_i:hover{\n  cursor: pointer;\n}";
-var style = {
-    "inner": "styles_inner__x-amJ",
-    "spinner": "styles_spinner__1CK7F",
-    "sk-scaleout": "styles_sk-scaleout__1hEQ2",
-    "autoHide": "styles_autoHide__83H_q",
-    "seeMore": "styles_seeMore__1dyHs",
-    "seemoreText": "styles_seemoreText__1wvli",
-    "seemoreIcon": "styles_seemoreIcon__1rAV5",
-    "seeMoreExpanded": "styles_seeMoreExpanded__1l-e8",
-    "seeMoreClose": "styles_seeMoreClose__3jq_i",
-    "slidein": "styles_slidein__1q-h-"
-};
-styleInject(css);
-var up = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAfDSURBVHic7Z1prB5THMaf6a1agsYSe621tSJC8EEIUUWRtraKShNEbIktoQRRW2JJfEJi+dQPEkttIWiRoBK0jfWiVWoXxa1a7+1t+/PhTNPXa/7zztx3zjnTa37JpM29d87znGXOnDnzP2ekhoaGhoaGhoaGhoaGhqAksQ3kAWwt6XBJ+0vaNz3GpL/equ3PV6T/fi1pcXp8KuntJEn6/LsdGrWqAKBH0pGSJkqaIOlgST1dJrtG0iJJL0uaK+mNJEnWdpnm8AFIgAnAbKAP//SlWhOAWjXAoKQFPxVYFKDQLRYCk/93FQGcDnwQseDbeQ84NXa5eAc4DFgQubDzWAAcGrJMglx6wCaSbpF0haSNSp7+uaTXJC2RtDQ9fpf0h6TB9G82krS5pC0kjZW0d3ocLWnPknqDku6RdFOSJAMlz60fwFjK9fOrgXnARUDZwrP0LwZeAdaU8LGwCv2o4Pr6XwtmeClwBbCjRz87AVcCnxf0tAKY6suPV4BrgLUFMtkLnAOMDOhtJDAD+KSAv7XAVaG8dQ0wArivQMaWp4UQbQiIGwrPAH4q4PdeYEQsr4VIM/Rwgcw8hseupiy4rmlOAd8PxmwwHQHu75CBFcDpsX1a4K6G3zvk4b7YPjMBrutg/DNgXGyfnQAOoPNN+prYPv8FcAb5N9xFwPaxfRYF2AF4Nyc/a6nLkzOwB65rsXgN2DK2z7IAo4HXc/LVB+wW2+TGuAcWi/nAZlFNdgGwGfBmTv4WAKNiGrwpx9wSYLto5ioC1x0tzcnnDbGM7Q8MGKZWAmOjGPMAsHeapywGgP1CG0pwfbvFmUENBQCYlpPfeaHNTMkxMzuomYAAj+Tk+5RQJkbg5m+yWI57kT4sAbbBnrZ4jxBPybhXeBbnezcQGeDCnPyfHMKANSzrpe6TVRUA9ACfGmXwhm/xA3Nqf4ZX8Ww/xwDHRNA9N6ccxvsUvscQ/QwX0xMM4FTcEHCAwNMCuPcJy4yyuNuXaA/wvSEadHIKNwprfQYZACYH9nCtURbf4KMrBo41BFcDO1UuaPtoL/wolQDsgv2O+SgfgncaYs9VLmZ7mJ5WuMVqYHpAPy8YPm7zIfaWIRZk6Ind8tsJdiVgD0nnVy20FXbL271SsWz9Ti2/nSBXArCXoT9IlVPw2P3/V5WJ2NpFW347Qa4E4FtD/+gi5xe9W1uzfdVeam0AUyQ9Ksmac18tF36exShJjwWoBKsMCs2QdlsBHxc8vzRpF/KE7MIfkDRF0uT0/1mMkjTHc3dklUF1U9TAXOMy8xLhQOc+vx+Y1PL3J6U/s/B2T8Cepn6hSpEPDZGDKhNZr9Wpzx8EpmWcNy39nYWXewJwiKH3fpUiXxoiu1YmovItP+P8SQS+EoDdDa1lVYr8YohUNvdfsPBPLJBO0ErAvSPI4ueqNITdJVQSEVBV4bekF6wSgFGGRnVrC4BVhkjZxRZZaXfq81cxhJs9LljM+z0BF5qTRX+3abeKeOmC6Nzy/6ZEy89I/8Q0DYuurwRgWyPtn7pJt13EugkPOTKsYOGfUIF3r5WAiwzM4otuvbeKfGSIDGkYSrFu57QK/Z+G3Y1CF90RgYahLxoi/xmPF0grSMvP0D0BD1cCcLaR3vNFzi86FbHE+Pk+Bc+X5G5Ykm6Wvf3AoKSzkyR5sUy6RUjTnK71Kyvb6ZF0M+VHdlYZWGX2L4pWwGLj56XmO9JlnxMlZc2iDkqaliTJU2XSLKn/pKSzlF0JX0k6LkmSVSWTtcrAKrPyUPF0NO7pcVlLOgO4mc8g4LZIaL0nLGOI7zXocjq6qMjm2DexIQXh4qKOe3H98vGVmS2uf3yq3QvsMMQ09jXKpJ+qw/Lx8EoS2JUuxvndghuijun8l+b5YV5JpmK3GWJhI4NrBPCqUSazfIjVIiylLhAhLKU2gVl1gNCBWanoHYbot8RcKxUYYBPgB6MsbvcpPM4QBTjPm3DNAC7IKQe/y5XID08PGqAbA2KGp6cGJuXU/qXeDUQGuDwn/5XPYVkm3jEM/AbsEsREBHBTz38aefcaI9VuJG+R3pxgRgKCWxn6TE6+wyzSazH0bI6ZK4OaCQBwdU5+n45haCz2/Ho/cHBwU54ADsV+gfQXsfaWI3+rgq+BnaMYqxBgDPaMJ8TaqiA1NwJ4Ocfcx2zA64aB7XDr3yzmEntlaNpCfs4xOVy3q1lOXa5wXHBs3p6cw23DpjWEGvMXBbgsxzAMry3L6vnACczqYLwf9yRZu50HceP8meSHrwDcGNurSZqJhzpkADbcbSsfqGPj+Q9pS+rEn7grJto0Ni6ucxZuLN+JmbF8DgmarYvjg9vPoehnSeq4efcvBN4CoXJwkQ/zC2YY1m9ffwkVjJqA8cCllN++/nW6iJgoSqgPOIyUNFPS9ZI2LXn6j5LelFuN2Cv3aao+SSuTJFmZpj9a0mhJW8tFqo2XNE7SEZLKPn/8LelWSXclSWItgd0wwXUBj5dohaGZzf8hwgMXLh7z60ntLGRD/VBDNwATsYObQvAKcFzscogOLshpJm63Xd8sTrVqMZFWq6c63NTuUfL3KcOXJM2v06cMa1UB7eDeJRwmaa+WY2e5D3muOyT3Ic91x3dyn75ad7xT5495NjQ0NDQ0NDQ0NDQ0NATmHxLcnGvnnDNMAAAAAElFTkSuQmCC";
-function seeMore(props) {
-    return props.showContent ? (0, _reactDefault.default).createElement("div", {
-        className: style.seeMoreExpanded
-    }, props.seeMoreContent, (0, _reactDefault.default).createElement("div", {
-        onClick: function onClick() {
-            props.toggleMore(false);
-            props.action("play");
-        },
-        className: style.seeMoreClose
-    }, (0, _reactDefault.default).createElement("span", null, "✕"))) : (0, _reactDefault.default).createElement("div", {
-        onClick: function onClick() {
-            props.toggleMore(true);
-            props.action("pause");
-        },
-        className: style.seeMore
-    }, (0, _reactDefault.default).createElement("span", {
-        className: style.seemoreIcon
-    }, (0, _reactDefault.default).createElement("img", {
-        src: up
-    })), (0, _reactDefault.default).createElement("span", {
-        className: style.seemoreText
-    }, "Read more"));
-}
-seeMore.propTypes = {
-    seeMoreContent: (0, _propTypesDefault.default).object,
-    showContent: (0, _propTypesDefault.default).bool,
-    action: (0, _propTypesDefault.default).func,
-    toggleMore: (0, _propTypesDefault.default).func
-};
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
-    return typeof obj;
-} : function(obj) {
-    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
-var classCallCheck = function(instance, Constructor) {
-    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
-};
-var createClass = function() {
-    function defineProperties(target, props) {
-        for(var i = 0; i < props.length; i++){
-            var descriptor = props[i];
-            descriptor.enumerable = descriptor.enumerable || false;
-            descriptor.configurable = true;
-            if ("value" in descriptor) descriptor.writable = true;
-            Object.defineProperty(target, descriptor.key, descriptor);
-        }
-    }
-    return function(Constructor, protoProps, staticProps) {
-        if (protoProps) defineProperties(Constructor.prototype, protoProps);
-        if (staticProps) defineProperties(Constructor, staticProps);
-        return Constructor;
-    };
-}();
-var _extends = Object.assign || function(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i];
-        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
-    }
-    return target;
-};
-var inherits = function(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-        constructor: {
-            value: subClass,
-            enumerable: false,
-            writable: true,
-            configurable: true
-        }
-    });
-    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-var possibleConstructorReturn = function(self, call) {
-    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
-var Story = function(_React$Component) {
-    inherits(Story, _React$Component);
-    function Story(props) {
-        classCallCheck(this, Story);
-        var _this = possibleConstructorReturn(this, (Story.__proto__ || Object.getPrototypeOf(Story)).call(this, props));
-        _this.toggleMore = function(show) {
-            _this.setState({
-                showMore: show
-            });
-        };
-        _this.imageLoaded = function() {
-            try {
-                if (_this.pauseId) clearTimeout(_this.pauseId);
-                _this.setState({
-                    loaded: true
-                });
-                _this.props.action("play", true);
-            } catch (e) {
-                console.log(e);
-            }
-        };
-        _this.videoLoaded = function() {
-            try {
-                _this.props.getVideoDuration(_this.vid.duration);
-                _this.vid && _this.vid.play().then(function() {
-                    _this.imageLoaded();
-                }).catch(function(e) {
-                    _this.props.action("pause");
-                    console.log(e);
-                });
-            } catch (e) {
-                console.log(e);
-            }
-        };
-        _this.state = {
-            loaded: false
-        };
-        _this.getStoryContent = _this.getStoryContent.bind(_this);
-        return _this;
-    }
-    createClass(Story, [
-        {
-            key: "componentDidUpdate",
-            value: function componentDidUpdate(prevProps) {
-                var _this2 = this;
-                if (this.props.story !== prevProps.story) {
-                    this.pauseId && clearTimeout(this.pauseId);
-                    this.pauseId = setTimeout(function() {
-                        _this2.setState({
-                            loaded: false
-                        });
-                    }, 300);
-                    this.props.action("pause", true);
-                    this.vid && this.vid.addEventListener("waiting", function() {
-                        _this2.props.action("pause", true);
-                    });
-                    this.vid && this.vid.addEventListener("playing", function() {
-                        _this2.props.action("play", true);
-                    });
-                }
-                if (this.vid && this.props.playState !== prevProps.playState && !this.props.bufferAction) {
-                    if (this.props.playState) this.vid.pause();
-                    else this.vid.play().catch(function(e) {
-                        return console.log(e);
-                    });
-                }
-            }
-        },
-        {
-            key: "getStoryContent",
-            value: function getStoryContent() {
-                var _this3 = this;
-                var source = _typeof(this.props.story) === "object" ? this.props.story.url : this.props.story;
-                var storyContentStyles = this.props.story.styles || this.props.storyContentStyles || styles$1.storyContent;
-                var type = this.props.story.type === "video" ? "video" : "image";
-                return type === "image" ? (0, _reactDefault.default).createElement("img", {
-                    style: storyContentStyles,
-                    src: source,
-                    onLoad: this.imageLoaded
-                }) : type === "video" ? (0, _reactDefault.default).createElement("video", {
-                    ref: function ref(r) {
-                        _this3.vid = r;
-                    },
-                    style: storyContentStyles,
-                    src: source,
-                    controls: false,
-                    onLoadedData: this.videoLoaded,
-                    autoPlay: true,
-                    playsInline: true
-                }) : null;
-            }
-        },
-        {
-            key: "render",
-            value: function render() {
-                var _this4 = this;
-                var isHeader = _typeof(this.props.story) === "object" && this.props.story.header;
-                return (0, _reactDefault.default).createElement("div", {
-                    style: _extends({}, styles$1.story, {
-                        width: this.props.width,
-                        height: this.props.height
-                    })
-                }, this.getStoryContent(), isHeader && (0, _reactDefault.default).createElement("div", {
-                    style: {
-                        position: "absolute",
-                        left: 12,
-                        top: 20,
-                        zIndex: 19
-                    }
-                }, this.props.header ? function() {
-                    return _this4.props.header(_this4.props.story.header);
-                } : (0, _reactDefault.default).createElement(Header, {
-                    heading: this.props.story.header.heading,
-                    subheading: this.props.story.header.subheading,
-                    profileImage: this.props.story.header.profileImage
-                })), !this.state.loaded && (0, _reactDefault.default).createElement("div", {
-                    style: {
-                        width: this.props.width,
-                        height: this.props.height,
-                        position: "absolute",
-                        left: 0,
-                        top: 0,
-                        background: "rgba(0, 0, 0, 0.9)",
-                        zIndex: 9,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        color: "#ccc"
-                    }
-                }, this.props.loader || (0, _reactDefault.default).createElement("div", {
-                    className: style.spinner
-                })), this.props.story.seeMore && (0, _reactDefault.default).createElement("div", {
-                    style: {
-                        position: "absolute",
-                        margin: "auto",
-                        bottom: 0,
-                        zIndex: 9999,
-                        width: "100%"
-                    }
-                }, (0, _reactDefault.default).createElement(seeMore, {
-                    action: this.props.action,
-                    toggleMore: this.toggleMore,
-                    showContent: this.state.showMore,
-                    seeMoreContent: this.props.story.seeMore
-                })));
-            }
-        }
-    ]);
-    return Story;
-}((0, _reactDefault.default).Component);
-var styles$1 = {
-    story: {
-        display: "flex",
-        position: "relative",
-        overflow: "hidden"
-    },
-    storyContent: {
-        width: "auto",
-        maxWidth: "100%",
-        maxHeight: "100%",
-        margin: "auto"
-    }
-};
-Story.propTypes = {
-    story: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).object,
-        (0, _propTypesDefault.default).string
-    ]),
-    height: (0, _propTypesDefault.default).number,
-    width: (0, _propTypesDefault.default).number,
-    action: (0, _propTypesDefault.default).func,
-    loader: (0, _propTypesDefault.default).element,
-    header: (0, _propTypesDefault.default).element,
-    playState: (0, _propTypesDefault.default).bool,
-    getVideoDuration: (0, _propTypesDefault.default).func,
-    bufferAction: (0, _propTypesDefault.default).bool,
-    storyContentStyles: (0, _propTypesDefault.default).object
-};
-var ProgressWrapper = function ProgressWrapper(props) {
-    return (0, _reactDefault.default).createElement("div", {
-        className: style.autoHide,
-        style: _extends({}, styles$2.progress, getProgressWrapperStyle(props))
-    }, props.children);
-};
-var getProgressWrapperStyle = function getProgressWrapperStyle(_ref) {
-    var width = _ref.width, pause = _ref.pause, bufferAction = _ref.bufferAction;
-    return {
-        width: width * 100 + "%",
-        opacity: pause && !bufferAction ? 0 : 1
-    };
-};
-var styles$2 = {
-    progress: {
-        height: 2,
-        maxWidth: "100%",
-        background: "#555",
-        margin: 2
-    }
-};
-ProgressWrapper.propTypes = {
-    children: (0, _propTypesDefault.default).node
-};
-var Progress = function(_React$PureComponent) {
-    inherits(Progress, _React$PureComponent);
-    function Progress() {
-        var _ref;
-        var _temp, _this, _ret;
-        classCallCheck(this, Progress);
-        for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
-        return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Progress.__proto__ || Object.getPrototypeOf(Progress)).call.apply(_ref, [
-            this
-        ].concat(args))), _this), _this.next = function() {
-            _this.props.next();
-        }, _temp), possibleConstructorReturn(_this, _ret);
-    }
-    createClass(Progress, [
-        {
-            key: "componentDidMount",
-            value: function componentDidMount() {
-                if (this.inner) {
-                    this.inner.addEventListener("webkitAnimationEnd", this.next, false);
-                    this.inner.addEventListener("animationend", this.next, false);
-                    this.inner.addEventListener("oanimationend", this.next, false);
-                }
-            }
-        },
-        {
-            key: "render",
-            value: function render() {
-                var _this2 = this;
-                var _props = this.props, width = _props.width, pause = _props.pause, bufferAction = _props.bufferAction, active = _props.active;
-                return (0, _reactDefault.default).createElement(ProgressWrapper, {
-                    width: width,
-                    pause: pause,
-                    bufferAction: bufferAction
-                }, (0, _reactDefault.default).createElement("div", {
-                    ref: function ref(r) {
-                        _this2.inner = r;
-                    },
-                    className: style.inner,
-                    style: getProgressStyle({
-                        active: active,
-                        pause: pause,
-                        duration: this.state.duration
-                    })
-                }));
-            }
-        }
-    ], [
-        {
-            key: "getDerivedStateFromProps",
-            value: function getDerivedStateFromProps(props, state) {
-                var current = props.currentStory;
-                if ((typeof current === "undefined" ? "undefined" : _typeof(current)) === "object") {
-                    if (current.type && props.videoDuration) return {
-                        duration: props.videoDuration * 1000
-                    };
-                    if (current.duration) return {
-                        duration: current.duration
-                    };
-                    return {
-                        duration: props.defaultInterval
-                    };
-                } else return {
-                    duration: props.defaultInterval
-                };
-            }
-        }
-    ]);
-    return Progress;
-}((0, _reactDefault.default).PureComponent);
-var animation = function animation(duration) {
-    return duration + "ms linear 0ms " + style.slidein;
-};
-var animationPlayState = function animationPlayState(pause) {
-    return pause ? "paused" : "running";
-};
-var getProgressStyle = function getProgressStyle(_ref2) {
-    var active = _ref2.active, duration = _ref2.duration, pause = _ref2.pause;
-    switch(active){
-        case 2:
-            return {
-                width: "100%"
-            };
-        case 1:
-            return {
-                animation: animation(duration),
-                animationPlayState: animationPlayState(pause)
-            };
-        case 0:
-            return {
-                width: 0
-            };
-        default:
-            return {
-                width: 0
-            };
-    }
-};
-Progress.propTypes = {
-    width: (0, _propTypesDefault.default).number,
-    defaultInterval: (0, _propTypesDefault.default).number,
-    pause: (0, _propTypesDefault.default).bool,
-    next: (0, _propTypesDefault.default).func,
-    active: (0, _propTypesDefault.default).number,
-    bufferAction: (0, _propTypesDefault.default).bool,
-    videoDuration: (0, _propTypesDefault.default).number,
-    currentStory: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).string,
-        (0, _propTypesDefault.default).object
-    ])
-};
-var ProgressArray = function(_React$Component) {
-    inherits(ProgressArray, _React$Component);
-    function ProgressArray() {
-        classCallCheck(this, ProgressArray);
-        return possibleConstructorReturn(this, (ProgressArray.__proto__ || Object.getPrototypeOf(ProgressArray)).apply(this, arguments));
-    }
-    createClass(ProgressArray, [
-        {
-            key: "render",
-            value: function render() {
-                var _this2 = this;
-                return (0, _reactDefault.default).createElement("div", {
-                    style: styles$3.progressArr
-                }, this.props.length.map(function(i, index) {
-                    return (0, _reactDefault.default).createElement(Progress, {
-                        key: index,
-                        width: 1 / _this2.props.length.length,
-                        next: _this2.props.next,
-                        defaultInterval: _this2.props.defaultInterval,
-                        videoDuration: _this2.props.videoDuration,
-                        currentStory: _this2.props.currentStory,
-                        active: i === _this2.props.progress.id ? 1 : i < _this2.props.progress.id ? 2 : 0,
-                        pause: _this2.props.pause,
-                        bufferAction: _this2.props.bufferAction
-                    });
-                }));
-            }
-        }
-    ]);
-    return ProgressArray;
-}((0, _reactDefault.default).Component);
-var styles$3 = {
-    progressArr: {
-        display: "flex",
-        justifyContent: "center",
-        maxWidth: "100%",
-        flexWrap: "row",
-        position: "absolute",
-        width: "98%",
-        padding: 5,
-        paddingTop: 7,
-        alignSelf: "center",
-        zIndex: 99,
-        filter: "drop-shadow(0 1px 8px #000)"
-    }
-};
-ProgressArray.propTypes = {
-    length: (0, _propTypesDefault.default).array,
-    progress: (0, _propTypesDefault.default).object,
-    pause: (0, _propTypesDefault.default).bool,
-    next: (0, _propTypesDefault.default).func,
-    currentStory: (0, _propTypesDefault.default).oneOfType([
-        (0, _propTypesDefault.default).string,
-        (0, _propTypesDefault.default).object
-    ]),
-    defaultInterval: (0, _propTypesDefault.default).number,
-    videoDuration: (0, _propTypesDefault.default).number,
-    bufferAction: (0, _propTypesDefault.default).bool
-};
-var Container = function(_React$PureComponent) {
-    inherits(Container, _React$PureComponent);
-    function Container(props) {
-        classCallCheck(this, Container);
-        var _this = possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
-        _this.pause = function(action, bufferAction) {
-            _this.setState({
-                pause: action === "pause",
-                bufferAction: bufferAction
-            });
-        };
-        _this.previous = function() {
-            if (_this.state.currentId > 0) _this.setState({
-                currentId: _this.state.currentId - 1,
-                count: 0
-            });
-        };
-        _this.next = function() {
-            if (_this.props.loop) _this.updateNextStoryIdForLoop();
-            else _this.updateNextStoryId();
-        };
-        _this.updateNextStoryIdForLoop = function() {
-            _this.setState({
-                currentId: (_this.state.currentId + 1) % _this.props.stories.length,
-                count: 0
-            });
-        };
-        _this.updateNextStoryId = function() {
-            if (_this.state.currentId < _this.props.stories.length - 1) _this.setState({
-                currentId: _this.state.currentId + 1,
-                count: 0
-            });
-            else _this.props.handleNextUser();
-        };
-        _this.debouncePause = function(e) {
-            e.preventDefault();
-            _this.mousedownId = setTimeout(function() {
-                _this.pause("pause");
-            }, 200);
-        };
-        _this.mouseUp = function(e, type) {
-            e.preventDefault();
-            _this.mousedownId && clearTimeout(_this.mousedownId);
-            if (_this.state.pause) _this.pause("play");
-            else type === "next" ? _this.next() : _this.previous();
-        };
-        _this.getVideoDuration = function(duration) {
-            _this.setState({
-                videoDuration: duration
-            });
-        };
-        _this.toggleMore = function(show) {
-            if (_this.story) {
-                _this.story.toggleMore(show);
-                return true;
-            } else return false;
-        };
-        _this.state = {
-            currentId: 0,
-            pause: true,
-            count: 0,
-            storiesDone: 0
-        };
-        _this.defaultInterval = props.defaultInterval;
-        _this.width = props.width;
-        _this.height = props.height;
-        return _this;
-    }
-    createClass(Container, [
-        {
-            key: "resetState",
-            value: function resetState() {
-                this.setState({
-                    currentId: 0
-                });
-            }
-        },
-        {
-            key: "render",
-            value: function render() {
-                var _this2 = this;
-                return (0, _reactDefault.default).createElement("div", {
-                    style: _extends({}, styles$4.container, {
-                        width: this.width,
-                        height: this.height
-                    })
-                }, (0, _reactDefault.default).createElement(ProgressArray, {
-                    next: this.next,
-                    pause: this.state.pause,
-                    bufferAction: this.state.bufferAction,
-                    videoDuration: this.state.videoDuration,
-                    length: this.props.stories.map(function(_, i) {
-                        return i;
-                    }),
-                    defaultInterval: this.defaultInterval,
-                    currentStory: this.props.stories[this.state.currentId],
-                    progress: {
-                        id: this.state.currentId,
-                        completed: this.state.count / (this.props.stories[this.state.currentId] && this.props.stories[this.state.currentId].duration || this.defaultInterval)
-                    }
-                }), (0, _reactDefault.default).createElement(Story, {
-                    ref: function ref(s) {
-                        return _this2.story = s;
-                    },
-                    action: this.pause,
-                    bufferAction: this.state.bufferAction,
-                    height: this.height,
-                    playState: this.state.pause,
-                    width: this.width,
-                    story: this.props.stories[this.state.currentId],
-                    loader: this.props.loader,
-                    header: this.props.header,
-                    getVideoDuration: this.getVideoDuration,
-                    storyContentStyles: this.props.storyContentStyles
-                }), (0, _reactDefault.default).createElement("div", {
-                    style: styles$4.overlay
-                }, (0, _reactDefault.default).createElement("div", {
-                    style: {
-                        width: "50%",
-                        zIndex: 999
-                    },
-                    onTouchStart: this.debouncePause,
-                    onTouchEnd: function onTouchEnd(e) {
-                        if (_this2.state.currentId === 0) return _this2.props.handlePreviousUser();
-                        return _this2.mouseUp(e, "previous");
-                    },
-                    onMouseDown: this.debouncePause,
-                    onMouseUp: function onMouseUp(e) {
-                        if (_this2.state.currentId === 0) return _this2.props.handlePreviousUser();
-                        return _this2.mouseUp(e, "previous");
-                    }
-                }), (0, _reactDefault.default).createElement("div", {
-                    style: {
-                        width: "50%",
-                        zIndex: 999
-                    },
-                    onTouchStart: this.debouncePause,
-                    onTouchEnd: function onTouchEnd(e) {
-                        if (_this2.state.currentId === _this2.props.stories.length - 1) return _this2.props.handleNextUser();
-                        return _this2.mouseUp(e, "next");
-                    },
-                    onMouseDown: this.debouncePause,
-                    onMouseUp: function onMouseUp(e) {
-                        if (_this2.state.currentId === _this2.props.stories.length - 1) return _this2.props.handleNextUser();
-                        return _this2.mouseUp(e, "next");
-                    }
-                })));
-            }
-        }
-    ]);
-    return Container;
-}((0, _reactDefault.default).PureComponent);
-var styles$4 = {
-    container: {
-        display: "flex",
-        flexDirection: "column",
-        background: "#111",
-        position: "relative"
-    },
-    overlay: {
-        position: "absolute",
-        height: "inherit",
-        width: "inherit",
-        display: "flex"
-    },
-    left: {},
-    right: {}
-};
-Container.propTypes = {
-    stories: (0, _propTypesDefault.default).array,
-    defaultInterval: (0, _propTypesDefault.default).number,
-    width: (0, _propTypesDefault.default).number,
-    height: (0, _propTypesDefault.default).number,
-    loader: (0, _propTypesDefault.default).element,
-    header: (0, _propTypesDefault.default).element,
-    storyContentStyles: (0, _propTypesDefault.default).object,
-    loop: (0, _propTypesDefault.default).bool,
-    handleNextUser: (0, _propTypesDefault.default).Function,
-    handlePreviousUser: (0, _propTypesDefault.default).Function
-};
-Container.defaultProps = {
-    defaultInterval: 4000,
-    width: 360,
-    height: 640
-};
-var ReactInstaStories = function(_Component) {
-    inherits(ReactInstaStories, _Component);
-    function ReactInstaStories(props) {
-        classCallCheck(this, ReactInstaStories);
-        var _this = possibleConstructorReturn(this, (ReactInstaStories.__proto__ || Object.getPrototypeOf(ReactInstaStories)).call(this, props));
-        _this.pause = _this.pause.bind(_this);
-        _this.play = _this.play.bind(_this);
-        _this.previous = _this.previous.bind(_this);
-        _this.next = _this.next.bind(_this);
-        _this.resetStory = _this.resetStory.bind(_this);
-        return _this;
-    }
-    createClass(ReactInstaStories, [
-        {
-            key: "componentDidMount",
-            value: function componentDidMount() {
-                this.props.stories.map(function(s) {
-                    var i = new Image();
-                    if (!((typeof s === "undefined" ? "undefined" : _typeof(s)) === "object" && s.type === "video")) i.src = (typeof s === "undefined" ? "undefined" : _typeof(s)) === "object" ? s.url : s;
-                });
-            }
-        },
-        {
-            key: "resetStory",
-            value: function resetStory() {
-                if (this.c) {
-                    this.c.resetState();
-                    return true;
-                } else return false;
-            }
-        },
-        {
-            key: "pause",
-            value: function pause() {
-                if (this.c) {
-                    this.c.pause("pause");
-                    return true;
-                } else return false;
-            }
-        },
-        {
-            key: "play",
-            value: function play() {
-                if (this.c) {
-                    this.c.pause("play");
-                    return true;
-                } else return false;
-            }
-        },
-        {
-            key: "previous",
-            value: function previous() {
-                if (this.c) {
-                    this.c.previous();
-                    return true;
-                } else return false;
-            }
-        },
-        {
-            key: "next",
-            value: function next() {
-                if (this.c) {
-                    this.c.next();
-                    return true;
-                } else return false;
-            }
-        },
-        {
-            key: "toggleSeeMore",
-            value: function toggleSeeMore(show) {
-                if (this.c) return this.c.toggleMore(show);
-                else return false;
-            }
-        },
-        {
-            key: "render",
-            value: function render() {
-                var _this2 = this;
-                return (0, _reactDefault.default).createElement("div", null, (0, _reactDefault.default).createElement(Container, {
-                    ref: function ref(c) {
-                        return _this2.c = c;
-                    },
-                    stories: this.props.stories,
-                    defaultInterval: this.props.defaultInterval,
-                    width: this.props.width,
-                    height: this.props.height,
-                    loader: this.props.loader,
-                    header: this.props.header,
-                    storyContentStyles: this.props.storyStyles,
-                    loop: this.props.loop,
-                    handlePreviousUser: this.props.handlePreviousUser,
-                    handleNextUser: this.props.handleNextUser
-                }));
-            }
-        }
-    ]);
-    return ReactInstaStories;
-}((0, _react.Component));
-ReactInstaStories.defaultProps = {
-    loop: false
-};
-ReactInstaStories.propTypes = {
-    stories: (0, _propTypesDefault.default).array,
-    defaultInterval: (0, _propTypesDefault.default).number,
-    width: (0, _propTypesDefault.default).number,
-    height: (0, _propTypesDefault.default).number,
-    loader: (0, _propTypesDefault.default).element,
-    header: (0, _propTypesDefault.default).element,
-    storyStyles: (0, _propTypesDefault.default).object,
-    loop: (0, _propTypesDefault.default).bool,
-    handleNextUser: (0, _propTypesDefault.default).Function,
-    handlePreviousUser: (0, _propTypesDefault.default).Function
-};
-exports.default = ReactInstaStories;
-
-},{"react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8GJfE":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"8GJfE":[function(require,module,exports) {
 var createReactPlayer = require("./lib/ReactPlayer").createReactPlayer;
 var Player = require("./lib/players/YouTube").default;
 module.exports = createReactPlayer([
@@ -41121,6 +40348,1520 @@ module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "image-
 },{"./helpers/bundle-url":"lgJ39"}],"dADhw":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("7065G") + "vale-logo.32922acd.jpeg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
+},{"./helpers/bundle-url":"lgJ39"}],"iuzFH":[function(require,module,exports) {
+!function(e, t) {
+    module.exports = t(require("react"));
+}(this, function(e) {
+    return function(e) {
+        var t = {};
+        function r(n) {
+            if (t[n]) return t[n].exports;
+            var o = t[n] = {
+                i: n,
+                l: !1,
+                exports: {}
+            };
+            return e[n].call(o.exports, o, o.exports, r), o.l = !0, o.exports;
+        }
+        return r.m = e, r.c = t, r.d = function(e, t, n) {
+            r.o(e, t) || Object.defineProperty(e, t, {
+                enumerable: !0,
+                get: n
+            });
+        }, r.r = function(e) {
+            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                value: "Module"
+            }), Object.defineProperty(e, "__esModule", {
+                value: !0
+            });
+        }, r.t = function(e, t) {
+            if (1 & t && (e = r(e)), 8 & t) return e;
+            if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+            var n = Object.create(null);
+            if (r.r(n), Object.defineProperty(n, "default", {
+                enumerable: !0,
+                value: e
+            }), 2 & t && "string" != typeof e) for(var o in e)r.d(n, o, (function(t) {
+                return e[t];
+            }).bind(null, o));
+            return n;
+        }, r.n = function(e) {
+            var t = e && e.__esModule ? function() {
+                return e.default;
+            } : function() {
+                return e;
+            };
+            return r.d(t, "a", t), t;
+        }, r.o = function(e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+        }, r.p = "", r(r.s = 7);
+    }([
+        function(t, r) {
+            t.exports = e;
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.initialContext = void 0;
+            var o = n(r(0));
+            t.initialContext = {
+                defaultInterval: 4e3,
+                width: 360,
+                height: 640
+            };
+            var i = o.default.createContext(t.initialContext);
+            t.default = i;
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.initialContext = void 0;
+            var o = n(r(0));
+            t.initialContext = {
+                stories: []
+            };
+            var i = o.default.createContext(t.initialContext);
+            t.default = i;
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var o = n(r(0));
+            t.default = o.default.createContext({
+                currentId: 0,
+                videoDuration: 0,
+                bufferAction: !1,
+                pause: !1,
+                next: function() {}
+            });
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e) {
+                return (n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+                    return typeof e;
+                } : function(e) {
+                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
+                })(e);
+            }
+            var o = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var i = o(r(0)), a = o(r(17));
+            t.default = function(e) {
+                var t = e.story, r = e.globalHeader, o = e.children;
+                return i.default.createElement(i.default.Fragment, null, o, t.header && i.default.createElement("div", {
+                    style: {
+                        position: "absolute",
+                        left: 12,
+                        top: 20,
+                        zIndex: 19
+                    }
+                }, "object" === n(t) ? r ? r(t.header) : i.default.createElement(a.default, {
+                    heading: t.header.heading,
+                    subheading: t.header.subheading,
+                    profileImage: t.header.profileImage
+                }) : null));
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return o(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return o(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function o(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var i = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), a = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), u = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && i(t, e, r);
+                return a(t, e), t;
+            }, l = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var c = u(r(0)), f = l(r(18));
+            t.default = function(e) {
+                var t = e.story, r = e.action, o = e.customCollapsed, i = e.children, a = n(c.useState(!1), 2), u = a[0], l = a[1], s = f.default;
+                return c.default.createElement(c.default.Fragment, null, i, t.seeMore && c.default.createElement("div", {
+                    style: {
+                        position: "absolute",
+                        margin: "auto",
+                        bottom: u ? "unset" : 0,
+                        zIndex: 9999,
+                        width: "100%",
+                        height: u ? "100%" : "auto"
+                    }
+                }, c.default.createElement(s, {
+                    action: r,
+                    toggleMore: function(e) {
+                        r(e ? "pause" : "play"), l(e);
+                    },
+                    showContent: u,
+                    seeMoreContent: t.seeMore,
+                    customCollapsed: o || t.seeMoreCollapsed
+                })));
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var o = n(r(0)), i = n(r(16));
+            t.default = function() {
+                return o.default.createElement(i.default, null);
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e) {
+                return (n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+                    return typeof e;
+                } : function(e) {
+                    return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
+                })(e);
+            }
+            function o(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return i(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return i(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function i(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var a = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), u = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), l = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && a(t, e, r);
+                return u(t, e), t;
+            }, c = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.WithSeeMore = t.WithHeader = void 0;
+            var f = l(r(0)), s = c(r(8)), d = c(r(1)), y = c(r(2)), p = r(13), h = r(14), m = c(r(4)), v = c(r(5)), b = function(e) {
+                var t = e.renderers ? e.renderers.concat(h.renderers) : h.renderers, r = {
+                    width: e.width,
+                    height: e.height,
+                    loader: e.loader,
+                    header: e.header,
+                    storyContainerStyles: e.storyContainerStyles,
+                    storyStyles: e.storyStyles,
+                    loop: e.loop,
+                    defaultInterval: e.defaultInterval,
+                    isPaused: e.isPaused,
+                    currentIndex: e.currentIndex,
+                    onStoryStart: e.onStoryStart,
+                    onStoryEnd: e.onStoryEnd,
+                    onAllStoriesEnd: e.onAllStoriesEnd,
+                    keyboardNavigation: e.keyboardNavigation,
+                    preventDefault: e.preventDefault
+                }, n = o(f.useState({
+                    stories: g(e.stories, t)
+                }), 2), i = n[0], a = n[1];
+                return f.useEffect(function() {
+                    a({
+                        stories: g(e.stories, t)
+                    });
+                }, [
+                    e.stories,
+                    e.renderers
+                ]), f.default.createElement(d.default.Provider, {
+                    value: r
+                }, f.default.createElement(y.default.Provider, {
+                    value: i
+                }, f.default.createElement(s.default, null)));
+            }, g = function(e, t) {
+                return e.map(function(e) {
+                    var r = {};
+                    "string" == typeof e ? (r.url = e, r.type = "image") : "object" === n(e) && (r = Object.assign(r, e));
+                    var o = p.getRenderer(r, t);
+                    return r.originalContent = r.content, r.content = o, r;
+                });
+            };
+            b.defaultProps = {
+                width: 360,
+                height: 640,
+                defaultInterval: 4e3
+            }, t.WithHeader = m.default, t.WithSeeMore = v.default, t.default = b;
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return o(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return o(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function o(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var i = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), a = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), u = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && i(t, e, r);
+                return a(t, e), t;
+            }, l = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var c = u(r(0)), f = l(r(1)), s = l(r(2)), d = l(r(3)), y = l(r(9)), p = l(r(10));
+            t.default = function() {
+                var e = n(c.useState(0), 2), t = e[0], r = e[1], o = n(c.useState(!0), 2), i = o[0], a = o[1], u = n(c.useState(!0), 2), l = u[0], m = u[1], v = n(c.useState(0), 2), b = v[0], g = v[1], _ = c.useRef(), O = c.useRef(!0), j = c.useContext(f.default), S = j.width, w = j.height, x = j.loop, M = j.currentIndex, E = j.isPaused, P = j.keyboardNavigation, A = j.preventDefault, C = j.storyContainerStyles, I = void 0 === C ? {} : C, D = c.useContext(s.default).stories;
+                c.useEffect(function() {
+                    "number" == typeof M && (M >= 0 && M < D.length ? R(function() {
+                        return M;
+                    }) : console.error("Index out of bounds. Current index was set to value more than the length of stories array.", M));
+                }, [
+                    M
+                ]), c.useEffect(function() {
+                    "boolean" == typeof E && a(E);
+                }, [
+                    E
+                ]), c.useEffect(function() {
+                    if ("undefined" != typeof window && window.document && "boolean" == typeof P && P) return document.addEventListener("keydown", k), function() {
+                        document.removeEventListener("keydown", k);
+                    };
+                }, [
+                    P
+                ]), c.useEffect(function() {
+                    return function() {
+                        O.current = !1;
+                    };
+                }, []);
+                var k = function(e) {
+                    "ArrowLeft" === e.key ? z() : "ArrowRight" === e.key && B();
+                }, T = function(e, t) {
+                    a("pause" === e), m(!!t);
+                }, R = function(e) {
+                    r(e), T("pause", !0);
+                }, z = function() {
+                    R(function(e) {
+                        return e > 0 ? e - 1 : e;
+                    });
+                }, B = function() {
+                    O.current && (x ? W() : U());
+                }, W = function() {
+                    R(function(e) {
+                        return (e + 1) % D.length;
+                    });
+                }, U = function() {
+                    R(function(e) {
+                        return e < D.length - 1 ? e + 1 : e;
+                    });
+                }, H = function(e) {
+                    e.preventDefault(), _.current = setTimeout(function() {
+                        T("pause");
+                    }, 200);
+                }, N = function(e) {
+                    return function(t) {
+                        t.preventDefault(), _.current && clearTimeout(_.current), i ? T("play") : "next" === e ? B() : z();
+                    };
+                };
+                return c.default.createElement("div", {
+                    style: Object.assign(Object.assign(Object.assign({}, h.container), I), {
+                        width: S,
+                        height: w
+                    })
+                }, c.default.createElement(d.default.Provider, {
+                    value: {
+                        bufferAction: l,
+                        videoDuration: b,
+                        currentId: t,
+                        pause: i,
+                        next: B
+                    }
+                }, c.default.createElement(p.default, null)), c.default.createElement(y.default, {
+                    action: T,
+                    bufferAction: l,
+                    playState: i,
+                    story: D[t],
+                    getVideoDuration: function(e) {
+                        g(1e3 * e);
+                    }
+                }), !A && c.default.createElement("div", {
+                    style: h.overlay
+                }, c.default.createElement("div", {
+                    style: {
+                        width: "50%",
+                        zIndex: 999
+                    },
+                    onTouchStart: H,
+                    onTouchEnd: N("previous"),
+                    onMouseDown: H,
+                    onMouseUp: N("previous")
+                }), c.default.createElement("div", {
+                    style: {
+                        width: "50%",
+                        zIndex: 999
+                    },
+                    onTouchStart: H,
+                    onTouchEnd: N("next"),
+                    onMouseDown: H,
+                    onMouseUp: N("next")
+                })));
+            };
+            var h = {
+                container: {
+                    display: "flex",
+                    flexDirection: "column",
+                    background: "#111",
+                    position: "relative"
+                },
+                overlay: {
+                    position: "absolute",
+                    height: "inherit",
+                    width: "inherit",
+                    display: "flex"
+                }
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), o = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), i = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && n(t, e, r);
+                return o(t, e), t;
+            }, a = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var u = i(r(0)), l = a(r(1)), c = {
+                story: {
+                    display: "flex",
+                    position: "relative",
+                    overflow: "hidden",
+                    alignItems: "center"
+                },
+                storyContent: {
+                    width: "auto",
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    margin: "auto"
+                }
+            };
+            t.default = function(e) {
+                var t, r, n = u.useContext(l.default), o = n.width, i = n.height, a = n.loader, f = n.header, s = n.storyStyles, d = function(t, r) {
+                    switch(t){
+                        case "UPDATE_VIDEO_DURATION":
+                            return e.getVideoDuration(r.duration), {
+                                ack: "OK"
+                            };
+                    }
+                };
+                return u.default.createElement("div", {
+                    style: Object.assign(Object.assign({}, c.story), {
+                        width: o,
+                        height: i
+                    })
+                }, (t = e.story.content, r = {
+                    width: o,
+                    height: i,
+                    loader: a,
+                    header: f,
+                    storyStyles: s
+                }, u.default.createElement(t, {
+                    action: e.action,
+                    isPaused: e.playState,
+                    story: e.story,
+                    config: r,
+                    messageHandler: d
+                })));
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return o(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return o(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function o(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var i = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), a = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), u = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && i(t, e, r);
+                return a(t, e), t;
+            }, l = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var c = u(r(0)), f = l(r(11)), s = l(r(3)), d = l(r(1)), y = l(r(2));
+            t.default = function() {
+                var e = n(c.useState(0), 2), t = e[0], r = e[1], o = c.useContext(s.default), i = o.currentId, a = o.next, u = o.videoDuration, l = o.pause, h = c.useContext(d.default), m = h.defaultInterval, v = h.onStoryEnd, b = h.onStoryStart, g = h.onAllStoriesEnd, _ = c.useContext(y.default).stories;
+                c.useEffect(function() {
+                    r(0);
+                }, [
+                    i,
+                    _
+                ]), c.useEffect(function() {
+                    return l || (O.current = requestAnimationFrame(S)), function() {
+                        cancelAnimationFrame(O.current);
+                    };
+                }, [
+                    i,
+                    l
+                ]);
+                var O = c.useRef(), j = t, S = function e() {
+                    0 === j && w(), r(function(e) {
+                        var t = E();
+                        return j = e + 100 / (t / 1e3 * 60), e + 100 / (t / 1e3 * 60);
+                    }), j < 100 ? O.current = requestAnimationFrame(e) : (x(), i === _.length - 1 && M(), cancelAnimationFrame(O.current), a());
+                }, w = function() {
+                    b && b(i, _[i]);
+                }, x = function() {
+                    v && v(i, _[i]);
+                }, M = function() {
+                    g && g(i, _);
+                }, E = function() {
+                    return "video" === _[i].type ? u : "number" == typeof _[i].duration ? _[i].duration : m;
+                };
+                return c.default.createElement("div", {
+                    style: p.progressArr
+                }, _.map(function(e, r) {
+                    return c.default.createElement(f.default, {
+                        key: r,
+                        count: t,
+                        width: 1 / _.length,
+                        active: r === i ? 1 : r < i ? 2 : 0
+                    });
+                }));
+            };
+            var p = {
+                progressArr: {
+                    display: "flex",
+                    justifyContent: "center",
+                    maxWidth: "100%",
+                    flexWrap: "row",
+                    position: "absolute",
+                    width: "98%",
+                    padding: 5,
+                    paddingTop: 7,
+                    alignSelf: "center",
+                    zIndex: 1001,
+                    filter: "drop-shadow(0 1px 8px #222)"
+                }
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), o = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), i = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && n(t, e, r);
+                return o(t, e), t;
+            }, a = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var u = i(r(0)), l = a(r(12)), c = a(r(3));
+            t.default = function(e) {
+                var t = u.useContext(c.default), r = t.bufferAction, n = t.pause, o = e.width, i = e.active;
+                return u.default.createElement(l.default, {
+                    width: o,
+                    pause: n,
+                    bufferAction: r
+                }, u.default.createElement("div", {
+                    style: Object.assign(Object.assign({}, function(t) {
+                        switch(t.active){
+                            case 2:
+                                return {
+                                    width: "100%"
+                                };
+                            case 1:
+                                return {
+                                    transform: "scaleX(".concat(e.count / 100, ")")
+                                };
+                            case 0:
+                            default:
+                                return {
+                                    width: 0
+                                };
+                        }
+                    }({
+                        active: i
+                    })), f.inner)
+                }));
+            };
+            var f = {
+                inner: {
+                    background: "#fff",
+                    height: "100%",
+                    maxWidth: "100%",
+                    borderRadius: 2,
+                    transformOrigin: "center left",
+                    WebkitBackfaceVisibility: "hidden",
+                    MozBackfaceVisibility: "hidden",
+                    msBackfaceVisibility: "hidden",
+                    backfaceVisibility: "hidden",
+                    WebkitPerspective: 1e3,
+                    MozPerspective: 1e3,
+                    msPerspective: 1e3,
+                    perspective: 1e3
+                }
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var o = n(r(0)), i = function(e) {
+                var t = e.width, r = e.pause, n = e.bufferAction;
+                return {
+                    width: "".concat(100 * t, "%"),
+                    opacity: r && !n ? 0 : 1
+                };
+            }, a = {
+                progress: {
+                    height: 2,
+                    maxWidth: "100%",
+                    background: "#555",
+                    margin: 2,
+                    borderRadius: 2,
+                    transition: "opacity 400ms ease-in-out"
+                }
+            };
+            t.default = function(e) {
+                return o.default.createElement("div", {
+                    style: Object.assign(Object.assign({}, a.progress), i(e))
+                }, e.children);
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.getRenderer = void 0, t.getRenderer = function(e, t) {
+                var r = t.map(function(t) {
+                    return Object.assign(Object.assign({}, t), {
+                        testerResult: t.tester(e)
+                    });
+                }).filter(function(e) {
+                    return e.testerResult.condition;
+                });
+                return r.sort(function(e, t) {
+                    return t.testerResult.priority - e.testerResult.priority;
+                }), r[0].renderer;
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.renderers = void 0;
+            var o = n(r(15)), i = n(r(19)), a = n(r(20)), u = n(r(21));
+            t.renderers = [
+                o.default,
+                i.default,
+                u.default,
+                a.default
+            ];
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return o(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return o(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function o(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var i = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), a = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), u = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && i(t, e, r);
+                return a(t, e), t;
+            }, l = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.tester = t.renderer = void 0;
+            var c = u(r(0)), f = l(r(6)), s = l(r(4)), d = l(r(5));
+            t.renderer = function(e) {
+                var t = e.story, r = e.action, o = (e.isPaused, e.config), i = n(c.useState(!1), 2), a = i[0], u = i[1], l = o.width, p = o.height, h = o.loader, m = o.storyStyles, v = Object.assign(Object.assign({}, y.storyContent), m || {});
+                return c.createElement(s.default, {
+                    story: t,
+                    globalHeader: o.header
+                }, c.createElement(d.default, {
+                    story: t,
+                    action: r
+                }, c.createElement("div", null, c.createElement("img", {
+                    style: v,
+                    src: t.url,
+                    onLoad: function() {
+                        u(!0), r("play");
+                    }
+                }), !a && c.createElement("div", {
+                    style: {
+                        width: l,
+                        height: p,
+                        position: "absolute",
+                        left: 0,
+                        top: 0,
+                        background: "rgba(0, 0, 0, 0.9)",
+                        zIndex: 9,
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "#ccc"
+                    }
+                }, h || c.createElement(f.default, null)))));
+            };
+            var y = {
+                story: {
+                    display: "flex",
+                    position: "relative",
+                    overflow: "hidden"
+                },
+                storyContent: {
+                    width: "auto",
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    margin: "auto"
+                }
+            };
+            t.tester = function(e) {
+                return {
+                    condition: !(e.content || e.type && "image" !== e.type),
+                    priority: 2
+                };
+            }, t.default = {
+                renderer: t.renderer,
+                tester: t.tester
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            r.r(t);
+            var n = r(0), o = r.n(n);
+            function i() {
+                return (i = Object.assign || function(e) {
+                    for(var t = 1; t < arguments.length; t++){
+                        var r = arguments[t];
+                        for(var n in r)Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n]);
+                    }
+                    return e;
+                }).apply(this, arguments);
+            }
+            function a(e, t) {
+                if (null == e) return {};
+                var r, n, o = function(e, t) {
+                    if (null == e) return {};
+                    var r, n, o = {}, i = Object.keys(e);
+                    for(n = 0; n < i.length; n++)r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+                    return o;
+                }(e, t);
+                if (Object.getOwnPropertySymbols) {
+                    var i = Object.getOwnPropertySymbols(e);
+                    for(n = 0; n < i.length; n++)r = i[n], t.indexOf(r) >= 0 || Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r]);
+                }
+                return o;
+            }
+            t.default = function(e) {
+                e.styles;
+                var t = a(e, [
+                    "styles"
+                ]);
+                return o.a.createElement("svg", i({
+                    width: "44",
+                    height: "44",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    stroke: "#fff"
+                }, t), o.a.createElement("g", {
+                    fill: "none",
+                    fillRule: "evenodd",
+                    strokeWidth: "2"
+                }, o.a.createElement("circle", {
+                    cx: "22",
+                    cy: "22",
+                    r: "1"
+                }, o.a.createElement("animate", {
+                    attributeName: "r",
+                    begin: "0s",
+                    dur: "1.8s",
+                    values: "1; 20",
+                    calcMode: "spline",
+                    keyTimes: "0; 1",
+                    keySplines: "0.165, 0.84, 0.44, 1",
+                    repeatCount: "indefinite"
+                }), o.a.createElement("animate", {
+                    attributeName: "stroke-opacity",
+                    begin: "0s",
+                    dur: "1.8s",
+                    values: "1; 0",
+                    calcMode: "spline",
+                    keyTimes: "0; 1",
+                    keySplines: "0.3, 0.61, 0.355, 1",
+                    repeatCount: "indefinite"
+                })), o.a.createElement("circle", {
+                    cx: "22",
+                    cy: "22",
+                    r: "1"
+                }, o.a.createElement("animate", {
+                    attributeName: "r",
+                    begin: "-0.9s",
+                    dur: "1.8s",
+                    values: "1; 20",
+                    calcMode: "spline",
+                    keyTimes: "0; 1",
+                    keySplines: "0.165, 0.84, 0.44, 1",
+                    repeatCount: "indefinite"
+                }), o.a.createElement("animate", {
+                    attributeName: "stroke-opacity",
+                    begin: "-0.9s",
+                    dur: "1.8s",
+                    values: "1; 0",
+                    calcMode: "spline",
+                    keyTimes: "0; 1",
+                    keySplines: "0.3, 0.61, 0.355, 1",
+                    repeatCount: "indefinite"
+                }))));
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var o = n(r(0)), i = {
+                main: {
+                    display: "flex",
+                    alignItems: "center"
+                },
+                img: {
+                    width: 40,
+                    height: 40,
+                    borderRadius: 40,
+                    marginRight: 10,
+                    filter: "drop-shadow(0 0px 2px rgba(0, 0, 0, 0.5))",
+                    border: "2px solid rgba(255, 255, 255, 0.8)"
+                },
+                text: {
+                    display: "flex",
+                    flexDirection: "column",
+                    filter: "drop-shadow(0 0px 3px rgba(0, 0, 0, 0.9))"
+                },
+                heading: {
+                    fontSize: "1rem",
+                    color: "rgba(255, 255, 255, 0.9)",
+                    margin: 0,
+                    marginBottom: 2
+                },
+                subheading: {
+                    fontSize: "0.6rem",
+                    color: "rgba(255, 255, 255, 0.8)",
+                    margin: 0
+                }
+            };
+            t.default = function(e) {
+                var t = e.profileImage, r = e.heading, n = e.subheading;
+                return o.default.createElement("div", {
+                    style: i.main
+                }, t && o.default.createElement("img", {
+                    style: i.img,
+                    src: t
+                }), o.default.createElement("span", {
+                    style: i.text
+                }, o.default.createElement("p", {
+                    style: i.heading
+                }, r), o.default.createElement("p", {
+                    style: i.subheading
+                }, n)));
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), o = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), i = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && n(t, e, r);
+                return o(t, e), t;
+            }, a = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var u = i(r(0)), l = a(r(1));
+            t.default = function(e) {
+                var t = e.seeMoreContent, r = e.customCollapsed, n = u.useContext(l.default).keyboardNavigation;
+                u.useEffect(function() {
+                    if ("undefined" != typeof window && window.document && "boolean" == typeof n && n) return document.addEventListener("keydown", o), function() {
+                        document.removeEventListener("keydown", o);
+                    };
+                }, [
+                    n
+                ]);
+                var o = function(t) {
+                    "ArrowUp" === t.key ? (t.preventDefault(), e.toggleMore(!0)) : "ArrowDown" !== t.key && "Escape" !== t.key || (t.preventDefault(), e.toggleMore(!1));
+                };
+                return e.showContent ? u.default.createElement("div", {
+                    style: c.seeMoreExpanded
+                }, u.default.createElement(t, {
+                    close: function() {
+                        return e.toggleMore(!1);
+                    }
+                })) : r ? u.default.createElement(r, {
+                    action: e.action,
+                    toggleMore: e.toggleMore
+                }) : u.default.createElement("div", {
+                    style: c.seeMore,
+                    onClick: function(t) {
+                        t.preventDefault(), t.stopPropagation(), e.toggleMore(!0);
+                    }
+                }, u.default.createElement("span", {
+                    style: c.seeMoreIcon
+                }, "⌃"), u.default.createElement("span", {
+                    style: c.seeMoreText
+                }, "See more"));
+            };
+            var c = {
+                seeMore: {
+                    height: "10vh",
+                    background: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))",
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "100%",
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                    bottom: 0
+                },
+                seeMoreExpanded: {
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    boxSizing: "border-box",
+                    zIndex: 99999
+                },
+                seeMoreText: {
+                    color: "white",
+                    textAlign: "center",
+                    letterSpacing: "0.1em",
+                    marginBottom: "2.2vh",
+                    textTransform: "capitalize",
+                    opacity: "1",
+                    fontSize: "0.8em",
+                    transition: "opacity 300ms ease-in-out"
+                },
+                seeMoreIcon: {
+                    color: "white",
+                    textAlign: "center",
+                    letterSpacing: "0.2em",
+                    marginBottom: "0.4vh",
+                    opacity: "1",
+                    filter: "drop-shadow(0 0 5px black)",
+                    textTransform: "capitalize",
+                    transition: "opacity 300ms ease-in-out"
+                },
+                seeMoreClose: {
+                    position: "absolute",
+                    filter: "drop-shadow(0 3px 2px #ccc)",
+                    right: "0.5rem",
+                    top: "0.5rem",
+                    fontSize: "1.5rem",
+                    opacity: "0.7",
+                    padding: "1rem"
+                }
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            function n(e, t) {
+                return function(e) {
+                    if (Array.isArray(e)) return e;
+                }(e) || function(e, t) {
+                    if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(e))) return;
+                    var r = [], n = !0, o = !1, i = void 0;
+                    try {
+                        for(var a, u = e[Symbol.iterator](); !(n = (a = u.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+                    } catch (e1) {
+                        o = !0, i = e1;
+                    } finally{
+                        try {
+                            n || null == u.return || u.return();
+                        } finally{
+                            if (o) throw i;
+                        }
+                    }
+                    return r;
+                }(e, t) || function(e, t) {
+                    if (!e) return;
+                    if ("string" == typeof e) return o(e, t);
+                    var r = Object.prototype.toString.call(e).slice(8, -1);
+                    "Object" === r && e.constructor && (r = e.constructor.name);
+                    if ("Map" === r || "Set" === r) return Array.from(e);
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return o(e, t);
+                }(e, t) || function() {
+                    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+                }();
+            }
+            function o(e, t) {
+                (null == t || t > e.length) && (t = e.length);
+                for(var r = 0, n = new Array(t); r < t; r++)n[r] = e[r];
+                return n;
+            }
+            var i = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), a = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), u = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && i(t, e, r);
+                return a(t, e), t;
+            }, l = this && this.__importDefault || function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.tester = t.renderer = void 0;
+            var c = u(r(0)), f = l(r(6)), s = l(r(4)), d = l(r(5));
+            t.renderer = function(e) {
+                var t = e.story, r = e.action, o = e.isPaused, i = e.config, a = e.messageHandler, u = n(c.useState(!1), 2), l = u[0], p = u[1], h = n(c.useState(!1), 2), m = h[0], v = h[1], b = i.width, g = i.height, _ = i.loader, O = i.storyStyles, j = Object.assign(Object.assign({}, y.storyContent), O || {}), S = c.useRef(null);
+                c.useEffect(function() {
+                    S.current && (o ? S.current.pause() : S.current.play().catch(function() {}));
+                }, [
+                    o
+                ]);
+                return c.createElement(s.default, {
+                    story: t,
+                    globalHeader: i.header
+                }, c.createElement(d.default, {
+                    story: t,
+                    action: r
+                }, c.createElement("div", {
+                    style: y.videoContainer
+                }, c.createElement("video", {
+                    ref: S,
+                    style: j,
+                    src: t.url,
+                    controls: !1,
+                    onLoadedData: function() {
+                        a("UPDATE_VIDEO_DURATION", {
+                            duration: S.current.duration
+                        }), p(!0), S.current.play().then(function() {
+                            r("play");
+                        }).catch(function() {
+                            v(!0), S.current.play().finally(function() {
+                                r("play");
+                            });
+                        });
+                    },
+                    playsInline: !0,
+                    onWaiting: function() {
+                        r("pause", !0);
+                    },
+                    onPlaying: function() {
+                        r("play", !0);
+                    },
+                    muted: m,
+                    autoPlay: !0,
+                    "webkit-playsinline": "true"
+                }), !l && c.createElement("div", {
+                    style: {
+                        width: b,
+                        height: g,
+                        position: "absolute",
+                        left: 0,
+                        top: 0,
+                        background: "rgba(0, 0, 0, 0.9)",
+                        zIndex: 9,
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        color: "#ccc"
+                    }
+                }, _ || c.createElement(f.default, null)))));
+            };
+            var y = {
+                storyContent: {
+                    width: "auto",
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    margin: "auto"
+                },
+                videoContainer: {
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                }
+            };
+            t.tester = function(e) {
+                return {
+                    condition: "video" === e.type,
+                    priority: 2
+                };
+            }, t.default = {
+                renderer: t.renderer,
+                tester: t.tester
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), o = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), i = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && n(t, e, r);
+                return o(t, e), t;
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.tester = t.renderer = void 0;
+            var a = i(r(0));
+            t.renderer = function(e) {
+                var t = e.story, r = e.action;
+                return a.useEffect(function() {
+                    r("play");
+                }, [
+                    t
+                ]), a.createElement("div", {
+                    style: u.storyContent
+                }, a.createElement("p", {
+                    style: u.text
+                }, "This story could not be loaded."));
+            };
+            var u = {
+                storyContent: {
+                    width: "100%",
+                    maxHeight: "100%",
+                    margin: "auto"
+                },
+                text: {
+                    textAlign: "center",
+                    color: "white",
+                    width: "90%",
+                    margin: "auto"
+                }
+            };
+            t.tester = function() {
+                return {
+                    condition: !0,
+                    priority: 1
+                };
+            }, t.default = {
+                renderer: t.renderer,
+                tester: t.tester
+            };
+        },
+        function(e, t, r) {
+            "use strict";
+            var n = this && this.__createBinding || (Object.create ? function(e, t, r, n) {
+                void 0 === n && (n = r), Object.defineProperty(e, n, {
+                    enumerable: !0,
+                    get: function() {
+                        return t[r];
+                    }
+                });
+            } : function(e, t, r, n) {
+                void 0 === n && (n = r), e[n] = t[r];
+            }), o = this && this.__setModuleDefault || (Object.create ? function(e, t) {
+                Object.defineProperty(e, "default", {
+                    enumerable: !0,
+                    value: t
+                });
+            } : function(e, t) {
+                e.default = t;
+            }), i = this && this.__importStar || function(e) {
+                if (e && e.__esModule) return e;
+                var t = {};
+                if (null != e) for(var r in e)"default" !== r && Object.hasOwnProperty.call(e, r) && n(t, e, r);
+                return o(t, e), t;
+            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.tester = t.renderer = void 0;
+            var a = i(r(0));
+            t.renderer = function(e) {
+                a.useEffect(function() {
+                    e.action("play");
+                }, [
+                    e.story
+                ]);
+                var t = e.story.originalContent;
+                return a.createElement(t, Object.assign({}, e));
+            }, t.tester = function(e) {
+                return {
+                    condition: !!e.content,
+                    priority: 2
+                };
+            }, t.default = {
+                renderer: t.renderer,
+                tester: t.tester
+            };
+        }
+    ]);
+});
+
+},{"react":"21dqq"}]},["1xC6H","kRqmO","f5Nsj"], "f5Nsj", "parcelRequire2155")
 
 //# sourceMappingURL=index.ac262268.js.map
