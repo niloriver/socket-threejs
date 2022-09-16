@@ -282,8 +282,10 @@ export function App() {
         }
       }
 
-      if (payload.gamestate === "iddle") {
-        setGameState("waiting");
+      if (gameState !== "merchan") {
+        if (payload.gamestate === "iddle") {
+          setGameState("waiting");
+        }
       }
     });
 
@@ -1047,9 +1049,9 @@ export function App() {
             )}
             <div className="hidden w-full h-8 ">
               <video
-                playsinline
+                playsInline
                 muted
-                autoplay
+                autoPlay
                 loop
                 src="https://rawgit.com/bower-media-samples/big-buck-bunny-480p-30s/master/video.mp4"
               ></video>
