@@ -27345,7 +27345,7 @@ function App() {
         window.socket.emit("player-hello", userData);
         console.log("CLICK_START");
         // TESTES
-        window.socket.emit("start-test");
+        // window.socket.emit("start-test");
         window.socket.on("start-controller", ()=>{
             window.socketStarted = true;
             console.log("CONTROLLER_STARTERD");

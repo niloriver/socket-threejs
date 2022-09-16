@@ -77,7 +77,7 @@ var loggedPeers = {};
 var decreaser;
 
 var countInterval = null;
-var countTotal = 120; // 120
+var countTotal = 30; // 120
 var countElapsed = 0;
 var randomID;
 var roomStarting = false;
@@ -178,7 +178,10 @@ const newSession = (currentState) => {
 
             io.sockets.emit("gamestate", {
               gamestate: getGameState(),
-              params: getGameStateParams(getGameState()),
+              params: {
+                ...getGameStateParams(getGameState()),
+                totalplayers: totalPlayers,
+              },
             });
           });
         }, 1000);

@@ -363,7 +363,7 @@ export function App() {
 
     // TESTES
 
-    window.socket.emit("start-test");
+    // window.socket.emit("start-test");
     window.socket.on("start-controller", () => {
       window.socketStarted = true;
       console.log("CONTROLLER_STARTERD");
